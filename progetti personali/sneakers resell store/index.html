@@ -28,8 +28,16 @@
                         </div>
                     </nav>
                     <div class="header-icons">
-                        <a href="#" class="icon"><i class="fa-regular fa-heart fa-xl" style="color: #1b1c1e;"></i></a>
-                        <a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #1b1c1e;"></i></a>
+                        <a href="#" class="icon" id="favs"><i class="fa-regular fa-heart fa-xl" style="color: #1b1c1e;" onclick=dropdownf()></i></a>
+                        <div id="dropdown">
+                            <ul>
+                                <li>No product in favorites</li>
+                                <li><a href="sneakers.html" class="link">Sneakers</a></li>
+                                <li><a href="streetwear.html" class="link">Streetwear</a></li>
+                                <li><a href="#sale" class="link">On Sale</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="icon" id="cart"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #1b1c1e;" onclick=dropdownc()></i></a>
                         <label class="ham icon" for="ham">
                             <input type="checkbox" id="ham" onclick=show()>
                             <span class="line line1"></span>
@@ -56,6 +64,7 @@
                         </div>
                         <p>Nike Air Force 1</p>
                         <p>$100.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                     <a href="#"><div class="product">
                         <div class="prodimg">
@@ -63,6 +72,7 @@
                         </div>
                         <p>Nike Air Max 90</p>
                         <p>$120.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                     <a href="#"><div class="product">
                         <div class="prodimg">
@@ -70,6 +80,7 @@
                         </div>
                         <p>Nike Dunk Low</p>
                         <p>$100.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                     <a href="#"><div class="product">
                         <div class="prodimg">
@@ -77,6 +88,7 @@
                         </div>
                         <p>Nike baseball cap</p>
                         <p>$25.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                     <a href="#"><div class="product">
                         <div class="prodimg">
@@ -84,6 +96,7 @@
                         </div>
                         <p>Air Jordan 1 High</p>
                         <p>$170.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                     <a href="#"><div class="product">
                         <div class="prodimg">
@@ -91,6 +104,7 @@
                         </div>
                         <p>Nike Air Max 270</p>
                         <p>$120.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                 </div>
             </section>
@@ -105,53 +119,59 @@
             <section class="white" id="sale">
                 <h2>On Sale</h2>
                 <div class="cont container1">
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="scarpe/maxplus.png" alt="airmax" width="170em" > <br>
                         </div>
                         <p>Nike Air Max Plus</p>
                         <p class="disc">$200.00</p>
                         <p class="offer">$149.99</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="streetwear/fw16.png" alt="supreme hoodie" width="150em" > <br>
                         </div>
                         <p>Supreme Fw16 Hoodie</p>
                         <p class="disc">$249.00</p>
                         <p class="offer">$189.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="streetwear/shorts.png" alt="nike shorts" width="150em" > <br>
                         </div>
                         <p>Nike Shorts</p>
                         <p class="disc">$15.00</p>
                         <p class="offer">$9.99</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="streetwear/nikeghostflashman.png" alt="nike jacket" width="120em" > <br>
                         </div>
                         <p>Nike Shield Ghost Flash Man Running Jacket</p>
                         <p class="disc">$69.00</p>
                         <p class="offer">$52.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="scarpe/airforcehigh2.png" alt="nike air force high" width="170em" > <br>
                         </div>
                         <p>Nike Air Force 1 High</p>
                         <p class="disc">$120.50</p>
                         <p class="offer">$99.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
-                    <a href="#"><div class="product">
+                    <a href="#"><div class="product onsale">
                         <div class="prodimg">
                             <img src="scarpe/airmax972.png" alt="nike airmax 972" width="170em" > <br>
                         </div>
                         <p>Nike Air Max 972</p>
                         <p class="disc">$131.00</p>
                         <p class="offer">$105.00</p>
+                        <button class="negbtn2">Add to Cart</button>
                     </div></a>
                 </div>
             </section>
@@ -165,6 +185,7 @@
                             </div>
                             <p>Supreme Camp Cap</p>
                             <p>$90.00</p>
+                            <button class="negbtn2">Add to Cart</button>
                         </div></a>
                         <a href="#"><div class="product">
                             <div class="prodimg">
@@ -172,6 +193,7 @@
                             </div>
                             <p>The North Face NFZ Jacket</p>
                             <p>$185.00</p>
+                            <button class="negbtn2">Add to Cart</button>
                         </div></a>
                         <a href="#"><div class="product">
                             <div class="prodimg">
@@ -179,6 +201,7 @@
                             </div>
                             <p>Supreme Dragon Ball T-Shirt</p>
                             <p>$69.00</p>
+                            <button class="negbtn2">Add to Cart</button>
                         </div></a>
                     </div>
             </section>

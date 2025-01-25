@@ -34,18 +34,18 @@ h1{
 #ham{
   display: none;
 }
-  .navbar {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0 1.5em;
-  }
-  .navbar2{
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255);
-    padding: 0 1.5em;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 1.5em;
+}
+.navbar2{
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  padding: 0 1.5em;
+}
   .home{
     background-image: url(immagini/nike.jpg);
     background-size: cover;
@@ -53,7 +53,6 @@ h1{
     background-position: center top;
     min-height: 50em;
   }
-
   nav {
     flex: 1;
     text-align: right;
@@ -106,6 +105,25 @@ h1{
     margin: 0 0.2em;
     border: solid transparent;
   }
+  #dropdown{
+    display: block;
+    width: 20%;
+    height: 500px; 
+    position: absolute;
+    top: 5em;
+    right: 4em;
+    background-color: rgba(245, 245, 250);
+    /*backdrop-filter: blur(10px);*/
+    padding: 2em;
+    z-index: 2;
+    min-height: 0;
+    max-height: 0;
+    overflow: hidden;
+    /*opacity: 0;*/
+}
+.white{
+  background-color: white;
+}
 footer{
   background-color: black;
   color: white;
@@ -221,7 +239,19 @@ footer{
     font-weight: 550;
     width: 5em;
   }
-  .negbtn:hover{
+  .negbtn2{
+    display: inline-block;
+    border: solid black;
+    color: white;
+    background-color: black;
+    padding: 5px 0;
+    margin: 5px 10px 0 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 550;
+    width: 90%;
+  }
+  .negbtn:hover, .negbtn2:hover{
     background-color: white;
     color: black;
     cursor: pointer;
@@ -236,7 +266,6 @@ footer{
 .white{
   padding: 2em;
 }
-
 .sep{
   background-image: url(streetwear/backdef.jpg);
   background-size: cover;
@@ -246,25 +275,37 @@ footer{
 }
 .prodimg{
   background-color: #e5e6e8;
+  width:100%;
   height: 14em;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 .product p{
-  text-align: center;
+  text-align: left;
+  padding: 10px;
+  margin:0;
 }
 .product{
-  border: solid 0.08em transparent;
   flex-shrink: 0;
+  height: 23.5em;
   width: 14em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+}
+.onsale{
+  height: 26.5em !important;
 }
 .product:hover{
   border: solid 0.08em black;
 }
   .container1{
   display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
   gap: 1em;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -282,9 +323,6 @@ footer{
     right: 10px; /* o la posizione desiderata */
     transform: translateY(-50%);
     cursor: pointer;
-    /* Aggiungi l'icona come sfondo o utilizza un'icona font o SVG */
-    /* background-image: url('path-to-your-arrow-icon.png'); */
-    /* font-family: 'Font Awesome'; content: '\f061'; */
   }
   .cont a{
     color: black;
@@ -296,6 +334,7 @@ footer{
   }
   .offer{
     font-weight: bold;
+    padding-top: 0 !important;
   }
 
   /*streetwear*/
