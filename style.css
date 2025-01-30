@@ -27,6 +27,16 @@ body{
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23fff' stroke-width='4'%3E%3Cpath d='M24 44.0002C35.0457 44.0002 44 35.0459 44 24.0002C44 12.9545 35.0457 4.00024 24 4.00024C12.9543 4.00024 4 12.9545 4 24.0002C4 35.0459 12.9543 44.0002 24 44.0002Z'/%3E%3Cpath stroke-linecap='round' d='M6 30.9856C8.63192 32.041 10.5266 32.041 11.6839 30.9856C13.4199 29.4025 11.9219 24.5978 14.3532 23.2727C16.7844 21.9476 20.4886 27.8214 23.9508 25.8887C27.4129 23.9559 23.6246 18.8023 26.0272 16.713C28.4298 14.6237 31.554 16.98 32.1001 13.4865C32.6462 9.99304 29.5521 11.5082 28.9584 8.20693C28.5625 6.00611 28.5625 4.84884 28.9584 4.73511'/%3E%3Cpath stroke-linecap='round' d='M29.0209 43.3505C27.1468 41.4325 26.4721 39.6497 26.9969 38.0019C27.7841 35.5303 29.0826 35.6764 29.6488 34.1482C30.2149 32.6199 28.6156 30.4433 32.1643 28.5826C34.5301 27.3421 37.783 28.7794 41.9228 32.8944'/%3E%3C/g%3E%3C/svg%3E");
   }
+  .mdi--github {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f5f5fa' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+  }
+  
 .mobile{
     display: none;
 }
@@ -38,7 +48,7 @@ body{
 @font-face {
 	font-family: 'Coolvetica';
 	src: local('Coolvetica'), url('Coolvetica.ttf') format('truetype');
-    font-display: swap;
+    font-display: block;
 	}
 h1, h2, h3, h4{
     font-family: "Coolvetica", sans-serif;
@@ -132,6 +142,15 @@ ul span{
     border: none;
     font-size: 1em;
     text-decoration: none;
+}
+a[disabled], a[disabled]:hover {
+    cursor: not-allowed;
+    opacity: 60%;
+    color: #f5f5fa;
+    background-color: #fa9192;
+}
+a[disabled]:active {
+    pointer-events: none;
 }
 .green{
     background-color: #1bdf73;
@@ -235,11 +254,16 @@ figure{
 @media (min-width: 701px) {
     .swiper-slide {
         width: 33% !important;
-      }
-      .swiper-button-next, .swiper-button-prev {
+    }
+    .swiper-button-next, .swiper-button-prev {
         display: none !important;
-      }
-  }
+    }
+}
+@media (min-width: 501px) {
+  .socialtt{
+    padding-left: 1rem;
+}
+}
 @media (max-width: 700px) {
 .swiper{
     width: 100%;
@@ -339,7 +363,7 @@ footer{
     color: #f5f5fa;
 }
 footer h4{
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 /*logo in footer*/
 .logo > h4{
@@ -359,7 +383,7 @@ footer h4{
     margin-top: 0;
 }
 .getintouch p{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 .footcont{
     color:#271B46;
@@ -413,7 +437,7 @@ textarea{
     display: inline-block;
     color: #f5f5fa;
     text-decoration: none;
-    padding: 0.5vw 10px;
+    padding: 5px 10px;
     border-radius: 3px;
 }
 .item{
@@ -502,6 +526,9 @@ iconify-icon{
     .product{
         padding: 1em;
     }
+    .fix{
+        top: 2px!important;
+    }
     .navbar img{
         height: 3em;
     }
@@ -516,19 +543,20 @@ iconify-icon{
 }
 }
 @media (min-width: 301px) and (max-width: 600px) {
-    #aboutme, #projects, #services{
-        padding: 3em 1.5em;
-    }
-    .foot{
-        padding: 2em 1.5em;
-    }
-    .product{
-        max-width: 75vw;
-    }
+#aboutme, #projects, #services{
+    padding: 3em 1.5em;
+}
+.foot{
+    padding: 3em 1.5em;
+} 
+.product{
+    max-width: 75vw;
+}
 }
 @media (max-width: 600px) {
     .grid-container{
         display: flex;
+        gap: 1.5em;
         flex-direction: column;
     }
     .container{
@@ -575,6 +603,7 @@ iconify-icon{
 }
 .ftcont{
     flex-direction: column;
+    gap: 5em;
 }
 }
 @media (max-width: 850px) {
@@ -673,7 +702,7 @@ iconify-icon{
         font-size: 3.5em;
     }
 }
-@media (max-width: 1100px) {
+@media (min-width: 801px) and(max-width: 1100px) {
     .grid-container{
         gap:1em;
         grid-template-columns: 32% 32% 32%;
