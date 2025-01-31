@@ -25,9 +25,10 @@ function submit() {
     }
 }
 //responsive dropdown header (<=600px vw)
+
 function show() {
     const menu = document.getElementById("menucont");
-    const isMobile = window.matchMedia("(max-width: 800px)").matches;
+    const isMobile = window.matchMedia("(max-width: 850px)").matches
 
     if (isMobile) {
         // Se la media query è attiva, mostra/nascondi il menu
