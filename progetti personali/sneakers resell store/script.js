@@ -20,3 +20,33 @@ function dropdownc() {
   cicon.classList.toggle("white");
   cart.classList.toggle("openmenu");
 }
+
+//product filter
+document.addEventListener("change", function(event) {
+  if (event.target.matches('.category')){
+    const  categoryClass = event.target.dataset.category;
+    const elements = document.querySelectorAll(`.product.${categoryClass}`);
+    elements.forEach(element => {
+      element.closest("a").classList.toggle('hidden', !event.target.checked);
+    });
+  }
+});
+
+//filters menu
+const filtersmenu = document.querySelector('.filters');
+const overlay = document.getElementById('overlay');
+const toggleBtn = document.getElementById('togglefilters');
+const closeBtn = document.getElementById('closefilters');
+
+toggleBtn.addEventListener("click", () => {
+  filtersmenu.classList.add("visible");
+  overlay.classList.add("active");
+});
+closeBtn.addEventListener("click", () => {
+  filtersmenu.classList.remove("visible");
+  overlay.classList.remove("active");
+});
+overlay.addEventListener("click", () => {
+  filtersmenu.classList.remove("visible");
+  overlay.classList.remove("active");
+});

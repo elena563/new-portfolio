@@ -17,16 +17,15 @@
                     <div class="logo">
                         <a href="index.html" id="site-title"><img src="immagini/logo.png" alt="SB00 Store" width="200em" class=""></a>
                     </div>
-                    <div class="btn_responsivemenu"></div>
                     <nav>
-                        <ul>
-                            <li><a href="index.html" class="link">Home</a></li>
-                            <li><a href="sneakers.html" class="link">Sneakers</a></li>
-                            <li><a href="streetwear.html" class="link">Streetwear</a></li>
-                            <li><a href="index.html #sale" class="link">On Sale</a></li>
-                            <!--nuove pagine per catalogo
-                            dovranno avere un filtro per marca e prezzo-->
-                        </ul>
+                        <div id="menucont">
+                            <ul>
+                                <li><a href="index.html" class="link">Home</a></li>
+                                <li><a href="sneakers.html" class="link">Sneakers</a></li>
+                                <li><a href="streetwear.html" class="link">Streetwear</a></li>
+                                <li><a href="index.html #sale" class="link">On Sale</a></li>
+                            </ul>
+                        </div>
                     </nav>
                     <div class="header-icons">
                         <a href="#" class="icon"><i class="fa-regular fa-heart fa-xl" style="color: #1b1c1e;"></i></a>
@@ -44,40 +43,36 @@
                 </div>
             </div>
         </header>
-        <section class="white store">
+        <section class="white">
+            <div class="overlay" id="overlay"></div>
+            <button id="togglefilters" style="margin-bottom:20px;" class="mobile-only secbtn">Show Filters  <i class="fa-solid fa-filter"></i></button>
+        <div class="store">
             <div class="filters">
+                <button id="closefilters" class="mobile-only secbtn">&times;</button>
                 <h3>Filters</h3>
                 <div class="fil">
-                    <details>
-                        <summary><h5>Gender</h5></summary>
-                        <input type="checkbox">Man <br>
-                        <input type="checkbox">Woman <br>
-                        <input type="checkbox">Unisex<br>
-                    </details>
+                    <h5>Gender</h5>
+                    <input type="checkbox" checked class="category" data-category="man">Man <br>
+                    <input type="checkbox" checked class="category" data-category="woman">Woman <br>
+                    <input type="checkbox" checked class="category" data-category="unisex">Unisex<br>
                 </div>
                 <div class="fil">
-                    <details>
-                        <summary><h5>Brand</h5></summary>
-                        <input type="checkbox">Nike <br>
-                        <input type="checkbox">Adidas <br>
-                        <input type="checkbox">Other<br>
-                    </details>
+                    <h5>Brand</h5>
+                    <input type="checkbox" checked class="category" data-category="nike">Nike <br>
+                    <input type="checkbox" checked class="category" data-category="adidas">Adidas <br>
+                    <input type="checkbox" checked class="category" data-category="other">Other<br>
                 </div>
                 <div class="fil">
-                    <details>
-                        <summary><h5>Category</h5></summary>
-                        <input type="checkbox">Tops <br>
-                        <input type="checkbox">Bottoms <br>
-                        <input type="checkbox">Accessories<br>
-                    </details>
+                    <h5>Category</h5>
+                    <input type="checkbox" checked class="category" data-category="top">Tops <br>
+                    <input type="checkbox" checked class="category" data-category="bottom">Bottoms <br>
+                    <input type="checkbox" checked class="category" data-category="access">Accessories<br>
                 </div>
                 <div class="fil">
-                    <details>
-                        <summary><h5>Price</h5></summary>
-                        <input type="checkbox">Less than $50 <br>
-                        <input type="checkbox">$50-100 <br>
-                        <input type="checkbox">More than $100<br>
-                    </details>
+                    <h5>Price</h5>
+                    <input type="checkbox" checked class="category" data-category="aff">Less than $50 <br>
+                    <input type="checkbox" checked class="category" data-category="medium">$50-100 <br>
+                    <input type="checkbox" checked class="category" data-category="exp">More than $100<br>
                 </div>
             </div>
             <div class="cont container2">
@@ -166,6 +161,7 @@
                     <p>$19.00</p>
                 </div></a>
             </div>
+        </div>
         </section>
         <footer>
             <div id="ftcontainer">
@@ -185,7 +181,8 @@
                         <a href="#">Support</a>
                     </div>
                 </div>
-                <div class="foot form">
+                <div class="form">
+                    <div class="formcont">
                     <h5>Contacting Form</h5>
                     <form action="#">
                         <input type="text" placeholder="Your Name">
@@ -194,11 +191,20 @@
                         <button class="negbtn">Invia</button>
                     </form>
                 </div>
+                </div>
                 <div class="social">
-                    <iconify-icon icon="mdi:instagram" width="24" height="24" class="insta"></iconify-icon>
-                    <iconify-icon icon="simple-icons:x" width="24" height="24" class="tik"></iconify-icon>
-                    <iconify-icon icon="ri:facebook-fill" width="24" height="24" class="fb"></iconify-icon>
-                    <iconify-icon icon="ic:baseline-tiktok" width="24" height="24" class="tik"></iconify-icon>
+                    <div class="icon-cont insta">
+                        <a href=""><iconify-icon icon="mdi:instagram" width="25" height="25"></iconify-icon></a>
+                    </div>
+                    <div class="icon-cont tik">
+                        <a href=""><iconify-icon icon="ri:twitter-x-fill" width="25" height="25"></iconify-icon></a>
+                    </div>
+                    <div class="icon-cont fb">
+                        <a href=""><iconify-icon icon="ri:facebook-fill" width="25" height="25"></iconify-icon></a>
+                    </div>
+                    <div class="icon-cont tik">
+                        <a href=""><iconify-icon icon="ic:baseline-tiktok" width="25" height="25"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <p>© 2024 SB00.com All Rights Reserved</p>
