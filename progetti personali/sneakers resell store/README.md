@@ -26,8 +26,8 @@ Project sections:
 
 ## Project Features
 
-- **Sneaker Listings**: Browse a curated collection of sneakers available for resale.
-- **Filter products**: Filter among all the products to find the best option.
+- **Products Listings**: Browse a curated collection of products available for resale.
+- **Filter Products**: Filter among all the products to find the best option.
 - **Responsive Design**: Ensures a seamless experience across various devices.
 
 ## Technologies Used

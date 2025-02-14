@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="immagini/favicon2.png">
         <link rel= "stylesheet" href= "style.css">
-        <script src="/html/script.js" type="text/javascript"></script>
+        <script src="/html/script.js" defer type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -28,8 +28,22 @@
                         </div>
                     </nav>
                     <div class="header-icons">
-                        <a href="#" class="icon"><i class="fa-regular fa-heart fa-xl" style="color: #1b1c1e;"></i></a>
-                        <a href="#" class="icon"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #1b1c1e;"></i></a>
+                        <a href="#" class="icon" id="favs">
+                            <iconify-icon icon="line-md:heart" width="30" height="30" style="color: #1b1c1e;">
+                        </a>
+                        <div id="dropdownf">
+                            <p>No product in favorites</p>
+                            <ul>
+                            </ul>
+                        </div>
+                        <a href="#" class="icon" id="cart">
+                            <iconify-icon icon="mdi:cart-outline" width="30" height="30" style="color: #1b1c1e;">
+                        </a>
+                        <div id="dropdownc">
+                            <p>No product in cart</p>
+                            <ul>
+                            </ul>
+                        </div>
                         <label class="ham icon" for="ham">
                             <input type="checkbox" id="ham" onclick=show()>
                             <span class="line line1"></span>
@@ -70,21 +84,21 @@
                 </div>
             </div>
             <div class="cont container2">
-                <a href="#"><div class="product man woman medium nike">
+                <a href="#"><div class="product unisex medium nike">
                     <div class="prodimg">
                         <img src="scarpe/airforcelow.png" alt="airforce" width="170em" > <br>
                     </div>
                     <p>Nike Air Force 1</p>
                     <p>$100.00</p>
                 </div></a>
-                <a href="#"><div class="product man exp nike">
+                <a href="#"><div class="product woman exp nike">
                     <div class="prodimg">
                         <img src="scarpe/airmax90.png" alt="airmax" width="170em" > <br>
                     </div>
                     <p>Nike Air Max 90</p>
                     <p>$120.00</p>
                 </div></a>
-                <a href="#"><div class="product man woman medium nike">
+                <a href="#"><div class="product man unisex medium nike">
                     <div class="prodimg">
                         <img src="scarpe/dunklow1.png" alt="dunklow" width="170em" > <br>
                     </div>

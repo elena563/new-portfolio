@@ -7,19 +7,38 @@ function show() {
       menu.classList.toggle("openmenu");
   }
 }
-//favs and cart dropdown
-function dropdownf() {
-  const favs = document.getElementById("dropdownf");
-  const ficon = document.getElementById('favs');
-  ficon.classList.toggle("white");
-  favs.classList.toggle("openmenu");
+
+//menu favorites and cart
+function dropdown(menu, icon, othMenu, othIcon) {
+  const dropmenu = document.getElementById(menu);
+  const menuicon = document.getElementById(icon);
+  const otherMenu = document.getElementById(othMenu);
+  const otherIcon = document.getElementById(othIcon);
+
+  if (!dropmenu.classList.contains('openmenu')){
+    otherMenu.classList.remove('openmenu');
+    otherIcon.classList.remove('wicon');
+  }
+  dropmenu.classList.toggle('openmenu');
+  menuicon.classList.toggle('wicon');
+
+  document.addEventListener("click", function closeMenu(event) {
+    if (!dropmenu.contains(event.target) && !menuicon.contains(event.target)) {
+      dropmenu.classList.remove("openmenu");
+      menuicon.classList.remove("wicon");
+      document.removeEventListener("click", closeMenu);
+    }
+  }); 
 }
-function dropdownc() {
-  const cart = document.getElementById("dropdownc");
-  const cicon = document.getElementById('cart');
-  cicon.classList.toggle("white");
-  cart.classList.toggle("openmenu");
-}
+document.addEventListener("click", function(event) {
+  const favs = event.target.closest("#favs");
+  const cart = event.target.closest("#cart");
+  if (favs) {
+    dropdown('dropdownf', 'favs', 'dropdownc', 'cart');
+  } else if (cart) {
+    dropdown('dropdownc', 'cart', 'dropdownf', 'favs');
+  }
+});
 
 //product filter
 document.addEventListener("change", function(event) {
