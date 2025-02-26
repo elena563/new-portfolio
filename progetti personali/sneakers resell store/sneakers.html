@@ -67,6 +67,8 @@
             </div>
         </header>
         <section class="white">
+            <div id="fav-message" class="message hidden">Added to favorites!</div>
+            <div id="cart-message" class="message hidden">Added to cart!</div>
             <div class="overlay" id="overlay"></div>
             <button id="togglefilters" style="margin-bottom:20px;" class="mobile-only secbtn">Show Filters  <i class="fa-solid fa-filter"></i></button>
         <div class="store">
@@ -93,89 +95,113 @@
                 </div>
             </div>
             <div class="cont container2">
-                <a href="#"><div class="product unisex medium nike">
+                <a href="#"><div class="product unisex medium nike" data-id="13">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '13')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airforcelow.png" alt="airforce" width="170em" > <br>
                     </div>
-                    <p>Nike Air Force 1</p>
+                    <p class="name">Nike Air Force 1</p>
                     <p>$100.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '13')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman exp nike">
+                <a href="#"><div class="product woman exp nike" data-id="14">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '14')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airmax90.png" alt="airmax" width="170em" > <br>
                     </div>
-                    <p>Nike Air Max 90</p>
+                    <p class="name">Nike Air Max 90</p>
                     <p>$120.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '14')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man unisex medium nike">
+                <a href="#"><div class="product man unisex medium nike" data-id="15">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '15')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/dunklow1.png" alt="dunklow" width="170em" > <br>
                     </div>
-                    <p>Nike Dunk Low</p>
+                    <p class="name">Nike Dunk Low</p>
                     <p>$100.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '15')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man exp nike">
+                <a href="#"><div class="product man exp nike" data-id="16">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '16')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/jordanhigh2.png" alt="jordanhigh" width="170em" > <br>
                     </div>
-                    <p>Air Jordan 1 High</p>
+                    <p class="name">Air Jordan 1 High</p>
                     <p>$170.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '16')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman exp adidas">
+                <a href="#"><div class="product woman exp adidas" data-id="17">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '17')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/superstar.png" alt="superstar" width="170em" > <br>
                     </div>
-                    <p>Adidas Superstar</p>
+                    <p class="name">Adidas Superstar</p>
                     <p>$115.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '17')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man exp nike">
+                <a href="#"><div class="product man exp nike" data-id="18">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '18')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airmax270.png" alt="airmax" width="170em" > <br>
                     </div>
-                    <p>Nike Air Max 270</p>
+                    <p class="name">Nike Air Max 270</p>
                     <p>$120.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '18')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man exp nike">
+                <a href="#"><div class="product man exp nike" data-id="19">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '19')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airmax720.png" alt="airmax" width="170em" > <br>
                     </div>
-                    <p>Nike Air Max 720</p>
+                    <p class="name">Nike Air Max 720</p>
                     <p>$110.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '19')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man woman exp adidas">
+                <a href="#"><div class="product man woman exp adidas" data-id="20">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '20')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/yeezyboost350.png" alt="yeezy" width="170em" > <br>
                     </div>
-                    <p>Adidas Yeezy Boost 350</p>
+                    <p class="name">Adidas Yeezy Boost 350</p>
                     <p>$115.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '20')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man medium nike">
+                <a href="#"><div class="product man medium nike" data-id="21">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '21')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airzoompegasus34.png" alt="airzoompegasus" width="170em" > <br>
                     </div>
-                    <p>Nike Air Zoom Pegasus 34</p>
+                    <p class="name">Nike Air Zoom Pegasus 34</p>
                     <p>$65.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '21')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man exp nike">
+                <a href="#"><div class="product man exp nike" data-id="22">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '22')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/airjordan4.png" alt="jordanhigh" width="170em" > <br>
                     </div>
-                    <p>Air Jordan 4 High</p>
+                    <p class="name">Air Jordan 4 High</p>
                     <p>$195.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '22')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman medium other">
+                <a href="#"><div class="product woman medium other" data-id="23">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '23')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/newbalance320.png" alt="newbalance" width="170em" > <br>
                     </div>
-                    <p>New Balance 620</p>
+                    <p class="name">New Balance 620</p>
                     <p>$70.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '23')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman medium other">
+                <a href="#"><div class="product woman medium other" data-id="24">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '24')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="scarpe/vansdisney.png" alt="vans" width="170em" > <br>
                     </div>
-                    <p>Vans Sk8-hi X Disney</p>
+                    <p class="name">Vans Sk8-hi X Disney</p>
                     <p>$100.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '24')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
             </div>
         </section>

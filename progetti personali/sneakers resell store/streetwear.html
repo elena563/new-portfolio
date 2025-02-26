@@ -67,6 +67,8 @@
             </div>
         </header>
         <section class="white">
+            <div id="fav-message" class="message hidden">Added to favorites!</div>
+            <div id="cart-message" class="message hidden">Added to cart!</div>
             <div class="overlay" id="overlay"></div>
             <button id="togglefilters" style="margin-bottom:20px;" class="mobile-only secbtn">Show Filters  <i class="fa-solid fa-filter"></i></button>
         <div class="store">
@@ -99,89 +101,113 @@
                 </div>
             </div>
             <div class="cont container2">
-                <a href="#"><div class="product unisex exp top other">
+                <a href="#"><div class="product unisex exp top other" data-id="1">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '1')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/thenorthface.png" alt="the north face jacket" width="140em" > <br>
                     </div>
-                    <p>The North Face 1996 Retro Nuptse Jacket</p>
+                    <p class="name">The North Face 1996 Retro Nuptse Jacket</p>
                     <p>$120.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '1')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product unisex aff access nike">
+                <a href="#"><div class="product unisex aff access nike" data-id="2">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '2')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/cap.png" alt="cap" width="150em" > <br>
                     </div>
-                    <p>Nike baseball cap</p>
+                    <p class="name">Nike baseball cap</p>
                     <p>$25.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '2')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man medium top nike">
+                <a href="#"><div class="product man medium top nike" data-id="3">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '3')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/jacket.png" alt="jacket" width="120em" > <br>
                     </div>
-                    <p>Nike White Jacket</p>
+                    <p class="name">Nike White Jacket</p>
                     <p>$75.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '3')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman medium top adidas">
+                <a href="#"><div class="product woman medium top adidas" data-id="4">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '4')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/pinkkiss.png" alt="adidas jacket" width="120em" > <br>
                     </div>
-                    <p>Adidas Pink Kiss Jacket</p>
+                    <p class="name">Adidas Pink Kiss Jacket</p>
                     <p>$73.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '4')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man exp top bottom nike">
+                <a href="#"><div class="product man exp top bottom nike" data-id="5">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '5')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/jumpsuit.png" alt="nike jumpsuit" width="140em" > <br>
                     </div>
-                    <p>Nike Jumpsuit</p>
+                    <p class="name">Nike Jumpsuit</p>
                     <p>$105.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '5')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man medium top other">
+                <a href="#"><div class="product man medium top other" data-id="6">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '6')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/hoodie.png" alt="the north face hoodie" width="130em" > <br>
                     </div>
-                    <p>The North Face Hoodie</p>
+                    <p class="name">The North Face Hoodie</p>
                     <p>$60.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '6')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man aff top adidas">
+                <a href="#"><div class="product man aff top adidas" data-id="7">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '7')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/polo.png" alt="Adidas polo" width="130em" > <br>
                     </div>
-                    <p>Adidas Polo Shirt</p>
+                    <p class="name">Adidas Polo Shirt</p>
                     <p>$19.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '7')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman aff top nike">
+                <a href="#"><div class="product woman aff top nike" data-id="8">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '8')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/sportbra.png" alt="nike sport bra" width="140em" > <br>
                     </div>
-                    <p>Nike Sport Bra</p>
+                    <p class="name">Nike Sport Bra</p>
                     <p>$24.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '8')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man aff access other">
+                <a href="#"><div class="product man aff access other" data-id="9">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '9')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/ck.png" alt="calvin klein beanie" width="150em" > <br>
                     </div>
-                    <p>Calvin Klein Beanie Hat</p>
+                    <p class="name">Calvin Klein Beanie Hat</p>
                     <p>$25.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '9')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product unisex medium top other">
+                <a href="#"><div class="product unisex medium top other" data-id="10">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '10')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/levisj.png" alt="levis jacket" width="150em" > <br>
                     </div>
-                    <p>Levi's Denim Jacket</p>
+                    <p class="name">Levi's Denim Jacket</p>
                     <p>$50.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '10')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product woman aff bottom adidas">
+                <a href="#"><div class="product woman aff bottom adidas" data-id="11">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '11')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/pants.png" alt="Adidas pants" width="70em" > <br>
                     </div>
-                    <p>Adidas Workout Pants</p>
+                    <p class="name">Adidas Workout Pants</p>
                     <p>$25.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '11')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
-                <a href="#"><div class="product man aff bottom adidas">
+                <a href="#"><div class="product man aff bottom adidas" data-id="12">
                     <div class="prodimg">
+                        <button onclick="updateStorage(event, 'add', 'fav', '12')" class="btn heart"><iconify-icon class='hicon' icon="fluent:heart-28-regular" width="20" height="20" onclick=''></button>
                         <img src="streetwear/tierro.png" alt="Adidas shorts" width="120em" > <br>
                     </div>
-                    <p>Adidas Tierro 13 Shorts</p>
+                    <p class="name">Adidas Tierro 13 Shorts</p>
                     <p>$19.00</p>
+                    <button onclick="updateStorage(event, 'add', 'cart', '12')" class="negbtn2 cart">Add to Cart</button>
                 </div></a>
             </div>
         </div>
