@@ -427,24 +427,25 @@ footer{
   background-color: white;
   box-shadow: 0px 0px 19.2px 3px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  width: 50%;
-  height: 70%;
-  top: 10%;
-  right: 25%;
+  width: max(50%, 600px);
+  height: 450px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 .modal-item .prodimg{
-  width: 350px;
+  min-width: 350px;
   height: 100%;
 }
 .modal-item img{
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 75%;
+  max-height: 75%;
   width: auto;
   height: auto;
   object-fit: contain;
 }
 .prodiv{
-  width: 30%;
+  width: max(40%, 170px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -475,7 +476,6 @@ h4{
 }
 .color-container{
   display: flex;
-  justify-content: space-between;
 }
 .color-circle {
   display: inline-block;
@@ -577,6 +577,37 @@ h4{
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     grid-auto-flow: dense;
+  }
+  @media (min-width: 1400px) {
+    .modal-item{
+      flex-direction: column;
+      height: 730px;
+      gap:0;
+    }
+    .prodiv{
+      width: 100%;
+    }
+    .modal-item .prodimg{
+      height: 70%;
+    }
+    .size-container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .options{
+      display: flex;
+      width: 100%;
+      gap: 8vw;
+    }
+    .modal-item p{
+      font-size: 25px;
+    }
+    .pricebtn{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1em;
+    }
   }
 @media (max-width: 1200px) {
   .container2{
@@ -762,6 +793,36 @@ h4{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 760px) {
+  .modal-item{
+    flex-direction: column;
+    max-width: 90%;
+    height: 560px;
+    gap:0;
+  }
+  .prodiv{
+    width: 100%;
+  }
+  .modal-item .prodimg{
+    height: 60%;
+  }
+  .size-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .options{
+    display: flex;
+    width: 100%;
+    gap: 8vw;
+  }
+  .pricebtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+}
+
 @media (max-width: 530px) {
   .links{
     flex-direction: column;
@@ -778,6 +839,18 @@ h4{
   }
   .container2{
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .options{
+    flex-direction: column;
+    gap:0;
+  }
+  .modal-item{
+    height: 610px;
+  }
+  .modal-item .prodimg{
+    min-width: 0;
   }
 }
 @media (max-width: 450px) {

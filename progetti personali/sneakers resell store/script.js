@@ -102,7 +102,11 @@ function updateDropdown(key) {
       dropdown.appendChild(item);
     }
   });
+  if (dropdown.innerHTML.trim() === "") {
+    dropdown.innerHTML = "<p>Nothing here</p>";
+  }
 }
+
 
 //modal window
 const modal = document.getElementById('modal');
@@ -163,12 +167,14 @@ function openModal(productId) {
   <div class="prodiv">
     <span class="close">&times;</span>
     <h3>${productName}</h3>
-    <h4>Color</h4>
-    <div class="color-container">${colorCircles}</div>
-    <h4>Size</h4>
-    <div class="size-container">${sizeBoxes}</div>
-    <p>${productPrice}</p>
-    <button onclick="updateStorage(event, 'add', 'cart', ${productId})" class="negbtn2 cart">Add to Cart</button>
+    <div class="options">
+      <span><h4>Color</h4>
+      <div class="color-container">${colorCircles}</div></span>
+      <span><h4>Size</h4>
+      <div class="size-container">${sizeBoxes}</div></span>
+    </div>
+    <span class="pricebtn"><p>${productPrice}</p>
+    <button onclick="updateStorage(event, 'add', 'cart', ${productId})" class="negbtn2 cart">Add to Cart</button></span>
   </div>
 `;
   modalContent.appendChild(modalItem);
