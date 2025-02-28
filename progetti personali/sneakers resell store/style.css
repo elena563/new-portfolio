@@ -4,6 +4,7 @@
 body{
     font-family: 'Cooper Hewitt', "Geneva", Tahoma, sans-serif;
     margin: 0;
+    
 }
 @font-face {
 	font-family: 'Poppins';
@@ -412,6 +413,89 @@ footer{
 .hidden{
   display: none;
 }
+#modal{
+  position: absolute;
+  bottom: 1000px;
+  left: 0px;
+}
+.modal-item{
+  position: fixed;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1em;
+  padding: 1.5em;
+  background-color: white;
+  box-shadow: 0px 0px 19.2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 50%;
+  height: 70%;
+  top: 10%;
+  right: 25%;
+}
+.modal-item .prodimg{
+  width: 350px;
+  height: 100%;
+}
+.modal-item img{
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.prodiv{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prodiv h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4{
+  margin: 5px 0 3px 0;
+}
+.color-container{
+  display: flex;
+  justify-content: space-between;
+}
+.color-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.size-box {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
   .container1{
   display: flex;
   margin-left: 5px;
@@ -485,11 +569,11 @@ footer{
   .store{
     display: flex;
     gap: 2em;
+    justify-content: space-between;
   }
   .container2{
     display: grid;
-    transition: all 0.3s ease;
-    width: 100%;
+    width: 80%;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     grid-auto-flow: dense;
