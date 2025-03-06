@@ -683,8 +683,7 @@ h4{
   }
   #menucont{
       display: block;
-      width: 100vw;
-      height: 100vh; 
+      width: 100vw; 
       position: absolute;
       top: 0;
       left: 0;
@@ -693,10 +692,10 @@ h4{
       padding: 2em;
       z-index: -1;
       min-height: 0;
-      max-height: 500px;
+      max-height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: height 0.5s ease-out, opacity 0.8s ease-out;
+      transition: height 2s ease-out, opacity 0.8s ease-out;
   }
   .ham{
       height: 33px;
@@ -721,7 +720,7 @@ h4{
   }
 #menucont.openmenu{
     opacity: 1;
-    max-height: 100vh; 
+    max-height: 1000px; 
     z-index: 2;
 }
   #menucont li{
@@ -822,17 +821,17 @@ h4{
     gap: 1em;
   }
 }
-
+@media (max-width: 600px) {
+  #dropdownf, #dropdownc{
+    width: 40%;
+  }
+}
 @media (max-width: 530px) {
   .links{
     flex-direction: column;
   }
   .sw{
     background-image: url(streetwear/backresp.jpg);
-  }
-  .filters{
-    visibility: hidden;
-    position: absolute;
   }
   h1{
     font-size: 11vw;
@@ -842,6 +841,9 @@ h4{
   }
 }
 @media (max-width: 450px) {
+  #dropdownf, #dropdownc{
+    width: 50%;
+  }
   .options{
     flex-direction: column;
     gap:0;
