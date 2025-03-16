@@ -197,17 +197,12 @@ a[disabled]:active {
     display: inline;
     padding: 0;
 }
-#aboutme img{
-    width: 20em;
-    object-fit: contain;
-}
 #aboutme{
    background-color: #EAE5FA;
+   position: relative;
+   box-sizing: border-box;
     color:#271B46;
     padding: 4em 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 #aboutme h2{
     margin-bottom: 10px;
@@ -215,16 +210,34 @@ a[disabled]:active {
 #aboutme h3{
     margin-bottom: 5px;
 }
-figure{
-    display: flex;
-    align-items: center;
-}
 .skills{
     list-style-position: inside;
+    position: relative;
     margin-top: 2em;
+    width: 100%;
 }
-.about-text{
-    margin-right: 1em;
+.skills img{
+    width: 150px;
+}
+.skills ul{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+}
+.skills li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.skills li div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 #services{
     padding: 5em 3em;
@@ -507,14 +520,14 @@ iconify-icon{
 .submit{
     width: max(40%, 150px);
 }
-@media (min-width: 801px) and (max-width: 1100px) {
-    .grid-container{
-        gap:1em;
+@media (min-width: 1500px){
+    .skills ul{
+        grid-template-columns: repeat(6, 1fr);
     }
 }
-@media (min-width: 601px) and (max-width: 800px) {
+@media (max-width: 1100px) {
     .grid-container{
-        grid-template-columns: repeat(2, 1fr);
+        gap:1em;
     }
 }
 @media (max-width: 850px) {
@@ -608,13 +621,21 @@ iconify-icon{
     .desktop{
         display: none;
     }
+    a.mobile{
+        position: relative;
+        top: -5px;
+        right: 58px;
+    }
     .mobile{
         display: inline-block;
         width: 30px;
         height: 30px;
         position: relative;
-        top: -5px;
-        right: 58px;
+        padding: 0;
+    }
+    span.mobile{
+        top: 0;
+        right: 0;
     }
     .line1{
         transform-origin: left center;
@@ -640,6 +661,11 @@ iconify-icon{
         left: 5px;
     }
 }
+@media (max-width: 800px) {
+    .grid-container, .skills ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 750px) {
 .logo{
     justify-content: center;
@@ -652,73 +678,69 @@ h1{
     gap: 5em;
 }
 }
-@media (max-width: 700px) {
-    figure{
-        justify-content: center;
-        margin-top: 1em;
-    }
-    #aboutme img{
-        width: calc(100vw - 3em);
-        max-width: 350px;
-    }
-    #aboutme{
-        flex-direction: column;
-    }
-    
-}
-@media (min-width: 301px) and (max-width: 600px) {
+@media (max-width: 600px) {
     #aboutme, #projects, #services, .reviews{
         padding: 3em 1.5em;
     }
     .foot{
         padding: 3em 1.5em;
     } 
+    .grid-container{
+        display: flex;
+        gap: 1.5em;
+        flex-direction: column;
     }
-    @media (max-width: 600px) {
-        .grid-container{
-            display: flex;
-            gap: 1.5em;
-            flex-direction: column;
-        }
-        .container{
-            flex-direction: column;
-            justify-content: center;
-            margin: 3em 7% 3.5em 7%;
-            padding: 10% 7%;
-        }
-        .navbar{
-            padding-left: 7%;
-            padding-right: 7%;
-        }
-        .container img{
-            max-width: 80%;
-            height: auto;
-            margin: 1em;
-        }
-        .text h4{
-            font-size: 1.1em;
-        }
-        .btncont{
-            flex-direction: column;
-            gap: 0;
-        }
-        .btncont .readme{
-            margin-top: 10px;
-        }
-        .btncont a{
-            align-self: flex-start;
-        }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 3em 7% 3.5em 7%;
+        padding: 10% 7%;
+    }
+    .navbar{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .container img{
+        max-width: 80%;
+        height: auto;
+        margin: 1em;
+    }
+    .text h4{
+        font-size: 1.1em;
+    }
+    .btncont{
+        flex-direction: column;
+        gap: 0;
+    }
+    .btncont .readme{
+        margin-top: 10px;
+    }
+    .btncont a{
+        align-self: flex-start;
+    }
+}
+@media (max-width: 520px) {
+    .grid-container, .skills ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media (max-width: 500px) {
     .ftsubcont{
         flex-direction: column;
         align-items: center;
     }
-h1{
-    font-size: 3em;
-}
-.ftsubcont div{
-    text-align: center;
+    h1{
+        font-size: 3em;
+    }
+    .ftsubcont div{
+        text-align: center;
+    }
+    .navbar img{
+        height: 3em;
+    }
+    a.mobile{
+        position: relative;
+        top: 0px;
 }
 }
 @media (max-width: 400px) {
@@ -728,11 +750,14 @@ h1{
     .fix{
         top: 0px;
     }
-    .navbar img{
-        height: 3em;
-    }
     #menucont{
         top: 105px;
+    }
+    .navbar img{
+        height: 2.5em;
+    }
+    span.mobile{
+        top: 3px;
     }
 }
 /*super thin viewport*/
@@ -751,4 +776,4 @@ h1{
     .submit{
         width: 100%;
     }
-}/**/
+}

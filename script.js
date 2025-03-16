@@ -1,17 +1,3 @@
-//markdown rendering
-function loadMarkdown(fileName) {
-    // Carica il file Markdown specificato
-    fetch(`path/to/markdown/folder/${fileName}`)
-        .then(response => response.text())
-        .then(markdown => {
-            // Converte il Markdown in HTML
-            const htmlContent = marked(markdown);
-            // Inserisce il contenuto HTML nel div con id="content"
-            document.getElementById('content').innerHTML = htmlContent;
-        })
-        .catch(error => console.error('Errore nel caricamento del file markdown:', error));
-}
-
 //info form
 function submit() {
     const user = document.getElementsByTagName("input").value;
