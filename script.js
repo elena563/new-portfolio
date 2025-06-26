@@ -23,10 +23,26 @@ function show() {
 }
 
 //swiper to let services banners move
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper1", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+  });
+
+const swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: { slidesPerView: 2 },
+        1000: { slidesPerView: 3 },
+    },
+    autoplay: {
+    delay: 5000,
     },
   });
 

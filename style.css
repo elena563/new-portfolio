@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 body{
-    font-family: 'Walsheim', sans-serif;
+    font-family: 'Outfit', sans-serif;
     background-color: #f5f5fa;
 }
 p, a, ul{
@@ -49,12 +49,12 @@ p, a, ul{
 }
 @font-face {
 	font-family: 'Coolvetica';
-	src: local('Coolvetica'), url('Coolvetica.ttf') format('truetype');
+	src: local('Coolvetica'), url('coolvetica-rg.ttf') format('truetype');
     font-display: block;
 }
 @font-face {
-	font-family: 'Walsheim';
-	src: local('Walsheim'), url('GT-Walsheim-Regular-Trial.otf') format('opentype');
+	font-family: 'Outfit';
+	src: local('Outfit'), url('Outfit-VariableFont_wght.ttf') format('truetype');
     font-display: block;
 }
 h1, h2, h3, h4{
@@ -210,34 +210,15 @@ a[disabled]:active {
 #aboutme h3{
     margin-bottom: 5px;
 }
-.skills{
-    list-style-position: inside;
-    position: relative;
-    margin-top: 2em;
+.approach{
+    font-weight: bold;
+    font-size: 1.2em;
+    color:#fa9192;
+}
+.cont2{
     width: 100%;
-}
-.skills img{
-    width: 150px;
-}
-.skills ul{
-    padding-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    list-style-type: none;
-    width: 100%;
-}
-.skills li{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-}
-.skills li div{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
 }
 #services{
     padding: 5em 3em;
@@ -252,13 +233,18 @@ a[disabled]:active {
     max-width: 100%;
     background-color: #f5f5fa;
 }
+@media (min-width: 851px) {
+    .swiper.mySwiper2 .swiper-slide {
+  width: calc(33.333% - 14px) !important;
+}
+
+}
 .review{
     display: flex;
     padding: 1.5em 1.5em 1.5em 1.5em;
     background-color: white;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     min-height: 200px;
     border: solid 1px rgba(0, 0, 0, .075);
     border-radius: 15px;
@@ -326,8 +312,10 @@ a[disabled]:active {
     padding: 4em 30px;
     color: #271B46;
 }
-#projects ul{
-    list-style-type: none;
+#portfolio{
+    background-color: #f5f5fa;
+    padding: 4em 30px;
+    color: #271B46;
 }
 .work{
     background-color: #f5f5fa;
@@ -343,10 +331,13 @@ a[disabled]:active {
 .buttons {
     margin-top: auto;
 }
-#projects :is(h2, h3){
+#projects :is(h2, h3), #portfolio :is(h2, h3){
     text-align: center;
     margin-bottom: 1em;
     color:#271B46;
+}
+#portfolio .work{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .btncont{
     display: flex;
@@ -364,7 +355,7 @@ a[disabled]:active {
     border: solid #271B46 1.5px;
     border-radius: 30px;
 }
-#projects .readme{
+#projects .readme, #portfolio .readme{
     font-size: 1rem;
 }
 .readme:hover{
@@ -515,11 +506,6 @@ iconify-icon{
 .submit{
     width: max(40%, 150px);
 }
-@media (min-width: 1500px){
-    .skills ul{
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
 @media (max-width: 1100px) {
     .grid-container{
         gap:1em;
@@ -654,7 +640,7 @@ iconify-icon{
     }
 }
 @media (max-width: 800px) {
-    .grid-container, .skills ul{
+    .grid-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -671,7 +657,7 @@ h1{
 }
 }
 @media (max-width: 600px) {
-    #aboutme, #projects, #services, .reviews{
+    #aboutme, #projects, #portfolio, #services, .reviews{
         padding: 4em 1.5em;
     }
     .foot{
@@ -715,30 +701,6 @@ h1{
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
-        .skills ul {
-          position: relative;
-          height: 450px;
-          margin-top: 1em;
-          margin-bottom: 1em;
-        }
-        .skills img{
-            width: 120px;
-        }
-        .skills ul li {
-          position: absolute;
-          width: 150px;
-        }
-        .skills h4{
-            text-align: center;
-        }
-        .skills ul li:nth-child(1) { top: 0; left: 50%; 
-            transform: translateX(-50%); }
-        .skills ul li:nth-child(2) { top: 50px; left: 0; }
-        .skills ul li:nth-child(3) { top: 50px; right: 0; }
-        .skills ul li:nth-child(4) { bottom: 50px; left: 0; }
-        .skills ul li:nth-child(5) { bottom: 50px; right: 0; }
-        .skills ul li:nth-child(6) { bottom: 0; left: 50%; 
-            transform: translateX(-50%); }
 }
 @media (min-width: 501px) {
     .socialtt{
@@ -750,9 +712,6 @@ h1{
         flex-direction: column;
         align-items: center;
     }
-    h1{
-        font-size: 3em;
-    }
     .ftsubcont div{
         text-align: center;
     }
@@ -763,21 +722,6 @@ h1{
         position: relative;
         top: 0px;
 }
-}
-@media (max-width: 480px) {
-    .skills img{
-        width: 100px;
-    }
-    .skills ul li {
-    width: 120px;
-    }
-    .skills ul {
-        height: 410px;
-    }
-    .skills ul li:nth-child(2) { left: -15px; }
-    .skills ul li:nth-child(3) { right: -15px; }
-    .skills ul li:nth-child(4) { left: -15px; }
-    .skills ul li:nth-child(5) { right: -15px; }
 }
 @media (max-width: 400px) {
     .product{
@@ -805,7 +749,7 @@ h1{
     .text h4{
         font-size: 1em;
     }
-    #aboutme, #services, .foot, #projects, .getintouch, .reviews{
+    #aboutme, #services, .foot, #projects, #portfolio, .getintouch, .reviews{
         padding-left: 1em;
         padding-right: 1em;
     }
