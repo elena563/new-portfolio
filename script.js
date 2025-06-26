@@ -31,19 +31,20 @@ var swiper1 = new Swiper(".mySwiper1", {
   });
 
 const swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
+        0: {slidesPerView: 1.05},
         640: { slidesPerView: 2 },
         1000: { slidesPerView: 3 },
     },
     autoplay: {
     delay: 5000,
     },
+    loop: true,
   });
 
 //code related to hotel project

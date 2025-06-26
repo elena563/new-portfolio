@@ -233,12 +233,18 @@ a[disabled]:active {
     max-width: 100%;
     background-color: #f5f5fa;
 }
+
+@media (min-width: 638px) {
+    .swiper.mySwiper2 .swiper-slide {
+  width: calc(50% - 20px) !important;
+}
+}
 @media (min-width: 851px) {
     .swiper.mySwiper2 .swiper-slide {
   width: calc(33.333% - 14px) !important;
 }
-
 }
+
 .review{
     display: flex;
     padding: 1.5em 1.5em 1.5em 1.5em;
