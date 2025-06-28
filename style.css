@@ -60,10 +60,16 @@ p, a, ul{
 h1, h2, h3, h4{
     font-family: "Coolvetica", sans-serif;
 }
-h2, h3{
+h1{
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#fa9192;
+    margin-bottom: 10px;
+}
+h1, h2, h3{
     letter-spacing: 1.6px;
 }
-h1{
+.intro{
     font-size: 4em;
     letter-spacing: 3px;
     margin-bottom: 0.2em;
@@ -654,7 +660,7 @@ iconify-icon{
 .logo{
     justify-content: center;
 }
-h1{
+.intro{
     font-size: 3.5em;
 }
 .ftcont{
