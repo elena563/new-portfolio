@@ -15,7 +15,7 @@ p, a, ul{
     width: 27px;
     height: 27px;
     position: relative;
-    top: 9px;
+    top: 7px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2375a843' d='M1.7 32c0 13.1 8.4 24.2 20 28.3V3.7C10.1 7.8 1.7 18.9 1.7 32'/%3E%3Cpath fill='%23ed4c5c' d='M61.7 32c0-13.1-8.4-24.2-20-28.3v56.6c11.7-4.1 20-15.2 20-28.3'/%3E%3Cpath fill='%23fff' d='M21.7 60.3c3.1 1.1 6.5 1.7 10 1.7s6.9-.6 10-1.7V3.7C38.6 2.6 35.2 2 31.7 2s-6.9.6-10 1.7z'/%3E%3C/svg%3E");
@@ -25,7 +25,7 @@ p, a, ul{
     width: 27px;
     height: 27px;
     position: relative;
-    top: 9px;
+    top: 7px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23fff' stroke-width='4'%3E%3Cpath d='M24 44.0002C35.0457 44.0002 44 35.0459 44 24.0002C44 12.9545 35.0457 4.00024 24 4.00024C12.9543 4.00024 4 12.9545 4 24.0002C4 35.0459 12.9543 44.0002 24 44.0002Z'/%3E%3Cpath stroke-linecap='round' d='M6 30.9856C8.63192 32.041 10.5266 32.041 11.6839 30.9856C13.4199 29.4025 11.9219 24.5978 14.3532 23.2727C16.7844 21.9476 20.4886 27.8214 23.9508 25.8887C27.4129 23.9559 23.6246 18.8023 26.0272 16.713C28.4298 14.6237 31.554 16.98 32.1001 13.4865C32.6462 9.99304 29.5521 11.5082 28.9584 8.20693C28.5625 6.00611 28.5625 4.84884 28.9584 4.73511'/%3E%3Cpath stroke-linecap='round' d='M29.0209 43.3505C27.1468 41.4325 26.4721 39.6497 26.9969 38.0019C27.7841 35.5303 29.0826 35.6764 29.6488 34.1482C30.2149 32.6199 28.6156 30.4433 32.1643 28.5826C34.5301 27.3421 37.783 28.7794 41.9228 32.8944'/%3E%3C/g%3E%3C/svg%3E");
@@ -57,6 +57,11 @@ p, a, ul{
 	src: local('Outfit'), url('Outfit-VariableFont_wght.ttf') format('truetype');
     font-display: block;
 }
+@font-face {
+	font-family: 'Lemon Milk';
+	src: local('Lemon Milk'), url('LEMONMILK-Regular.otf') format('opentype');
+    font-display: block;
+}
 h1, h2, h3, h4{
     font-family: "Coolvetica", sans-serif;
 }
@@ -85,6 +90,14 @@ h4{
     font-size: 120%;
     letter-spacing: 1.4px;
 }
+.subtitle{
+    display: block;
+    font-size: 57%;
+    font-family: 'Lemon Milk';
+    color:#c4a6ed;
+    line-height: 1.8;
+    margin-top: 5px;
+}
 header{
     background-color:#5a4180;
     color: #f5f5fa;
@@ -106,10 +119,9 @@ header a{
 #menu :is(a, ul span):hover{
     background-color: #664992;
 }
-#contact{
+.anchor{
     color: #271B46;
     font-weight: bold;
-    text-decoration: none;
 }
 .navbar {
     display: flex;
@@ -273,9 +285,6 @@ a[disabled]:active {
 }
 .par{
     margin-top: 1em;
-}
-.par a{
-    text-decoration: none;
 }
 .list{
     display: flex;
