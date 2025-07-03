@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .klaro .cookie-modal .cm-btn.cm-btn-success, .klaro .context-notice .cm-btn.cm-btn-success, .klaro .cookie-notice .cm-btn.cm-btn-success {
+    background-color: #c4a6ed !important;
+    background-color: var(--green1, #c4a6ed) !important;
+}
+.klaro .cookie-modal a, .klaro .context-notice a, .klaro .cookie-notice a {
+    color: #684BBF !important;
+    color: var(--green1, #684BBF) !important;
+}
 body{
     font-family: 'Outfit', sans-serif;
     background-color: #f5f5fa;
@@ -222,10 +230,17 @@ a[disabled]:active {
     color:#271B46;
     padding: 4em 30px;
 }
-#aboutme h2{
+.policies{
+    padding: 4em;
+    list-style-position: inside;
+}
+.policies section{
+    margin: 2em 0;
+}
+#aboutme h2, .policies h2{
     margin-bottom: 10px;
 }
-#aboutme h3{
+#aboutme h3, .policies h3{
     margin-bottom: 5px;
 }
 .approach{
@@ -517,9 +532,15 @@ iconify-icon{
     color: #5a4180;
 }
 #cop{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 0.5em 0 0.5em 0;
     font-style: italic;
     text-align: center;
+}
+#cop a{
+    color: white;
 }
 .text2{
     padding: 1em;
@@ -678,7 +699,7 @@ iconify-icon{
 }
 }
 @media (max-width: 600px) {
-    #aboutme, #projects, #portfolio, #services, .reviews{
+    #aboutme, #projects, #portfolio, #services, .reviews, .policies{
         padding: 4em 1.5em;
     }
     .foot{
@@ -770,7 +791,7 @@ iconify-icon{
     .text h4{
         font-size: 1em;
     }
-    #aboutme, #services, .foot, #projects, #portfolio, .getintouch, .reviews{
+    #aboutme, #services, .foot, #projects, #portfolio, .getintouch, .reviews, .policies{
         padding-left: 1em;
         padding-right: 1em;
     }

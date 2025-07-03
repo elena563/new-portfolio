@@ -9,6 +9,7 @@
         <link rel= "stylesheet" href= "style.css">
         <link rel="alternate" hreflang="en" href="https://elenazen.it/index-en.html">
         <link rel="alternate" hreflang="it" href="https://elenazen.it/index.html">
+        <script defer src="https://api.kiprotect.com/v1/privacy-managers/5cecaf901dc76631c577e1c3a4bce01a/klaro.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all';"/>
         <script type="application/ld+json">
             {
@@ -53,16 +54,18 @@
                             <a href="portfolio.html">Portfolio</a>
                             <a href="index.html #contacts">Contatti</a>
                         </ul>
-                        <a class="desktop" href="portfolio-en.html"><span class="icon-park--international desktop"></span></a>
+                        <a href="portfolio-en.html" class="desktop"><span class="icon-park--international desktop"></span></a>
                     </div>
                     
-                    <label class="ham" for="ham">
-                        <input type="checkbox" id="ham" onclick="show()">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </label>
-                    <a href="portfolio-en.html" class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                    <div class="mobilebtn">
+                        <label class="ham" for="ham">
+                            <input type="checkbox" id="ham" onclick="show()">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </label>
+                        <a href="portfolio-en.html" class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -225,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <p id="cop">© 2025 Elena Zen All Rights Reserved</p>
+            <p id="cop">© 2025 Elena Zen All Rights Reserved  <a href="policies.html">Privacy Policy - Cookie Policy</a></p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="https://kit.fontawesome.com/cc3bfee917.js" crossorigin="anonymous"></script>
