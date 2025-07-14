@@ -253,6 +253,16 @@ a[disabled]:active {
     display: flex;
     justify-content: center;
 }
+.stack{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 0 1em 0;
+    align-items: center;
+}
+.duplicate{
+    display: none;
+}
 #services{
     padding: 5em 3em;
     color:#271B46;
@@ -545,6 +555,21 @@ iconify-icon{
 .text2{
     padding: 1em;
 }
+.interests{
+    margin-top: 1.5em;
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 35%;
+    gap: 20px;
+    place-items: center;
+    justify-items: center;
+}
+.interests div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
 .submit{
     width: max(40%, 150px);
 }
@@ -557,6 +582,25 @@ iconify-icon{
     :root {
         --swiper-navigation-color: #271B46;
       }
+    .interests{
+        width: 60%;
+    }
+    .wrapper {
+    width: 100%;
+    overflow: hidden;
+    }
+    .duplicate{
+        display: block;
+    }
+    .stack{
+    gap: 5rem;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+    }
+    @keyframes scroll-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+    }
       .swiper-button-next, .swiper-button-prev {
         position: absolute;
         top: 50%;
@@ -742,6 +786,12 @@ iconify-icon{
 @media (max-width: 520px) {
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .intro{
+        font-size: 3em;
+    }
+    .interests{
+        width: 100%;
     }
 }
 @media (min-width: 501px) {
