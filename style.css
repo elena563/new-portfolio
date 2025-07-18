@@ -116,6 +116,10 @@ header a{
     padding: 0.2em;
     border-radius: 3px;
 }
+#menu{
+    display: inline;
+    word-spacing: 1.5rem; 
+}
 #menu a{
     font-family: "Coolvetica", sans-serif;
     letter-spacing: 0.5px;
@@ -143,18 +147,10 @@ nav {
     flex: 1;
     text-align: right;
  }
- /*logo in navbar*/
+ /*logo in footer*/
 .logo{
     display: flex;
     letter-spacing: 2px;
-}
-.logo > h2{
-    position: relative;
-    top: 7.5px;
-} 
-#menu{
-    display: inline;
-    word-spacing: 1.5rem; 
 }
 #ham{
     display:none;
@@ -200,15 +196,6 @@ a[disabled]:active {
 .orange:hover{
     background-color: #F97779;
 }
-.container{
-    display: flex;
-    background-color: #c4a6ed;
-    margin: 3.5em 9% 3.5em 9%;
-    padding: 5%;
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-}
 .text{
     color: #f5f5fa;
     display: inline;
@@ -216,17 +203,26 @@ a[disabled]:active {
 }
 .text p{
     max-width: 820px;
-    min-width: 0px;
 }
 .name{
     position: relative;
     display: inline;
     padding: 0;
 }
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    background-color: #c4a6ed;
+    margin: 3.5em 9% 3.5em 9%;
+    padding: 5%;
+    border-radius: 30px;
+}
 #aboutme{
-   background-color: #EAE5FA;
-   position: relative;
-   box-sizing: border-box;
+    background-color: #EAE5FA;
     color:#271B46;
     padding: 4em 30px;
 }
@@ -248,11 +244,6 @@ a[disabled]:active {
     font-size: 1.2em;
     color:#fa9192;
 }
-.cont2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .stack{
     width: 100%;
     display: flex;
@@ -263,7 +254,7 @@ a[disabled]:active {
 .duplicate{
     display: none;
 }
-#services{
+#services, .reviews{
     padding: 5em 3em;
     color:#271B46;
     max-width: 100%;
@@ -271,23 +262,7 @@ a[disabled]:active {
 }
 .reviews{
     border: none;
-    padding: 4em 3em 3em 3em;
-    color:#271B46;
-    max-width: 100%;
-    background-color: #f5f5fa;
 }
-
-@media (min-width: 638px) {
-    .swiper.mySwiper2 .swiper-slide {
-  width: calc(50% - 20px) !important;
-}
-}
-@media (min-width: 851px) {
-    .swiper.mySwiper2 .swiper-slide {
-  width: calc(33.333% - 14px) !important;
-}
-}
-
 .review{
     display: flex;
     padding: 1.5em 1.5em 1.5em 1.5em;
@@ -307,9 +282,6 @@ a[disabled]:active {
 }
 .review p{
     margin-top: 15px;
-}
-.par{
-    margin-top: 1em;
 }
 .list{
     display: flex;
@@ -465,19 +437,6 @@ input{
     border: solid rgba(31, 27, 70, 0.3) 1px;
     color: #271B46;
 }
-label{
-    width: min(100%, 350px);
-}
-:is(input, textarea):focus{
-    border: solid #7F5BEB 2px;
-    outline: none;
-}
-textarea{
-    font-family: 'Roboto', sans-serif;
-    padding: 0.3rem;
-    width: 100%;
-    border: solid rgba(31, 27, 70, 0.3) 1px;
-}
 .foot{
     padding: 3em 30px 2em 30px;
     display: flex;
@@ -570,9 +529,6 @@ iconify-icon{
     justify-content: center;
     gap: 5px;
 }
-.submit{
-    width: max(40%, 150px);
-}
 @media (max-width: 1100px) {
     .grid-container{
         gap:1em;
@@ -631,7 +587,6 @@ iconify-icon{
     .list{
         overflow-x:visible;
    }
-    /*ham menu*/
     .ham{
         display: block;
         height: 26px;
@@ -845,7 +800,14 @@ iconify-icon{
         padding-left: 0.8em;
         padding-right: 0.8em;
     }
-    .submit{
-        width: 100%;
-    }
+}
+@media (min-width: 638px) {
+    .swiper.mySwiper2 .swiper-slide {
+  width: calc(50% - 20px) !important;
+}
+}
+@media (min-width: 851px) {
+    .swiper.mySwiper2 .swiper-slide {
+  width: calc(33.333% - 14px) !important;
+}
 }

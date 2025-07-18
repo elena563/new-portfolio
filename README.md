@@ -2,13 +2,15 @@
 
 Welcome to my personal portfolio! I am Elena, an aspirant web developer and data analyst. In this digital dashboard, you'll find some information about me, a collection of my projects and skills in the fields of web development. 
 
-Portfolio sections:
+Website sections:
 - Header with responsive navigation menu
 - Hero section
 - About me: professional profile and digital skills
 - Products: service description cards 
-- Projects: collection of my web development projects and works
+- Projects: some of my web development projects and works
 - Contact form and footer with social media icons
+
+- Portfolio page: all the collection of my projects and works
 
 ## User Interface Preview
 
@@ -22,32 +24,82 @@ Explore the user interface online by visiting [my website](https://elenazen.it/)
 4. If you wish to contribute, refer to the guidelines in the "Contributions" section of the README.
 
 ## Key Projects
-You can find a more detailed description of each project in the readme file of the proper folder/repo.
+Here there are the technologies used in my projects. You can find a more detailed description of each project in the readme file of the proper folder/repo.
 
-### 1. Blacklisted M3dia
-This is the dynamic portfolio for a young photographer passionate about cars. It enables seamless browsing through curated galleries, and explore detailed images in high quality. Futhermore, the code includes the admin panel the photographer uses to put his products directly online. All based in NextJS, it uses Cloudinary and MongoDB for image data storing.
+### StatPilot
+Web application for data analysis, machine learning and explainable AI
+HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP - Figma
+https://statpilot.onrender.com/
 
-### 2. MarketMint Cryptocurrency Dashboard
-MarketMint is an interactive dashboard for real-time cryptocurrency tracking. It allows users to view key cryptocurrency data by selecting their preferred one, and some different time intervals. It's based in ReactJS and uses the public CoinCap API for data.
+### Blacklisted M3dia
+Portfolio website with dynamic carousel pages and custom admin panel
+NextJS - MongoDB - Cloudinary Storage - i18n - Google reCAPTCHA - FormSubmit
+https://blacklistedm3dia.com/it
 
-### 3. Isteroscopia Dr. Antonio Accardi
-This is the personal website of the gynecologist Antonio Accardi, specializing in hysteroscopy.
-Visitors can explore his extensive background, numerous testimonials from satisfied patients, and discover valuable insights into hysteroscopy and other gynecological topics.
+### Isteroscopia Dr. Antonio Accardi
+Personal website of a gynecologist specializing in hysteroscopy (I redesigned it)
+HTML - CSS - Elfsight
+http://www.isteroscopia.eu/pagine/
 
-### 4. SB00 Sneakers Resell Store
-The "SB00 Sneakers Resell Store" is a fictional platform designed for sneaker enthusiasts. The platform aims to create a community where enthusiasts can explore and look for footwear and clothes.
+### SpotiType
+Web application for music listener classification based on a ML algorithm trained on a k-means clustering
+ReactJS - TailwindCSS - Recharts - Flask - Python - Pandas - Scikit-learn - Spotipy - ReccoBeats API
+https://spotitype.vercel.app/
 
-### 5. Hotel Sogno in Maremma
-The "Hotel Sogno in Maremma" project is a fictional hotel website created for illustrative purposes. It showcases the hotel's amenities, provides information about room options, and allows users to explore the charm of the Maremma region.
+### SB00 Sneakers Resell Store
+Frontend interface of a sneakers and streetwear e-commerce
+HTML - CSS - JavaScript
+https://elenazen.it/progetti_personali/sneakers_resell_store/
 
-### 6. Save the Shark
-The "Save the Shark" project was created for the fictional association dedicated to the conservation of the oceans and their inhabitants, with a particular focus on sharks. Users can explore the association's mission, purchase charitable merchandise, and join the community through a form.
+### Mauro Bianchi Fisioterapista
+Showcase website project for a physiotherapist, complete with CV and list of therapies offered
+HTML - CSS
+https://maurobianchi.netlify.app/
 
-## Technologies Used
+### Hotel Sogno in Maremma
+Frontend website interface for a 4 stars italian hotel with room price calculator
+HTML - CSS - JavaScript
+https://elenazen.it/progetti_personali/hotel_sogno_in_maremma/
 
-- **Frontend**: HTML, CSS, JavaScript, ReactJS, Hugo
-- **Backend**: NextJS
+### Energym
+One-page showcase website design for a gym offering various activities
+HTML - CSS
+https://energymfit.netlify.app/
+
+### Save the Shark
+Frontend website interface for a no profit association
+HTML - CSS - Hugo
+https://savetheshark.netlify.app/
+
+### Autofficina Martelli
+One-page showcase website project in a modern design for an historical car repair garage
+HTML - CSS
+https://autofficinamartelli.netlify.app/
+
+### MarketMint Dashboard (in maintenance)
+Interactive dashboard for real-time cryptocurrency tracking
+ReactJS - ChartJS - CoinCap API
 
 Feel free to explore each project, learn more about my skills and capabilities, and discover the products and services I offer. If you have any questions or would like to connect, please don't hesitate to reach out!
+
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make onw of my projects better, please fork the corresponding repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Find the Repository
+2. Fork the Project
+3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+
+## Contact
+
+Elena Zen - info.elenazen@gmail.com
 
 Thank you for visiting my portfolio!
