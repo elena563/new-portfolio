@@ -219,6 +219,9 @@ a[disabled]:active {
     background-color: #c4a6ed;
     margin: 3.5em 9% 3.5em 9%;
     padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
 }
 #aboutme{
