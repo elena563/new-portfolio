@@ -8,7 +8,7 @@ Website sections:
 - About me: professional profile and digital skills
 - Products: service description cards 
 - Projects: some of my web development projects and works
-- Contact form and footer with social media icons
+- footer with contacts social media icons
 
 - Portfolio page: all the collection of my projects and works
 
@@ -78,7 +78,7 @@ https://autofficinamartelli.netlify.app/
 
 ### MarketMint Dashboard (in maintenance)
 Interactive dashboard for real-time cryptocurrency tracking
-ReactJS - ChartJS - CoinCap API
+ReactJS - ChartJS - Radix UI - CoinCap API - GNews API
 
 Feel free to explore each project, learn more about my skills and capabilities, and discover the products and services I offer. If you have any questions or would like to connect, please don't hesitate to reach out!
 
