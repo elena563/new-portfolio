@@ -73,8 +73,13 @@
         <section id="portfolio">
             <h2>Il mio Portfolio</h2>
             <p>Qui puoi trovare tutti i miei principali progetti, tra cui siti web, web app e lavori di altro tipo. Alcuni sono legati ad attività realmente esistenti, mentre altri sono strettamente progetti. Puoi liberamente esplorarne l'interfaccia, e per alcuni, il codice sorgente è pubblico sul mio <a href="https://github.com/elena563" target="_blank" class="anchor">GitHub</a>.</p></br></br>
+            <div class="tabs">
+                <button class="tab active" onclick="showProjects(event, '.featured')">In Evidenza</button>
+                <button class="tab" onclick="showProjects(event, '.website')">Siti Vetrina</button>
+                <button class="tab" onclick="showProjects(event, '.webapp')">Web App</button>
+            </div>
                 <div class="grid-container">
-                    <div class="work">
+                    <div class="work featured webapp">
                         <img src="project_banners/banner-statpilot.png" alt="statpilot web app">
                         <div class="text2">
                             <h4>StatPilot</h4>
@@ -85,7 +90,7 @@
                             <a href="https://github.com/elena563/statpilot" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-blacklisted.png" alt="blacklisted m3dia">
                         <div class="text2">
                             <h4>Blacklisted M3dia</h4>
@@ -96,7 +101,7 @@
                             <a href="readme/visual-readme_bm.html" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-isteroscopia.png" alt="isteroscopia website">
                         <div class="text2">
                             <h4>Antonio Accardi Isteroscopia</h4>
@@ -107,7 +112,7 @@
                             <a href="readme/README_ister.md" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured webapp">
                         <img src="project_banners/banner-spotitype.png" alt="statpilot web app">
                         <div class="text2">
                             <h4>SpotiType</h4>
@@ -118,7 +123,7 @@
                             <a href="https://github.com/elena563/spotitype" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-bianchi.png" alt="isteroscopia website">
                         <div class="text2">
                             <h4>Mauro Bianchi Fisioterapista</h4>
@@ -129,7 +134,7 @@
                             <a href="https://github.com/elena563/drbianchifisio" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-energym.png" alt="isteroscopia website">
                         <div class="text2">
                             <h4>Energym Centro Fitness</h4>
@@ -140,7 +145,7 @@
                             <a href="https://github.com/elena563/energym" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-sb00.png" alt="SB00 Reseller Store">
                         <div class="text2">
                             <h4>SB00 Reseller Store</h4>
@@ -151,7 +156,7 @@
                             <a href="progetti_personali/sneakers_resell_store/visual-readme.html" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-hotel.png" alt="Hotel Sogno in Maremma">
                         <div class="text2">
                             <h4>Hotel Sogno in Maremma</h4>
@@ -162,7 +167,7 @@
                             <a href="progetti_personali/hotel_sogno_in_maremma/visual-readme.html" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-autofficina.png" alt="autofficina martelli sito web vetrina frontend">
                         <div class="text2">
                             <h4>Autofficina Martelli</h4>
@@ -173,7 +178,7 @@
                             <a href="https://github.com/elena563/autofficinamartelli" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured website">
                         <img src="project_banners/banner-savetheshark.png" alt="Save the Shark">
                         <div class="text2">
                             <h4>Save the Shark</h4>
@@ -184,15 +189,26 @@
                             <a href="https://github.com/elena563/save_the_shark" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
                         </div>
                     </div>
-                    <div class="work">
+                    <div class="work featured webapp">
                         <img src="project_banners/banner-crypto.png" alt="cryptocurrency dashboard">
                         <div class="text2">
                             <h4>MarketMint Dashboard Criptovalute </h4>
-                            <p>Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale (in manutenzione)</p>
+                            <p>Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale</p>
                         </div>
                         <div class="buttons">
-                            <a href="#" class="btn orange" disabled target="_blank">Vai al Progetto</a>
+                            <a href="https://marketmint.netlify.app/" class="btn orange" target="_blank">Vai al Progetto</a>
                             <a href="https://github.com/elena563/marketmint" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>README</span></a>
+                        </div>
+                    </div>
+                    <div class="work featured">
+                        <img src="project_banners/banner-wordviz.png" alt="wordviz python library">
+                        <div class="text2">
+                            <h4>WordViz </h4>
+                            <p>Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/elena563/wordviz" class="btn orange" target="_blank">Vai al Progetto</a>
+                            <a href="https://wordviz.readthedocs.io/" target="_blank" class="readme"><i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> <span>Leggi Documentazione</span></a>
                         </div>
                     </div>
                 </div>

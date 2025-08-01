@@ -338,6 +338,31 @@ a[disabled]:active {
     padding: 4em 30px;
     color: #271B46;
 }
+.hidden{
+    display: none !important;
+}
+.tabs{
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #EAE5FA;
+    padding: 5px;
+}
+.tab{
+    border: none;
+    padding: 5px 1.5em;
+    color:#271B46;
+    border-radius: 9999px;
+    background-color: #EAE5FA;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.active{
+    background-color: #c4a6ed;
+    color: #f5f5fa;
+}
 .work{
     background-color: #f5f5fa;
     padding: 0;

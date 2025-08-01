@@ -47,6 +47,28 @@ const swiper2 = new Swiper(".mySwiper2", {
     loop: true,
   });
 
+
+function showProjects(evt, category) {
+
+    const projects = document.querySelectorAll('.work');
+    projects.forEach(function (proj) {
+        proj.classList.add('hidden');
+    });
+
+    const buttons = document.querySelectorAll('.tab');
+    buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+    });
+
+    const selected = document.querySelectorAll(category);
+    console.log(selected)
+    selected.forEach(proj => {
+        proj.classList.remove('hidden');
+    });
+    evt.currentTarget.classList.add("active");
+}
+
+
 //code related to hotel project
     const roomOptions = document.querySelectorAll('.room-option');
     const roomGalleries = document.querySelectorAll('.room_gallery');
