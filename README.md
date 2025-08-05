@@ -76,9 +76,10 @@ One-page showcase website project in a modern design for an historical car repai
 HTML - CSS  
 https://autofficinamartelli.netlify.app/
 
-### MarketMint Dashboard (in maintenance)
+### MarketMint Dashboard
 Interactive dashboard for real-time cryptocurrency tracking  
 ReactJS - ChartJS - Radix UI - CoinCap API - GNews API  
+https://marketmint.netlify.app/  
 
 Feel free to explore each project, learn more about my skills and capabilities, and discover the products and services I offer. If you have any questions or would like to connect, please don't hesitate to reach out!
 

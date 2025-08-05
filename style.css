@@ -343,13 +343,21 @@ a[disabled]:active {
 }
 .tabs{
     margin-bottom: 2em;
-    width: 100%;
+    display: flex;
+    overflow-x: auto;
     border-radius: 9999px;
     background-color: #EAE5FA;
     padding: 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 .tab{
     border: none;
+    white-space: nowrap;
     padding: 5px 1.5em;
     color:#271B46;
     border-radius: 9999px;
