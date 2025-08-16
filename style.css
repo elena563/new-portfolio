@@ -177,12 +177,6 @@ a[disabled], a[disabled]:hover {
 a[disabled]:active {
     pointer-events: none;
 }
-.green{
-    background-color: #1bdf73;
-}
-.green:hover{
-    background-color: #16B85F;
-}
 .violet{
     background-color: #7F5BEB;
 }
