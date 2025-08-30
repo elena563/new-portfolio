@@ -90,6 +90,10 @@ h1, h2, h3{
 }
 h2{
     font-size: 190%;
+    margin-bottom: 20px;
+}
+.textcenter{
+    text-align: center;
 }
 h3{
     font-size: 150%;
@@ -193,7 +197,7 @@ a[disabled]:active {
 .text{
     color: #f5f5fa;
     display: inline;
-    margin: 1em 1em 0 1em;
+    margin: 1em 1em 0.5em 1em;
 }
 .text p{
     max-width: 820px;
@@ -732,22 +736,16 @@ iconify-icon{
         padding: 4em 1em;
     }
     .foot{
-        padding: 3em 1.5em;
+        padding: 3em 1em;
     } 
     .grid-container{
         display: flex;
         gap: 1.5em;
         flex-direction: column;
     }
-    .container{
-        flex-direction: column;
-        justify-content: center;
-        margin: 3em 5% 3.5em 5%;
-        padding: 10% 6%;
-    }
     .navbar{
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .container img{
         max-width: 80%;
@@ -773,7 +771,15 @@ iconify-icon{
         grid-template-columns: repeat(1, 1fr);
     }
     .intro{
-        font-size: 3.2em;
+        font-size: 3.3em;
+    }
+    .hero{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .text{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     .interests{
         width: 100%;
@@ -819,10 +825,6 @@ iconify-icon{
 }
 /*super thin viewport*/
 @media (max-width: 350px) {
-    .container{
-        margin: 3.5em 5%;
-        padding: 7%;
-    }
     .text h4{
         font-size: 1em;
     }
