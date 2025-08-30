@@ -31,21 +31,36 @@ var swiper1 = new Swiper(".mySwiper1", {
   });
 
 const swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        0: {slidesPerView: 1.05},
-        640: { slidesPerView: 2 },
-        1000: { slidesPerView: 3 },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        640: { 
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        1000: { 
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
     },
     autoplay: {
     delay: 5000,
     },
     loop: true,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
   });
+
+window.addEventListener('resize', () => {
+    swiper2.update();
+});
 
 
 function showProjects(evt, category) {

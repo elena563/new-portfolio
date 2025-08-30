@@ -301,10 +301,10 @@ a.disabled:active {
   }
 }
 @media (min-width: 851px) {
-    .swiper-slide {
+    .mySwiper1 .swiper-slide {
         width: 33% !important;
     }
-    .swiper-button-next, .swiper-button-prev {
+    .mySwiper1 .swiper-button-next, .swiper-button-prev {
         display: none !important;
     }
 }
@@ -559,6 +559,7 @@ iconify-icon{
     justify-content: center;
     gap: 5px;
 }
+
 @media (max-width: 1100px) {
     .grid-container{
         gap:1em;
@@ -587,7 +588,7 @@ iconify-icon{
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
     }
-      .swiper-button-next, .swiper-button-prev {
+    .mySwiper1 .swiper-button-next, .swiper-button-prev {
         position: absolute;
         top: 50%;
         width: calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -600,18 +601,18 @@ iconify-icon{
         justify-content: center;
         color: var(--swiper-navigation-color,var(--swiper-theme-color));
     }
-    .swiper{
+    .mySwiper1 .swiper{
         width: 100%;
         height: 100%;
     }
-    .swiper-slide {
+    .mySwiper1 .swiper-slide {
         display: flex;
         width: 23em;
         position: relative;
         left: 2vw;
       }
     
-    .swiper-button-next:active, .swiper-button-prev:active {
+    .mySwiper1 .swiper-button-next:active, .swiper-button-prev:active {
         color: var(--swiper-navigation-color,var(--swiper-theme-color));
     }
     .list{
@@ -727,6 +728,7 @@ iconify-icon{
     gap: 5em;
 }
 }
+
 @media (max-width: 600px) {
     #aboutme, #projects, #portfolio, #services, .reviews, .policies{
         padding: 4em 1em;
@@ -831,12 +833,12 @@ iconify-icon{
         padding-right: 0.8em;
     }
 }
-@media (min-width: 638px) {
+@media (min-width: 640px) {
     .swiper.mySwiper2 .swiper-slide {
   width: calc(50% - 20px) !important;
 }
 }
-@media (min-width: 851px) {
+@media (min-width: 1000px) {
     .swiper.mySwiper2 .swiper-slide {
   width: calc(33.333% - 14px) !important;
 }
