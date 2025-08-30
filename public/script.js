@@ -68,6 +68,9 @@ function showProjects(evt, category) {
     evt.currentTarget.classList.add("active");
 }
 
+document.getElementById('featured-btn').addEventListener('click', (event) => showProjects(event, '.featured'))
+document.getElementById('website-btn').addEventListener('click', (event) => showProjects(event, '.website'))
+document.getElementById('webapp-btn').addEventListener('click', (event) => showProjects(event, '.webapp'))
 
 //code related to hotel project
     const roomOptions = document.querySelectorAll('.room-option');

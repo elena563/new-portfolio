@@ -168,13 +168,13 @@ ul span{
     border: none;
     text-decoration: none;
 }
-a[disabled], a[disabled]:hover {
+a.disabled, a.disabled:hover {
     cursor: not-allowed;
     opacity: 60%;
     color: #f5f5fa;
     background-color: #fa9192;
 }
-a[disabled]:active {
+a.disabled:active {
     pointer-events: none;
 }
 .violet{
