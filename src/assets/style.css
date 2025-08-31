@@ -52,22 +52,22 @@ p, a, ul{
 }
 @font-face {
 	font-family: 'Roboto';
-	src: local('roboto'), url('fonts/Roboto-Regular.ttf') format('truetype');
+	src: local('roboto'), url('/fonts/Roboto-Regular.ttf') format('truetype');
     font-display: swap;
 }
 @font-face {
 	font-family: 'Coolvetica';
-	src: local('Coolvetica'), url('fonts/coolvetica-rg.ttf') format('truetype');
+	src: local('Coolvetica'), url('/fonts/coolvetica-rg.ttf') format('truetype');
     font-display: block;
 }
 @font-face {
 	font-family: 'Outfit';
-	src: local('Outfit'), url('fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+	src: local('Outfit'), url('/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
     font-display: block;
 }
 @font-face {
 	font-family: 'Lemon Milk';
-	src: local('Lemon Milk'), url('fonts/LEMONMILK-Regular.otf') format('opentype');
+	src: local('Lemon Milk'), url('/fonts/LEMONMILK-Regular.otf') format('opentype');
     font-display: block;
 }
 h1, h2, h3, h4{

@@ -1,15 +1,18 @@
+---
+const { page } = Astro.props;
+---
 <header>
     <div class="navbar">
-            <a href="index.html"><img src="immagini/completelogonew.png" alt="elena-zen-logo"></a>
+            <a href="/"><img src="immagini/completelogonew.png" alt="elena-zen-logo"></a>
         <nav>
             <div id="menucont">
                 <ul id="menu">
-                    <span style="word-spacing: normal;"><a href="#aboutme">Chi sono</a></span>
-                    <a href="#services">Servizi</a>
+                    <span style="word-spacing: normal;"><a href="/#aboutme">Chi sono</a></span>
+                    <a href="/#services">Servizi</a>
                     <a href="/portfolio">Portfolio</a>
-                    <a href="#contacts">Contatti</a>
+                    <a href="/#contacts">Contatti</a>
                 </ul>
-                <a class="desktop" href="/en"><span class="icon-park--international desktop"></span></a>
+                <a class="desktop" href={page === 'portfolio' ? '/en/portfolio' : '/en'}><span class="icon-park--international desktop"></span></a>
             </div>
             <div class="mobilebtn">
                 <label class="ham" for="ham">
@@ -18,7 +21,7 @@
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </label>
-                <a href="/en" class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                <a href={page === 'portfolio' ? '/en/portfolio' : '/en'} class="mobile"><span class="icon-park--international mobile fix"></span></a>
             </div>
         </nav>
     </div>
