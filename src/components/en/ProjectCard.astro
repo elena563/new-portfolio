@@ -1,0 +1,20 @@
+---
+const { classes, title, description, img, alt, url, readme, type } = Astro.props;
+---
+
+<div class={`work ${classes || ""}`}>
+  <img src={img} alt={alt} />
+  <div class="text2">
+    <h4>{title}</h4>
+    <p>{description}</p>
+  </div>
+  <div class="buttons">
+    <a href={url || "#"}
+        class={`btn orange ${!url ? "disabled" : ""}`} 
+        target="_blank" rel="noopener">View {type}</a>
+    <a href={readme} target="_blank" rel="noopener" class="readme">
+        <i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> 
+        <span>README</span>
+    </a>
+  </div>
+</div>

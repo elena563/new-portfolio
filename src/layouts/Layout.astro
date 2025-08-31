@@ -1,0 +1,68 @@
+---
+const { title, description, lang } = Astro.props;
+import '../assets/style.css';
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="/immagini/favicon192.png">
+		<meta name="description" content={description}>
+		<title>{title}</title>
+		<link rel="alternate" hreflang="it" href="https://elenazen.it/it/index.html">
+		<link rel="alternate" hreflang="en" href="https://elenazen.it/index.html">
+
+		<!-- Google Tag Manager -->
+		<script is:inline>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','G-VSB2P56YSW');
+		</script>
+
+		<!-- Klaro privacy manager -->
+		<script defer src="https://api.kiprotect.com/v1/privacy-managers/5cecaf901dc76631c577e1c3a4bce01a/klaro.js"></script>
+		
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<!-- Swiper JS caricato subito -->
+    	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script type="application/ld+json" is:inline>
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Elena Zen",
+              "url": "https://elenazen.it",
+              "inLanguage": "it",
+              "sameAs": [
+                "https://www.linkedin.com/in/elena-zen-771388294/",
+                "https://github.com/elena563",
+                "https://it.fiverr.com/elena_zen?public_mode=true"
+              ],
+              "jobTitle": "Full-stack Web Developer & Data Analyst",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              }
+            }
+        </script>
+
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=G-VSB2P56YSW"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<slot />
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" is:inline></script>
+        <script src="https://kit.fontawesome.com/cc3bfee917.js" crossorigin="anonymous" is:inline></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" is:inline></script>
+        <script src="/script.js" is:inline></script>
+	</body>
+</html>

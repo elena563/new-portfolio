@@ -1,0 +1,217 @@
+---
+import Header from '../../components/en/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/en/Footer.astro';
+import ProjectCard from '../../components/en/ProjectCard.astro';
+
+const projects = [
+  {
+    title: "StatPilot",
+    description: "Interactive web application for statistical data analysis, machine learning modeling, and model explainability",
+    img: "/project_banners/banner-statpilot.png",
+    alt: "statpilot web app",
+    url: "https://statpilot.onrender.com/",
+    readme: "https://github.com/elena563/statpilot",
+	type: 'Project'
+  },
+  {
+	title: "Blacklisted M3dia",
+    description: "Website for a photographer with a strong passion for supercars and motors in general",
+    img: "/project_banners/banner-blacklisted.png",
+    alt: "Blacklisted m3dia website",
+    url: "https://blacklistedm3dia.com/it",
+    readme: "/readme/visual-readme_bm.html",
+	type: 'Website'
+  },
+  {
+	title: "Antonio Accardi Isteroscopia",
+    description: "Website for a gynecologist specialized in hysteroscopy in Palermo, Italy",
+    img: "/project_banners/banner-isteroscopia.png",
+    alt: "Isteroscopia website",
+    url: "http://www.isteroscopia.eu/pagine/",
+    readme: "/readme/README_ister.md",
+	type: 'Website'
+  }
+]
+
+const reviews = [
+	{
+		username: "@alessandrostega",
+		review: "Ottima sviluppatrice, comunicazione chiara ed efficace, sono molto soddisfatto del risultato finale."
+	},
+	{
+		username: "@drahard",
+		review: "Persona seria, preparata e professionale, in grado di comprendere subito le tue esigenze e trasformare le idee in grafica e codici. Persona polivalente in grado di affrontare la situazione a 360 gradi e risolvere tutti i problemi. Rapporto prezzo\qualità\competenza assolutamente ottimo; scelta che rifarei immediatamente, consigliata!"
+	},
+	{
+		username:"@miriamcermelj",
+		review:"Elena is very responsive and a great problem solver, creative and attentive to details. She helped me building the website with squarespace with the intergrationof the transaltions with weglot. She has excellent skills in programming. Wouldabsolutly reccomend her!",
+	},
+	{
+		username:"@heikostribl",
+		review:"Getting this done with attention to detail is a skill... and this seller has such skill. Thanks also for some valuable input. will be happy to use your services again.",
+	},
+	{
+		username:"@mik_gia",
+		review:"Ho avuto il piacere di affidarmi a Elena per risolvere alcuni problemi tecnici con il miosito web, e posso dire con certezza che è stata una scelta eccellente. Fin dal primomomento si è dimostrata disponibile, competente e incredibilmente professionale. Haindividuato rapidamente le criticità e le ha risolte con efficacia, spiegandomi ognipassaggio con chiarezza e pazienza. Grazie al suo intervento, il sito è tornato a funzionareperfettamente, con performance persino migliori di prima. Elena non solo ha le competenzetecniche, ma anche un approccio umano che fa la differenza. È raro trovare qualcuno cheunisca così bene preparazione e gentilezza. Consiglio vivamente di affidarsi a lei",
+	},
+]
+---
+
+<Layout lang="en" 
+	title="Elena Zen Web Developer and Data Analyst" 
+	description="Elena Zen Full-stack Web Developer & Data Analyst. I build intuitive digital experiences and analyze data for smart solutions. Learn more about my work!">
+	<Header />
+	<main>
+		<!--hero section-->
+		<div class="hero">
+			<div class="text">
+				<div class="name">
+                    <h2 class="intro">Your digital journey starts <span>here</span></h2></br>
+                    <p>I help businesses grow by combining cutting-edge <strong>web design</strong> with <strong>data-driven insights</strong>. 
+                    I create engaging websites that deliver seamless <strong>user experience</strong>, while using analytics to guide <strong>smart decisions</strong>,
+                helping <strong>your brand</strong> thrive in the digital world</p>
+                </div>
+                <div class="btncont">
+                    <a href="#contacts" rel="noopener noreferrer" class="btn violet">Contact me</a>
+                    <a href="#projects" rel="noopener noreferrer" class="readme">Look at my projects</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--chi sono-->
+	<section id="aboutme">
+		<div>
+			<div>
+				<h2>Hi there! This is Elena</h2>
+				<h1>full-stack web developer • web designer • data analyst</h1>
+				<div class="about-text">
+					 <p>I am a web developer and analyst with great passion and curiosity about the whole digital world.</p>
+                            <p>At the moment, I am studying <strong>Statistics and Information Management</strong> in Milan, and in the meanwhile I am taking training courses on the internet.</p></br>
+                            <p>I design and develop custom websites using mainly <strong>HTML, CSS, Javascript and Python</strong>, along with some of their frameworks, to ensure maximum customization and performance. 
+                                I also offer support on platforms such as WordPress, Shopify and Squarespace.</p>
+                        </br>
+                            <p>I help freelancers and small brands communicate better online, with curated and functional websites.
+                            </br>My approach is simple and results-oriented: <span class="approach">listen</span>, <span class="approach">design</span>, <span class="approach">solve</span>.
+                            </p>
+					<h4 style="margin-top: 1.5em;">My interests</h4>
+					<div class="interests">
+						<div>
+						<img src="immagini/ai-icon.svg" alt="AI icon" height="28">
+						<p>AI</p>
+						</div>
+						<div>
+						<img src="immagini/coding.svg" alt="coding icon" height="30">
+						<p>Coding</p>
+						</div>
+						<div>
+						<img src="immagini/binoculars-icon.svg" alt="mistero icon" height="30">
+						<p>Mystery</p>
+						</div>
+						<div>
+						<img src="immagini/book-icon.svg" alt="libri icon" height="30">
+						<p>Books</p>
+						</div>
+						<div>
+						<img src="immagini/pen-icon.svg" alt="design icon" height="30">
+						<p>Design</p>
+						</div>
+						<div>
+						<img src="immagini/gym-icon.svg" alt="fitness icon" height="30">
+						<p>Fitness</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="wrapper">
+		<div class="stack">
+		<img src="immagini/html.png" alt="html logo" height="70">
+		<img src="immagini/css.png" alt="css logo" height="70">
+		<img src="immagini/js.png" alt="javascript logo" height="70">
+		<img src="immagini/Tailwind.png" alt="tailwind css logo" height="50">
+		<img src="immagini/React.png" alt="reactjs logo" height="70">
+		<img src="immagini/Nextjs.png" alt="nextjs" height="35">
+		<img src="immagini/python.png" alt="python logo" height="70">
+		<img src="immagini/flask.png" alt="flask logo" height="70">
+		<img src="immagini/html.png" alt="html logo" height="70" class="duplicate">
+		<img src="immagini/css.png" alt="css logo" height="70" class="duplicate">
+		<img src="immagini/js.png" alt="javascript logo" height="70" class="duplicate">
+		<img src="immagini/Tailwind.png" alt="tailwind css logo" height="50" class="duplicate">
+		<img src="immagini/React.png" alt="reactjs logo" height="70" class="duplicate">
+		<img src="immagini/Nextjs.png" alt="nextjs" height="35" class="duplicate">
+		<img src="immagini/python.png" alt="python logo" height="70" class="duplicate">
+		<img src="immagini/flask.png" alt="flask logo" height="70" class="duplicate">
+		</div>
+	</div>
+	<!--servizi-->
+	<section id="services">
+		<h2 class="me">What I can provide you:</h2>
+		<div class="swiper mySwiper1">
+			<ul class="list swiper-wrapper">
+                    <li class="swiper-slide"><div class="product">
+                        <img class="icon" src="immagini/vioa-removebg.png" alt="website development service" width="60em">
+                        <h4>Custom Website Development <br> <span class="subtitle">Bring Your Business Online with a Professional Website</span></h4> 
+                        <p class="space">Do you want to grow your business with a <strong>strong online presence</strong>?</p> 
+                        <p>I design and build custom websites from scratch, tailored to your brand and business goals. Fast, responsive, and SEO-friendly—your website will reflect your identity and help you reach more clients online.</p>
+                    </div></li>
+                    <li class="swiper-slide"><div class="product">
+                        <img class="icon" src="immagini/viob-removebg.png" alt="website optimisation service" width="60em">
+                        <h4>Website Redesign & Optimization <br> <span class="subtitle">Modern Design, Better Performance, and SEO Boost</span></h4> 
+                        <p class="space">Is your current website outdated or <strong>underperforming</strong>?</p> 
+                        <p>I provide complete website redesign services, improving the visual appeal, structure, and mobile usability. I optimize your site for speed and SEO, ensuring higher rankings and a better user experience across all devices.</p>
+                    </div></li>
+                    <li class="swiper-slide"><div class="product">
+                        <img class="icon" src="immagini/dataan.png" alt="data analysis service" width="60em">
+                        <h4>Business Data Analysis <br>  <span class="subtitle">Turn Raw Data into Strategic Insights</span></h4>
+                        <p class="space">Struggling to make sense of your <strong>business data</strong>?</p>
+                        <p>I offer professional data analysis services, through Python, that clean, organize, and interpret your data to reveal valuable insights. Through clear reports and visual summaries, I help you make smarter, data-driven decisions to grow your business.</p>
+                    </div></li>
+                </ul>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</section>
+	<!--portfolio-->
+	<section id="projects">
+		<h2>My works and projects</h2>
+			<div class="grid-container">
+				{projects.map(p => <ProjectCard {...p} />)}
+			</div>
+			</br>
+		<div class="container"><a href="portfolio.html" rel="noopener noreferrer" class="btn violet">See more!</a></div>
+	</section>
+	<div class="reviews">
+            <h2>What they say about me</h2>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+					{reviews.map(p => 
+					<div class="review swiper-slide">
+						<div class="clientrev">
+						<strong>{p.username}</strong>
+						<img src="immagini/Fiverr-Logo.png" alt="fiverr logo" width="30px">
+						</div>
+						<img src="immagini/5stars.png" alt="5 stars review" height="30px">
+						<p>{p.review}</p>
+					</div>
+					)}
+                </div>
+            </div>
+        </div>
+	<footer id="contacts">
+		<div> 
+			<div class="footcont">
+				<div class="getintouch">
+						<h2>Get in touch</h2>
+						<p>Unlock the doors to digital possibilities. Take the first step by connecting 
+                                with me on Calendly or via email to book a free consultation and discuss how we can bring your vision to life and 
+                                leverage data for your success. Your digital journey starts here!</p>
+					<a href="mailto:info.elenazen@gmail.com"  target="_blank" rel="noopener noreferrer" class="readme">Send me an email</a>
+					<a href="https://calendly.com/info-elenazen/30min" target="_blank" rel="noopener noreferrer" class="btn violet">Book a free meeting</a>
+				</div>
+			</div>
+			<Footer />
+		</div>
+	</footer>
+</Layout>

@@ -1,0 +1,151 @@
+---
+import Header from '../components/it/Header.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/it/Footer.astro';
+import ProjectCard from '../components/it/ProjectCard.astro';
+
+const projects = [
+  {
+    classes: 'featured webapp',
+    title: "StatPilot",
+    description: "Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli",
+    img: "/project_banners/banner-statpilot.png",
+    alt: "statpilot web app",
+    url: "https://statpilot.onrender.com/",
+    readme: "https://github.com/elena563/statpilot",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Blacklisted M3dia",
+    description: "Sito web per un fotografo con una forte passione per le supercar e i motori in generale",
+    img: "/project_banners/banner-blacklisted.png",
+    alt: "sito web blacklisted m3dia",
+    url: "https://blacklistedm3dia.com/it",
+    readme: "/readme/visual-readme_bm.html",
+    type: 'Sito'
+  },
+  {
+    classes: 'featured website',
+	title: "Antonio Accardi Isteroscopia",
+    description: "Sito web per un ginecologo specializzato in Isteroscopia",
+    img: "/project_banners/banner-isteroscopia.png",
+    alt: "sito web isteroscopia",
+    url: "http://www.isteroscopia.eu/pagine/",
+    readme: "/readme/README_ister.md",
+    type: 'Sito'
+  },
+  {
+    classes: 'featured webapp',
+	title: "SpotiType",
+    description: "Web app interattiva che, data una playlist Spotify o una lista di 5 canzoni, ti dirà che tipo di ascoltatore sei",
+    img: "/project_banners/banner-spotitype.png",
+    alt: "statpilot web app",
+    url: "https://spotitype.vercel.app/",
+    readme: "https://github.com/elena563/spotitype",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Mauro Bianchi Fisioterapista",
+    description: "Progetto di sito web vetrina per un fisioterapista, completo di CV ed elenco di terapie offerte",
+    img: "/project_banners/banner-bianchi.png",
+    alt: "progetto di sito web Mauro Bianchi Fisioterapista",
+    url: "https://maurobianchi.netlify.app/",
+    readme: "https://github.com/elena563/drbianchifisio",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Energym Centro Fitness",
+    description: "Progetto di sito web vetrina monopagina per una palestra che offre varie attività",
+    img: "/project_banners/banner-energym.png",
+    alt: "Progetto di sito web palestra Energym",
+    url: "https://energymfit.netlify.app/",
+    readme: "https://github.com/elena563/energym",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Progetto di sito web SB00 Reseller Store",
+    description: "Frontend di un sito e-commerce per un rivenditore di sneakers e abbigliamento",
+    img: "/project_banners/banner-sb00.png",
+    alt: "SB00 Reseller Store",
+    url: "/progetti_personali/sneakers_resell_store/index.html",
+    readme: "/progetti_personali/sneakers_resell_store/visual-readme.html",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Hotel Sogno in Maremma",
+    description: "Sito web per un hotel 4 stelle nella Maremma toscana in Italia",
+    img: "/project_banners/banner-hotel.png",
+    alt: "Progetto di sito web Hotel Sogno in Maremma",
+    url: "/progetti_personali/hotel_sogno_in_maremma/index.html",
+    readme: "/progetti_personali/hotel_sogno_in_maremma/visual-readme.html",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Autofficina Martelli",
+    description: "Progetto di sito web vetrina monopagina in design moderno per un'officina di riparazione auto storica",
+    img: "/project_banners/banner-autofficina.png",
+    alt: "autofficina martelli sito web vetrina frontend",
+    url: "https://autofficinamartelli.netlify.app/",
+    readme: "https://github.com/elena563/autofficinamartelli",
+    type: 'Progetto'
+  },
+  {
+    classes: 'featured website',
+	title: "Save the Shark",
+    description: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
+    img: "/project_banners/banner-savetheshark.png",
+    alt: "Progetto di sito web Save the Shark",
+    url: "https://savetheshark.netlify.app/",
+    readme: "https://github.com/elena563/save_the_shark",
+    type: 'Progetto'
+  }, 
+  {
+    classes: 'featured webapp',
+	title: "MarketMint Dashboard Criptovalute",
+    description: "Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale",
+    img: "/project_banners/banner-crypto.png",
+    alt: "MarketMint dashboard criptovalute",
+    url: "https://marketmint.netlify.app/",
+    readme: "https://github.com/elena563/marketmint",
+    type: 'Progetto'
+  }, 
+  {
+    classes: 'featured',
+	title: "WordViz",
+    description: "Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing",
+    img: "/project_banners/banner-wordviz.png",
+    alt: "wordviz python library",
+    url: "https://github.com/elena563/wordviz",
+    readme: "https://wordviz.readthedocs.io/",
+    type: 'Pacchetto'
+  },
+]
+
+---
+
+<Layout lang="it" 
+	title="Elena Zen Web Developer e Data Analyst" 
+	description="Elena Zen Full-stack Web Developer & Data Analyst. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
+	<Header />
+
+    <section id="portfolio">
+            <h2>Il mio Portfolio</h2>
+            <p>Qui puoi trovare tutti i miei principali progetti, tra cui siti web, web app e lavori di altro tipo. Alcuni sono legati ad attività realmente esistenti, mentre altri sono strettamente progetti. Puoi liberamente esplorarne l'interfaccia, e per alcuni, il codice sorgente è pubblico sul mio <a href="https://github.com/elena563" target="_blank" class="anchor">GitHub</a>.</p></br></br>
+            <div class="tabs">
+                <button id="featured-btn" role="tab" class="tab active">In Evidenza</button>
+                <button id="website-btn" role="tab" class="tab">Siti Vetrina</button>
+                <button id="webapp-btn" role="tab" class="tab">Web App</button>
+            </div>
+            <div class="grid-container">
+                {projects.map(p => <ProjectCard {...p} />)}
+            </div>
+    </section>
+
+    <footer id="contacts"><Footer /></footer>
+</Layout>
