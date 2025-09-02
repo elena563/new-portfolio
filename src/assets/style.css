@@ -584,8 +584,9 @@ iconify-icon{
 }
 @media (max-width: 950px) {
     #aboutme > div{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+        gap: 6vw;
     }
     .interests{
         width: 60%;

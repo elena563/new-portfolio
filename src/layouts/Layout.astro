@@ -6,6 +6,8 @@ import '../assets/style.css';
 <!doctype html>
 <html lang={lang}>
 	<head>
+		<!-- cookiebot script -->
+		<script defer is:inline id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="17c9de5b-2707-4ac0-aaa7-897642de4869" data-blockingmode="auto" type="text/javascript"></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="/immagini/favicon192.png">
@@ -14,17 +16,17 @@ import '../assets/style.css';
 		<link rel="alternate" hreflang="it" href="https://elenazen.it/">
 		<link rel="alternate" hreflang="en" href="https://elenazen.it/en/">
 
-		<!-- Google Tag Manager -->
-		<script is:inline>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','G-VSB2P56YSW');
+		<!-- Google Analytics -->
+		<script type="text/plain" data-cookieconsent="statistics" async 
+		src="https://www.googletagmanager.com/gtag/js?id=G-VSB2P56YSW">
 		</script>
 
-		<!-- Klaro privacy manager -->
-		<script defer src="https://api.kiprotect.com/v1/privacy-managers/5cecaf901dc76631c577e1c3a4bce01a/klaro.js"></script>
+		<script type="text/plain" data-cookieconsent="statistics" is:inline>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-VSB2P56YSW');
+		</script>
 		
 		<!-- Swiper CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -45,6 +47,7 @@ import '../assets/style.css';
                 "https://it.fiverr.com/elena_zen?public_mode=true"
               ],
               "jobTitle": "Full-stack Web Developer & Data Analyst",
+			  "image": "https://elenazen.it/immagini/elena-web.jpg",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Freelance"
@@ -54,11 +57,6 @@ import '../assets/style.css';
 
 	</head>
 	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=G-VSB2P56YSW"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe>
-		</noscript>
 		<slot />
 		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" is:inline></script>
         <script src="https://kit.fontawesome.com/cc3bfee917.js" crossorigin="anonymous" is:inline></script>
