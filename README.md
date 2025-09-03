@@ -1,4 +1,4 @@
-# Elena Zen's Personal Portfolio
+# Elena Zen's Personal Portfolio 💻
 
 Welcome to my personal portfolio! I am Elena, an aspirant web developer and data analyst. In this digital dashboard, you'll find some information about me, a collection of my projects and skills in the fields of web development. 
 
@@ -26,57 +26,57 @@ Explore the user interface online by visiting [my website](https://elenazen.it/)
 ## Key Projects
 Here there are the technologies used in my projects. You can find a more detailed description of each project in the readme file of the proper folder/repo.
 
-### StatPilot
+### 📊 StatPilot
 Web application for data analysis, machine learning and explainable AI  
 HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP - Figma  
 https://statpilot.onrender.com/
 
-### Blacklisted M3dia
+### 📸 Blacklisted M3dia
 Portfolio website with dynamic carousel pages and custom admin panel  
 NextJS - MongoDB - Cloudinary Storage - i18n - Google reCAPTCHA - FormSubmit  
 https://blacklistedm3dia.com/it
 
-### Isteroscopia Dr. Antonio Accardi
+### 🩺 Isteroscopia Dr. Antonio Accardi
 Personal website of a gynecologist specializing in hysteroscopy (I redesigned it)  
 HTML - CSS - Elfsight  
 http://www.isteroscopia.eu/pagine/
 
-### SpotiType
+### 🎧 SpotiType
 Web application for music listener classification based on a ML algorithm trained on a k-means clustering  
 ReactJS - TailwindCSS - Recharts - Flask - Python - Pandas - Scikit-learn - Spotipy - ReccoBeats API  
 https://spotitype.vercel.app/
 
-### SB00 Sneakers Resell Store
+### 👟 SB00 Sneakers Resell Store
 Frontend interface of a sneakers and streetwear e-commerce  
 HTML - CSS - JavaScript  
 https://elenazen.it/progetti_personali/sneakers_resell_store/
 
-### Mauro Bianchi Fisioterapista
+### 🦴 Mauro Bianchi Fisioterapista
 Showcase website project for a physiotherapist, complete with CV and list of therapies offered  
 HTML - CSS  
 https://maurobianchi.netlify.app/
 
-### Hotel Sogno in Maremma
+### 🛏️ Hotel Sogno in Maremma
 Frontend website interface for a 4 stars italian hotel with room price calculator  
 HTML - CSS - JavaScript  
 https://elenazen.it/progetti_personali/hotel_sogno_in_maremma/
 
-### Energym
+### 💪🏼 Energym
 One-page showcase website design for a gym offering various activities  
 HTML - CSS  
 https://energymfit.netlify.app/
 
-### Save the Shark
+### 🦈 Save the Shark
 Frontend website interface for a no profit association  
 HTML - CSS - Hugo  
 https://savetheshark.netlify.app/
 
-### Autofficina Martelli
+### 🔧 Autofficina Martelli
 One-page showcase website project in a modern design for an historical car repair garage  
 HTML - CSS  
 https://autofficinamartelli.netlify.app/
 
-### MarketMint Dashboard
+### 🪙 MarketMint Dashboard
 Interactive dashboard for real-time cryptocurrency tracking  
 ReactJS - ChartJS - Radix UI - CoinCap API - GNews API  
 https://marketmint.netlify.app/  
