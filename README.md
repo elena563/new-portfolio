@@ -27,7 +27,7 @@ Explore the user interface online by visiting [my website](https://elenazen.it/)
 Here there are the technologies used in my projects. You can find a more detailed description of each project in the readme file of the proper folder/repo.
 
 ### 📊 StatPilot
-Web application for data analysis, machine learning and explainable AI  
+Web application for data analysis, machine learning and explainable AI - Final project for CS50x course 
 HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP - Figma  
 https://statpilot.onrender.com/
 
@@ -37,7 +37,7 @@ NextJS - MongoDB - Cloudinary Storage - i18n - Google reCAPTCHA - FormSubmit
 https://blacklistedm3dia.com/it
 
 ### 🩺 Isteroscopia Dr. Antonio Accardi
-Personal website of a gynecologist specializing in hysteroscopy (I redesigned it)  
+Personal website of a gynecologist specializing in hysteroscopy - Redesign  
 HTML - CSS - Elfsight  
 http://www.isteroscopia.eu/pagine/
 
@@ -59,7 +59,7 @@ https://maurobianchi.netlify.app/
 ### 🛏️ Hotel Sogno in Maremma
 Frontend website interface for a 4 stars italian hotel with room price calculator  
 HTML - CSS - JavaScript  
-https://elenazen.it/progetti_personali/hotel_sogno_in_maremma/
+https://hotelsognoinmaremma.netlify.app/
 
 ### 💪🏼 Energym
 One-page showcase website design for a gym offering various activities  

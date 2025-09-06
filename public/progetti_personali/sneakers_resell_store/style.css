@@ -579,6 +579,10 @@ h4{
     grid-auto-flow: dense;
   }
   @media (min-width: 1400px) {
+    .hero{
+      margin-left: auto;
+      margin-right: auto;
+    }
     .modal-item{
       flex-direction: column;
       height: 730px;
