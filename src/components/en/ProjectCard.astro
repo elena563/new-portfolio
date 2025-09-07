@@ -3,8 +3,8 @@ const { classes, title, description, img, alt, url, readme, type } = Astro.props
 ---
 
 <div class={`work ${classes || ""}`}>
-  <img src={img} alt={alt} />
-  <div class="text2">
+  <img src={img} alt={alt} loading="lazy"/>
+  <div class="projtext">
     <h4>{title}</h4>
     <p>{description}</p>
   </div>

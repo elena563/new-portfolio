@@ -27,7 +27,7 @@ Explore the user interface online by visiting [my website](https://elenazen.it/)
 Here there are the technologies used in my projects. You can find a more detailed description of each project in the readme file of the proper folder/repo.
 
 ### 📊 StatPilot
-Web application for data analysis, machine learning and explainable AI - Final project for CS50x course 
+Web application for data analysis, machine learning and explainable AI - Final project for CS50x course  
 HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP - Figma  
 https://statpilot.onrender.com/
 
