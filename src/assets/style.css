@@ -318,7 +318,7 @@ a.disabled:active {
 }
 #projects :is(h2, h3), #portfolio :is(h2, h3){
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 .anchor{
     color: #271B46;
@@ -521,10 +521,10 @@ iconify-icon{
     margin-top: 28px;
     display: grid; 
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    max-width: 380px;
+    max-width: 350px;
     gap: 20px;
     place-items: center;
-    justify-items: center;
+    justify-items: flex-start;
 }
 .interests div{
     display: flex;
@@ -550,7 +550,7 @@ iconify-icon{
         gap: 6vw;
     }
     .interests{
-        width: 60%;
+        width: min(60%, 350px);
         max-width: none;
     }
 }
@@ -586,6 +586,12 @@ iconify-icon{
         align-items: center;
         justify-content: center;
         color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    }
+    .mySwiper1 .swiper-button-next {
+        right: 0 !important;
+    }
+    .mySwiper1 .swiper-button-prev {
+        left: 0 !important;
     }
     .mySwiper1 .swiper{
         width: 100%;
@@ -637,6 +643,10 @@ iconify-icon{
         gap: 20px;
         flex-direction: row-reverse;
         justify-content: flex-start;
+    }
+    h2{
+        font-size: 170%;
+        text-align: center;
     }
     #menu{
         display: flex;
@@ -758,7 +768,7 @@ iconify-icon{
     } 
     .grid-container{
         display: flex;
-        gap: 1.5em;
+        gap: 32px;
         flex-direction: column;
     }
     .navbar{
@@ -781,17 +791,21 @@ iconify-icon{
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    
     .hero{
-        padding: 30px;
+        padding: 40px;
         margin: 50px 30px;
     }
     .text{
         margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
     }
     .interests{
         width: 100%;
+        justify-items: center;
     }
+    .about-text h4{
+    text-align: center;
+}
     .item{
         justify-content: center;
     }
@@ -802,6 +816,9 @@ iconify-icon{
   }
 }
 @media (max-width: 500px) {
+    .intro{
+        font-size: 3.7rem;
+    }
     #menucont{
         width: 100%;
         padding-top: 64px;
@@ -847,11 +864,14 @@ iconify-icon{
     span.mobile{
         top: -0.5px;
     }
+    .intro{
+        font-size: 3.5rem;
+    }
 }
 /*super thin viewport*/
 @media (max-width: 350px) {
     .intro{
-        font-size: 3.3em;
+        font-size: 3em;
     }
     .text h4{
         font-size: 1em;
