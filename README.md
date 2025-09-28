@@ -11,6 +11,13 @@ Website sections:
 - footer with contacts social media icons
 
 - Portfolio page: all the collection of my projects and works
+  
+  
+Built with:  
+  
+[![Astro](https://img.shields.io/badge/Astro-bc52ee?style=flat&logo=astro&logoColor=white)](https://www.python.org/) 
+[![CSS](https://img.shields.io/badge/CSS3-663399?style=flat&logo=css&logoColor=white)](https://www.python.org/) 
+[![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat&logo=javascript&logoColor=323330)](https://www.python.org/)
 
 ## User Interface Preview
 
@@ -80,6 +87,11 @@ https://autofficinamartelli.netlify.app/
 Interactive dashboard for real-time cryptocurrency tracking  
 ReactJS - ChartJS - Radix UI - CoinCap API - GNews API  
 https://marketmint.netlify.app/  
+
+### 👕 Hashtag Generator
+Interactive interface to generate hashtags for product listings  
+Python - LangChain - Llama3 - Streamlit  
+https://hashtaggenerator.streamlit.app/  
 
 Feel free to explore each project, learn more about my skills and capabilities, and discover the products and services I offer. If you have any questions or would like to connect, please don't hesitate to reach out!
 

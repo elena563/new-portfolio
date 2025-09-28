@@ -14,7 +14,7 @@ const { page } = Astro.props;
                 </ul>
                 <a class="desktop" href={page === 'portfolio' ? '/portfolio' : page === 'privacy' ? '/privacy' : '/'}><span class="emojione--flag-for-italy desktop"></span></a>
             </div>
-            <div class="mobilebtn">
+            <div class="mobilebtn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <label class="ham" for="ham">
                     <input type="checkbox" id="ham" onclick="show()">
                     <span class="line line1"></span>
