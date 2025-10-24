@@ -56,7 +56,7 @@ https://spotitype.vercel.app/
 ### 👟 SB00 Sneakers Resell Store
 Frontend interface of a sneakers and streetwear e-commerce  
 HTML - CSS - JavaScript  
-https://elenazen.it/progetti_personali/sneakers_resell_store/
+"https://sb00.netlify.app/",
 
 ### 🦴 Mauro Bianchi Fisioterapista
 Showcase website project for a physiotherapist, complete with CV and list of therapies offered  
