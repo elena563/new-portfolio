@@ -14,7 +14,7 @@ Project sections
 
 Explore the user interface online by visiting the [Blacklisted M3dia website](link).
 
-## Code Exploration on GitHub COMING SOON
+## Code Exploration on GitHub
 
 The source code is not available on GitHub for privacy reasons, but feel free to ask me anything
 

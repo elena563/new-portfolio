@@ -18,24 +18,19 @@ Website sections:
 1. Explore the website online by clicking [just here](http://www.isteroscopia.eu/pagine/).
 2. Navigate through different sections of the site to experience its implemented features.
 
-## Code Exploration on GitHub (not yet)
+## Code Exploration on GitHub
 
-1. The frontend source code is available on GitHub in the [Isteroscopia - Frontend repository](link).
-2. Browse through folders to examine the project's structure.
-3. Check commits to track the development of the frontend over time.
-4. If you wish to contribute, refer to the guidelines in the "Contributions" section of the README.
+The source code is not available on GitHub for privacy reasons, but feel free to ask me anything
 
 ## Project Features
 
-- **hero slider**
+- **Hero Slider**
 - **Responsive Design**: Ensures a seamless experience across various devices.
 
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
 
-## Contributions
-
-If you want to contribute to improving the frontend, feel free to open an issue or or contact me. I will be grateful for every suggestions.
+The existing custom CMS is based on asp.net
 
 Thank you for your interest in the Antonio Accardi's Isteroscopia Frontend work!
