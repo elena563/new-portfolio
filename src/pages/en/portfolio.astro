@@ -13,7 +13,8 @@ const projects = [
     alt: "statpilot web app",
     url: "https://statpilot.onrender.com/",
     readme: "https://github.com/elena563/statpilot",
-	type: 'Project'
+	type: 'Project',
+  badges: ['Python'],
   },
   {
     classes: 'featured website',
@@ -23,7 +24,8 @@ const projects = [
     alt: "Blacklisted m3dia website",
     url: "https://blacklistedm3dia.com/it",
     readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
-	type: 'Website'
+	type: 'Website',
+  badges: ['NextJS'],
   },
   {
     classes: 'featured website',
@@ -33,7 +35,8 @@ const projects = [
     alt: "Isteroscopia website",
     url: "http://www.isteroscopia.eu/pagine/",
     readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md",
-	type: 'Website'
+	type: 'Website',
+  badges: [],
   },
   {
     classes: 'featured webapp',
@@ -43,7 +46,8 @@ const projects = [
     alt: "statpilot web app",
     url: "https://spotitype.vercel.app/",
     readme: "https://github.com/elena563/spotitype",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured website',
@@ -53,7 +57,8 @@ const projects = [
     alt: "Website project Mauro Bianchi Fisioterapista",
     url: "https://maurobianchi.netlify.app/",
     readme: "https://github.com/elena563/drbianchifisio",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured',
@@ -63,7 +68,8 @@ const projects = [
     alt: "wordviz python library",
     url: "https://github.com/elena563/wordviz",
     readme: "https://wordviz.readthedocs.io/",
-    type: 'Package'
+    type: 'Package',
+  badges: [],
   },
   {
     classes: 'featured website',
@@ -73,7 +79,8 @@ const projects = [
     alt: "Website project Energym",
     url: "https://energymfit.netlify.app/",
     readme: "https://github.com/elena563/energym",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured webapp',
@@ -83,7 +90,8 @@ const projects = [
     alt: "MarketMint cryptocurrency dashboard",
     url: "https://marketmint.netlify.app/",
     readme: "https://github.com/elena563/marketmint",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   }, 
   {
     classes: 'featured website',
@@ -93,7 +101,8 @@ const projects = [
     alt: "Website project Hotel Sogno in Maremma",
     url: "https://hotelsognoinmaremma.netlify.app/",
     readme: "https://github.com/elena563/hotel_sogno_in_maremma",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured website',
@@ -103,7 +112,8 @@ const projects = [
     alt: "Website project autofficina martelli",
     url: "https://autofficinamartelli.netlify.app/",
     readme: "https://github.com/elena563/autofficinamartelli",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured webapp',
@@ -113,7 +123,8 @@ const projects = [
     alt: "hashtag generator web app",
     url: "https://hashtaggenerator.streamlit.app/",
     readme: "https://github.com/elena563/hashtag_generator",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
   {
     classes: 'featured website',
@@ -123,7 +134,8 @@ const projects = [
     alt: "Website project Save the Shark",
     url: "https://savetheshark.netlify.app/",
     readme: "https://github.com/elena563/save_the_shark",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   }, 
   {
     classes: 'website hidden',
@@ -133,7 +145,8 @@ const projects = [
     alt: "Website project SB00 Reseller Store",
     url: "https://sb00.netlify.app/",
     readme: "https://github.com/elena563/sb00",
-    type: 'Project'
+    type: 'Project',
+  badges: [],
   },
 ]
 
@@ -153,8 +166,21 @@ const projects = [
                 <button id="webapp-btn" role="tab" class="tab">Web Apps</button>
             </div>
             <div class="grid-container">
+               <div class="work contrib featured">
+                  <img src="/project_banners/banner-notonlydesk.png" alt='NOTONLYDESK coworking platform' loading="lazy"/>
+                  <div class="projtext">
+                    <h4>NOTONLYDESK</h4>
+                    <p>NOTONLYDESK, or simply NOD, is an innovative startup that provides a flexible platform for accessing a network of coworking spaces across Italy and Europe.<br><br> 
+                      I am currently collaborating with them, supporting the CTO during a key stage of their growth.  My role involves handling both frontend and backend development, creating new pages, contributing to the new admin panel, and implementing additional features.</p>
+                    <a href="#"
+        class="btn orange "
+        target="_blank" rel="noopener">Discover</a>
+                  </div>
+                </div>
                 {projects.map(p => <ProjectCard {...p} />)}
+               
             </div>
+            
     </section>
 
     <footer id="contacts"><Footer /></footer>
