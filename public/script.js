@@ -22,45 +22,49 @@ function show() {
 }
 
 // services manual slider
-var swiper1 = new Swiper(".mySwiper1", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+if (document.querySelector(".mySwiper1")) {
+    var swiper1 = new Swiper(".mySwiper1", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+}
 
 // reviews automatic slider
-const swiper2 = new Swiper(".mySwiper2", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 20
+if (document.querySelector(".mySwiper2")) {
+    const swiper2 = new Swiper(".mySwiper2", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        640: { 
-            slidesPerView: 2,
-            spaceBetween: 40
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            640: { 
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            1000: { 
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
         },
-        1000: { 
-            slidesPerView: 3,
-            spaceBetween: 20
+        autoplay: {
+        delay: 5000,
         },
-    },
-    autoplay: {
-    delay: 5000,
-    },
-    loop: true,
-    observer: true,
-    observeParents: true,
-    watchOverflow: true,
-  });
+        loop: true,
+        observer: true,
+        observeParents: true,
+        watchOverflow: true,
+      });
 
-window.addEventListener('resize', () => {
-    swiper2.update();
-});
+    window.addEventListener('resize', () => {
+        swiper2.update();
+    });
+}
 
 // tab filter in portfolio page
 function showProjects(evt, category) {
@@ -83,6 +87,8 @@ function showProjects(evt, category) {
     evt.currentTarget.classList.add("active");
 }
 
-document.getElementById('featured-btn').addEventListener('click', (event) => showProjects(event, '.featured'))
-document.getElementById('website-btn').addEventListener('click', (event) => showProjects(event, '.website'))
-document.getElementById('webapp-btn').addEventListener('click', (event) => showProjects(event, '.webapp'))
+if (document.getElementById('featured-btn')) {
+    document.getElementById('featured-btn').addEventListener('click', (event) => showProjects(event, '.featured'))
+    document.getElementById('website-btn').addEventListener('click', (event) => showProjects(event, '.website'))
+    document.getElementById('webapp-btn').addEventListener('click', (event) => showProjects(event, '.webapp'))
+}
