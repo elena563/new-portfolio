@@ -1,5 +1,5 @@
 ---
-const { classes, title, description, img, alt, url, readme, type, badges } = Astro.props;
+const { classes, title, description, img, alt, url, readme, preview, repo_visibility, badges } = Astro.props;
 ---
 
 <div class={`work ${classes || ""}`}>
@@ -16,12 +16,16 @@ const { classes, title, description, img, alt, url, readme, type, badges } = Ast
     <p>{description}</p>
   </div>
   <div class="buttons">
+    {preview && (
     <a href={url || "#"}
         class={`btn orange ${!url ? "disabled" : ""}`} 
-        target="_blank" rel="noopener">View {type}</a>
+        target="_blank" rel="noopener">Discover</a>
+    )}
+    {repo_visibility && (
     <a href={readme} target="_blank" rel="noopener" class="readme">
-        <i class="fa-solid fa-bookmark fa-sm" style="color: #271b46;"></i> 
-        <span>README</span>
+        <i class="fa-brands fa-github fa-sm"></i> 
+        <span>GitHub</span>
     </a>
+    )}
   </div>
 </div>

@@ -3,139 +3,19 @@ import Header from '../components/it/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/it/Footer.astro';
 import ProjectCard from '../components/it/ProjectCard.astro';
+import { projects as projectsData } from '../data/projects';
 
-const projects = [
-  {
-    classes: 'featured webapp',
-    title: "StatPilot",
-    description: "Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli",
-    img: "/project_banners/banner-statpilot.png",
-    alt: "statpilot web app",
-    url: "https://statpilot.onrender.com/",
-    readme: "https://github.com/elena563/statpilot",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured website',
-	title: "Blacklisted M3dia",
-    description: "Sito web per un fotografo con una forte passione per le supercar e i motori in generale",
-    img: "/project_banners/banner-blacklisted.png",
-    alt: "sito web blacklisted m3dia",
-    url: "https://blacklistedm3dia.com/it",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
-    type: 'Sito'
-  },
-  {
-    classes: 'featured website',
-	title: "Antonio Accardi Isteroscopia",
-    description: "Sito web per un ginecologo specializzato in Isteroscopia",
-    img: "/project_banners/banner-isteroscopia.png",
-    alt: "sito web isteroscopia",
-    url: "http://www.isteroscopia.eu/pagine/",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md",
-    type: 'Sito'
-  },
-  {
-    classes: 'featured webapp',
-	title: "SpotiType",
-    description: "Web app interattiva che, data una playlist Spotify o una lista di 5 canzoni, ti dirà che tipo di ascoltatore sei",
-    img: "/project_banners/banner-spotitype.png",
-    alt: "statpilot web app",
-    url: "https://spotitype.vercel.app/",
-    readme: "https://github.com/elena563/spotitype",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured website',
-	title: "Mauro Bianchi Fisioterapista",
-    description: "Progetto di sito web vetrina per un fisioterapista, completo di CV ed elenco di terapie offerte",
-    img: "/project_banners/banner-bianchi.png",
-    alt: "progetto di sito web Mauro Bianchi Fisioterapista",
-    url: "https://maurobianchi.netlify.app/",
-    readme: "https://github.com/elena563/drbianchifisio",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured',
-	title: "WordViz",
-    description: "Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing",
-    img: "/project_banners/banner-wordviz.png",
-    alt: "wordviz python library",
-    url: "https://github.com/elena563/wordviz",
-    readme: "https://wordviz.readthedocs.io/",
-    type: 'Pacchetto'
-  },
-  {
-    classes: 'featured website',
-	title: "Energym Centro Fitness",
-    description: "Progetto di sito web vetrina monopagina per una palestra che offre varie attività",
-    img: "/project_banners/banner-energym.png",
-    alt: "Progetto di sito web palestra Energym",
-    url: "https://energymfit.netlify.app/",
-    readme: "https://github.com/elena563/energym",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured webapp',
-	title: "MarketMint Dashboard Criptovalute",
-    description: "Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale",
-    img: "/project_banners/banner-crypto.png",
-    alt: "MarketMint dashboard criptovalute",
-    url: "https://marketmint.netlify.app/",
-    readme: "https://github.com/elena563/marketmint",
-    type: 'Progetto'
-  }, 
-  {
-    classes: 'featured website',
-	title: "Hotel Sogno in Maremma",
-    description: "Sito web per un hotel 4 stelle nella Maremma toscana in Italia",
-    img: "/project_banners/banner-hotel.png",
-    alt: "Progetto di sito web Hotel Sogno in Maremma",
-    url: "https://hotelsognoinmaremma.netlify.app/",
-    readme: "https://github.com/elena563/hotel_sogno_in_maremma",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured website',
-	title: "Autofficina Martelli",
-    description: "Progetto di sito web vetrina monopagina in design moderno per un'officina di riparazione auto storica",
-    img: "/project_banners/banner-autofficina.png",
-    alt: "autofficina martelli sito web vetrina frontend",
-    url: "https://autofficinamartelli.netlify.app/",
-    readme: "https://github.com/elena563/autofficinamartelli",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured webapp',
-	title: "Hashtag Generator",
-    description: "Interfaccia web intuitiva per generare con l'AI hashtag efficaci e puliti per annunci di prodotti online",
-    img: "/project_banners/banner-hashtag.png",
-    alt: "hashtag generator web app",
-    url: "https://hashtaggenerator.streamlit.app/",
-    readme: "https://github.com/elena563/hashtag_generator",
-    type: 'Progetto'
-  },
-  {
-    classes: 'featured website',
-	title: "Save the Shark",
-    description: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
-    img: "/project_banners/banner-savetheshark.png",
-    alt: "Progetto di sito web Save the Shark",
-    url: "https://savetheshark.netlify.app/",
-    readme: "https://github.com/elena563/save_the_shark",
-    type: 'Progetto'
-  }, 
-  {
-    classes: 'website hidden',
-	title: "SB00 Reseller Store",
-    description: "Frontend di un sito e-commerce per un rivenditore di sneakers e abbigliamento",
-    img: "/project_banners/banner-sb00.png",
-    alt: "Progetto di sito web SB00 Reseller Store",
-    url: "https://sb00.netlify.app/",
-    readme: "https://github.com/elena563/sb00",
-    type: 'Progetto'
-  },
-]
+const projects = projectsData.map(p => ({
+  classes: p.classes,
+  title: p.title.it,
+  description: p.description.it,
+  img: p.img,
+  alt: p.alt,
+  url: p.url,
+  readme: p.readme,
+  preview: p.preview,
+  repo_visibility: p.repo_visibility
+}));
 
 ---
 
