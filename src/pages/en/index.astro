@@ -3,36 +3,19 @@ import Header from '../../components/en/Header.astro';
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/en/Footer.astro';
 import ProjectCard from '../../components/en/ProjectCard.astro';
+import { projects as projectsData } from '../../data/projects';
 
-const projects = [
-  {
-    title: "StatPilot",
-    description: "Interactive web application for statistical data analysis, machine learning modeling, and model explainability",
-    img: "/project_banners/banner-statpilot.png",
-    alt: "statpilot web app",
-    url: "https://statpilot.onrender.com/",
-    readme: "https://github.com/elena563/statpilot",
-	type: 'Project'
-  },
-  {
-	title: "Blacklisted M3dia",
-    description: "Website for a photographer with a strong passion for supercars and motors in general",
-    img: "/project_banners/banner-blacklisted.png",
-    alt: "Blacklisted m3dia website",
-    url: "https://blacklistedm3dia.com/it",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
-	type: 'Website'
-  },
-  {
-	title: "Antonio Accardi Isteroscopia",
-    description: "Website for a gynecologist specialized in hysteroscopy in Palermo, Italy",
-    img: "/project_banners/banner-isteroscopia.png",
-    alt: "Isteroscopia website",
-    url: "http://www.isteroscopia.eu/pagine/",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md",
-	type: 'Website'
-  }
-]
+const projects = projectsData.slice(0, 3).map(p => ({
+  classes: p.classes,
+  title: p.title.en,
+  description: p.description.en,
+  img: p.img,
+  alt: p.alt,
+  url: p.url,
+  readme: p.readme,
+  preview: p.preview,
+  repo_visibility: p.repo_visibility
+}));
 
 const reviews = [
 	{
