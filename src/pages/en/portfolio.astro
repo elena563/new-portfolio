@@ -4,7 +4,6 @@ import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/en/Footer.astro';
 import ProjectCard from '../../components/en/ProjectCard.astro';
 import { projects as projectsData } from '../../data/projects';
-import { preview } from 'astro';
 
 const projects = projectsData.map(p => ({
   classes: p.classes,
@@ -15,7 +14,8 @@ const projects = projectsData.map(p => ({
   url: p.url,
   readme: p.readme,
   preview: p.preview,
-  repo_visibility: p.repo_visibility
+  repo_visibility: p.repo_visibility,
+  badges: p.badges
 }));
 
 ---
@@ -35,14 +35,20 @@ const projects = projectsData.map(p => ({
             </div>
             <div class="grid-container">
                <div class="work contrib featured">
-                  <img src="/project_banners/banner-notonlydesk.png" alt='NOTONLYDESK coworking platform' loading="lazy"/>
+                  <img src="/project_banners/banner-nod.png" alt='NOTONLYDESK coworking platform' loading="lazy"/>
                   <div class="projtext">
                     <h4>NOTONLYDESK</h4>
+                    <div class="badges">
+                      <span class="badge python">PYTHON</span>
+                      <span class="badge django">DJANGO</span>
+                      <span class="badge seo">SEO</span>
+                      <span class="badge javascript">JAVASCRIPT</span>
+                    </div>
                     <p>NOTONLYDESK, or simply NOD, is an innovative startup that provides a flexible platform for accessing a network of coworking spaces across Italy and Europe.<br><br> 
                       I am currently collaborating with them, supporting the CTO during a key stage of their growth.  My role involves handling both frontend and backend development, creating new pages, contributing to the new admin panel, and implementing additional features.</p>
-                    <a href="#"
-        class="btn orange "
-        target="_blank" rel="noopener">Discover</a>
+                    <a href="https://www.notonlydesk.com/en/"
+                      class="btn orange "
+                      target="_blank" rel="noopener">Discover</a>
                   </div>
                 </div>
                 {projects.map(p => <ProjectCard {...p} />)}

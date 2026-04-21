@@ -91,4 +91,11 @@ if (document.getElementById('featured-btn')) {
     document.getElementById('featured-btn').addEventListener('click', (event) => showProjects(event, '.featured'))
     document.getElementById('website-btn').addEventListener('click', (event) => showProjects(event, '.website'))
     document.getElementById('webapp-btn').addEventListener('click', (event) => showProjects(event, '.webapp'))
+    
+    const projects = document.querySelectorAll('.work');
+    projects.forEach(function (proj) {
+        if (!proj.classList.contains('featured')) {
+            proj.classList.add('hidden');
+        }
+    });
 }

@@ -1,11 +1,17 @@
 ---
-const { classes, title, description, img, alt, url, readme, preview, repo_visibility } = Astro.props;
+const { classes, title, description, img, alt, url, readme, preview, repo_visibility, badges } = Astro.props;
 ---
 
 <div class={`work ${classes || ""}`}>
   <img src={img} alt={alt} loading="lazy" />
   <div class="projtext">
     <h4>{title}</h4>
+    {badges && badges.length > 0 &&
+    <div class="badges">
+      {badges.map((tech: string) => (
+        <span class={`badge ${tech.toLowerCase().replace(/\s+/g, '-')}`}>{tech.toUpperCase()}</span>        
+      ))}
+    </div>}
     <p>{description}</p>
   </div>
   <div class="buttons">

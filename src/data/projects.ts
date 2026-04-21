@@ -14,6 +14,7 @@ export interface Project {
   readme?: string;
   preview: boolean;
   repo_visibility: boolean;
+  badges?: string[];
 }
 
 export const projects: Project[] = [
@@ -32,7 +33,8 @@ export const projects: Project[] = [
     url: "https://statpilot.onrender.com/",
     readme: "https://github.com/elena563/statpilot",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Python", "Flask", "Data Science"]
   },
   {
     classes: 'featured website',
@@ -49,7 +51,8 @@ export const projects: Project[] = [
     url: "https://blacklistedm3dia.com/it",
     readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
     preview: true,
-    repo_visibility: false
+    repo_visibility: false,
+    badges: ["Nextjs", "MongoDB", "Javascript"]
   },
   {
     classes: 'featured website',
@@ -83,7 +86,25 @@ export const projects: Project[] = [
     url: "https://spotitype.vercel.app/",
     readme: "https://github.com/elena563/spotitype",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Python", "Flask", "Machine Learning"]
+  },
+  {
+    classes: 'featured website',
+    title: {
+      it: "Professor Navid Nobani",
+      en: "Professor Navid Nobani"
+    },
+    description: {
+      it: "Progetto di sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti",
+      en: "Showcase website project for a university professor, presenting his work and the courses he teaches"
+    },
+    img: "/project_banners/banner-nobani.png",
+    alt: "progetto di sito web Professor Navid Nobani",
+    url: "https://nobani.it/",
+    preview: true,
+    repo_visibility: false,
+    badges: ["Astrojs"]
   },
   {
     classes: 'featured website',
@@ -98,7 +119,6 @@ export const projects: Project[] = [
     img: "/project_banners/banner-bianchi.png",
     alt: "progetto di sito web Mauro Bianchi Fisioterapista",
     url: "https://maurobianchi.netlify.app/",
-    readme: "https://github.com/elena563/drbianchifisio",
     preview: true,
     repo_visibility: false
   },
@@ -116,7 +136,8 @@ export const projects: Project[] = [
     alt: "wordviz python library",
     readme: "https://github.com/elena563/wordviz",
     preview: false,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Python", "Gensim", "Matplotlib", "Plotly"]
   },
   {
     classes: 'featured website',
@@ -150,7 +171,8 @@ export const projects: Project[] = [
     url: "https://marketmint.netlify.app/",
     readme: "https://github.com/elena563/marketmint",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["React"]
   },
   {
     classes: 'featured website',
@@ -167,10 +189,11 @@ export const projects: Project[] = [
     url: "https://hotelsognoinmaremma.netlify.app/",
     readme: "https://github.com/elena563/hotel_sogno_in_maremma",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Javascript"]
   },
   {
-    classes: 'featured website',
+    classes: 'website',
     title: {
       it: "Autofficina Martelli",
       en: "Autofficina Martelli"
@@ -182,7 +205,6 @@ export const projects: Project[] = [
     img: "/project_banners/banner-autofficina.png",
     alt: "autofficina martelli sito web vetrina frontend",
     url: "https://autofficinamartelli.netlify.app/",
-    readme: "https://github.com/elena563/autofficinamartelli",
     preview: true,
     repo_visibility: false
   },
@@ -201,7 +223,8 @@ export const projects: Project[] = [
     url: "https://hashtaggenerator.streamlit.app/",
     readme: "https://github.com/elena563/hashtag_generator",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Python", "Streamlit", "AI", "Langchain"]
   },
   {
     classes: 'featured website',
@@ -217,8 +240,9 @@ export const projects: Project[] = [
     alt: "Progetto di sito web Save the Shark",
     url: "https://savetheshark.netlify.app/",
     readme: "https://github.com/elena563/save_the_shark",
-    preview: true,
-    repo_visibility: true
+    preview: false,
+    repo_visibility: true,
+    badges: ["Hugo", "Stripe", "Expressjs", "under maintenance"]
   },
   {
     classes: 'website hidden',
@@ -235,6 +259,7 @@ export const projects: Project[] = [
     url: "https://sb00.netlify.app/",
     readme: "https://github.com/elena563/sb00",
     preview: true,
-    repo_visibility: true
+    repo_visibility: true,
+    badges: ["Javascript"]
   }
 ];

@@ -410,12 +410,146 @@ a.disabled:active {
     margin-top: auto;
     justify-content: center;
     padding: 16px;
-    margin-bottom: 16px;
 }
 .buttons > * {
     margin: 0;
     text-align: center;
     flex: 1;
+}
+
+.badges{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.badge{
+    color: #c4a6ed;
+    background-color: #f5f5fa;
+    border: solid #c4a6ed 1.5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Badge colors per tecnologia */
+.badge.python{
+    color: #2b5b84;
+    background-color: #e3f2fd;
+    border-color: #2b5b84;
+}
+.badge.flask, .badge.nextjs{
+    color: #1a1a1a;
+    background-color: #f0f0f0;
+    border-color: #1a1a1a;
+}
+.badge.javascript, .badge.js{
+    color: #b8930f;
+    background-color: #fffbea;
+    border-color: #b8930f;
+}
+.badge.typescript, .badge.ts{
+    color: #2d79c7;
+    background-color: #e3f2fd;
+    border-color: #2d79c7;
+}
+.badge.react{
+    color: #0d96b8;
+    background-color: #e0f7fa;
+    border-color: #0d96b8;
+}
+.badge.django{
+    color: #2c6f4d;
+    background-color: #e8f5e9;
+    border-color: #2c6f4d;
+}
+.badge.html, .badge.html5{
+    color: #c44125;
+    background-color: #fff3e0;
+    border-color: #c44125;
+}
+.badge.css, .badge.css3{
+    color: #0e4d92;
+    background-color: #e3f2fd;
+    border-color: #0e4d92;
+}
+.badge.node, .badge.nodejs{
+    color: #3c6e3e;
+    background-color: #e8f5e9;
+    border-color: #3c6e3e;
+}
+.badge.database, .badge.sql, .badge.mysql, .badge.postgresql{
+    color: #1565c0;
+    background-color: #e3f2fd;
+    border-color: #1565c0;
+}
+.badge.mongodb{
+    color: #2d6f3c;
+    background-color: #e8f5e9;
+    border-color: #2d6f3c;
+}
+.badge.langchain, .badge.expressjs{
+    color: #1a1a1a;
+    background-color: #f5f5f5;
+    border-color: #1a1a1a;
+}
+.badge.docker, .badge.gensim{
+    color: #0c5d9e;
+    background-color: #e3f2fd;
+    border-color: #0c5d9e;
+}
+.badge.aws, .badge.matplotlib{
+    color: #b85e0e;
+    background-color: #fff3e0;
+    border-color: #b85e0e;
+}
+.badge.machine, .badge.plotly, .badge.machine-learning{
+    color: #6a1b9a;
+    background-color: #f3e5f5;
+    border-color: #6a1b9a;
+}
+.badge.data-science, .badge.analytics, .badge.data-analysis{
+    color: #00796b;
+    background-color: #e0f2f1;
+    border-color: #00796b;
+}
+.badge.ai, .badge.artificial{
+    color: #6a1b9a;
+    background-color: #f3e5f5;
+    border-color: #6a1b9a;
+}
+.badge.stripe{
+    color: #5b63a8;
+    background-color: #ede7f6;
+    border-color: #5b63a8;
+}
+.badge.streamlit{
+    color: #d24726;
+    background-color: #fff3e0;
+    border-color: #d24726;
+}
+.badge.astrojs{
+    color: #b85e0e;
+    background-color: #fff3e0;
+    border-color: #b85e0e;
+}
+.badge.seo{
+    color: #558b2f;
+    background-color: #f1f8e9;
+    border-color: #558b2f;
+}
+.badge.hugo{
+    color: #c71585;
+    background-color: #fce4ec;
+    border-color: #c71585;
+}
+.badge.under-maintenance, .badge.updating, .badge.refactoring{
+    color: #e67e22;
+    background-color: #fff8e1;
+    border-color: #e67e22;
+    border-style: dashed;
+    font-style: italic;
+    border-radius: none
 }
 
 /*contacts and footer*/

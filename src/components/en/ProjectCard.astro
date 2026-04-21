@@ -6,13 +6,12 @@ const { classes, title, description, img, alt, url, readme, preview, repo_visibi
   <img src={img} alt={alt} loading="lazy"/>
   <div class="projtext">
     <h4>{title}</h4>
+    {badges && badges.length > 0 &&
     <div class="badges">
-      {badges && badges.length > 0 &&
-        badges.map((tech: string) => (
-          <span class={`badge ${tech.toLowerCase()}`}>{tech.toUpperCase()}</span>        
-        ))
-      }
-    </div>
+        {badges.map((tech: string) => (
+          <span class={`badge ${tech.toLowerCase().replace(/\s+/g, '-')}`}>{tech.toUpperCase()}</span>        
+        ))}
+    </div>}
     <p>{description}</p>
   </div>
   <div class="buttons">
