@@ -149,6 +149,7 @@ ul span{
     border-radius: 30px;
     border: none;
     text-decoration: none;
+    max-width: 500px;
 }
 a.disabled, a.disabled:hover {
     cursor: not-allowed;
@@ -384,6 +385,7 @@ a.disabled:active {
 .work.contrib img{
     height: 100%;
     width: 40%;
+    object-fit: contain;
 }
 #portfolio .work{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -406,7 +408,7 @@ a.disabled:active {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 16px;
+    gap: 12px;
     margin-top: auto;
     justify-content: center;
     padding: 16px;
@@ -878,6 +880,14 @@ iconify-icon{
 @media (max-width: 800px) {
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .work.contrib{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .work.contrib img{
+        width: 100%;
+        height: auto;
     }
     .intro{
         font-size: 4rem;
