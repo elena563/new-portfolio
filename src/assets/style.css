@@ -500,7 +500,7 @@ a.disabled:active {
     background-color: #e3f2fd;
     border-color: #0c5d9e;
 }
-.badge.aws, .badge.matplotlib{
+.badge.web-design, .badge.matplotlib{
     color: #b85e0e;
     background-color: #fff3e0;
     border-color: #b85e0e;

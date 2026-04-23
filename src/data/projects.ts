@@ -69,7 +69,8 @@ export const projects: Project[] = [
     url: "http://www.isteroscopia.eu/pagine/",
     readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md",
     preview: true,
-    repo_visibility: false
+    repo_visibility: false,
+    badges: ["Web Design"]
   },
   {
     classes: 'featured webapp',
@@ -85,9 +86,9 @@ export const projects: Project[] = [
     alt: "statpilot web app",
     url: "https://spotitype.vercel.app/",
     readme: "https://github.com/elena563/spotitype",
-    preview: true,
+    preview: false,
     repo_visibility: true,
-    badges: ["Python", "Flask", "Machine Learning"]
+    badges: ["Python", "Flask", "Machine Learning", "under maintenance"]
   },
   {
     classes: 'featured website',
@@ -96,8 +97,8 @@ export const projects: Project[] = [
       en: "Professor Navid Nobani"
     },
     description: {
-      it: "Progetto di sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti",
-      en: "Showcase website project for a university professor, presenting his work and the courses he teaches"
+      it: "Sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti",
+      en: "Showcase website for a university professor, presenting his work and the courses he teaches"
     },
     img: "/project_banners/banner-nobani.png",
     alt: "progetto di sito web Professor Navid Nobani",
@@ -105,22 +106,6 @@ export const projects: Project[] = [
     preview: true,
     repo_visibility: false,
     badges: ["Astrojs"]
-  },
-  {
-    classes: 'featured website',
-    title: {
-      it: "Mauro Bianchi Fisioterapista",
-      en: "Mauro Bianchi Fisioterapista"
-    },
-    description: {
-      it: "Progetto di sito web vetrina per un fisioterapista, completo di CV ed elenco di terapie offerte",
-      en: "Showcase website project for a physiotherapist, complete with CV and list of therapies offered"
-    },
-    img: "/project_banners/banner-bianchi.png",
-    alt: "progetto di sito web Mauro Bianchi Fisioterapista",
-    url: "https://maurobianchi.netlify.app/",
-    preview: true,
-    repo_visibility: false
   },
   {
     classes: 'featured',
@@ -142,17 +127,34 @@ export const projects: Project[] = [
   {
     classes: 'featured website',
     title: {
-      it: "Energym Centro Fitness",
-      en: "Energym Centro Fitness"
+      it: "Save the Shark",
+      en: "Save the Shark"
     },
     description: {
-      it: "Progetto di sito web vetrina monopagina per una palestra che offre varie attività",
-      en: "One-page showcase website design for a gym offering various activities"
+      it: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
+      en: "Website for a no-profit organisation protecting sharks and all sea life in general"
     },
-    img: "/project_banners/banner-energym.png",
-    alt: "Progetto di sito web palestra Energym",
-    url: "https://energymfit.netlify.app/",
-    readme: "https://github.com/elena563/energym",
+    img: "/project_banners/banner-savetheshark.png",
+    alt: "Progetto di sito web Save the Shark",
+    url: "https://savetheshark.netlify.app/",
+    readme: "https://github.com/elena563/save_the_shark",
+    preview: true,
+    repo_visibility: true,
+    badges: ["Hugo", "Stripe", "Expressjs"]
+  },
+  {
+    classes: 'featured website',
+    title: {
+      it: "Mauro Bianchi Fisioterapista",
+      en: "Mauro Bianchi Fisioterapista"
+    },
+    description: {
+      it: "Progetto di landing page per un fisioterapista, completo di CV ed elenco di terapie offerte",
+      en: "Landing page project for a physiotherapist, complete with CV and list of therapies offered"
+    },
+    img: "/project_banners/banner-bianchi.png",
+    alt: "progetto di sito web Mauro Bianchi Fisioterapista",
+    url: "https://maurobianchi.netlify.app/",
     preview: true,
     repo_visibility: false
   },
@@ -199,14 +201,15 @@ export const projects: Project[] = [
       en: "Autofficina Martelli"
     },
     description: {
-      it: "Progetto di sito web vetrina monopagina in design moderno per un'officina di riparazione auto storica",
-      en: "One-page showcase website project in a modern design for an historical car repair garage"
+      it: "Progetto di landing page in design moderno per un'officina di riparazione auto storica",
+      en: "Landing page project in a modern design for an historical car repair garage"
     },
     img: "/project_banners/banner-autofficina.png",
     alt: "autofficina martelli sito web vetrina frontend",
     url: "https://autofficinamartelli.netlify.app/",
     preview: true,
-    repo_visibility: false
+    repo_visibility: false,
+    badges: ["Web Design"]
   },
   {
     classes: 'featured webapp',
@@ -229,20 +232,19 @@ export const projects: Project[] = [
   {
     classes: 'featured website',
     title: {
-      it: "Save the Shark",
-      en: "Save the Shark"
+      it: "Energym Centro Fitness",
+      en: "Energym Centro Fitness"
     },
     description: {
-      it: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
-      en: "Website for a no-profit organisation protecting sharks and all sea life in general"
+      it: "Progetto di landing page per una palestra che offre varie attività",
+      en: "Landing page project for a gym offering various activities"
     },
-    img: "/project_banners/banner-savetheshark.png",
-    alt: "Progetto di sito web Save the Shark",
-    url: "https://savetheshark.netlify.app/",
-    readme: "https://github.com/elena563/save_the_shark",
-    preview: false,
-    repo_visibility: true,
-    badges: ["Hugo", "Stripe", "Expressjs", "under maintenance"]
+    img: "/project_banners/banner-energym.png",
+    alt: "Progetto di sito web palestra Energym",
+    url: "https://energymfit.netlify.app/",
+    readme: "https://github.com/elena563/energym",
+    preview: true,
+    repo_visibility: false
   },
   {
     classes: 'website hidden',
