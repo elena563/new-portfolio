@@ -52,7 +52,7 @@ export const projects: Project[] = [
     readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
     preview: true,
     repo_visibility: false,
-    badges: ["Nextjs", "MongoDB", "Javascript"]
+    badges: ["Nextjs", "MongoDB", "Javascript", "Web Design"]
   },
   {
     classes: 'featured website',
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     url: "https://nobani.it/",
     preview: true,
     repo_visibility: false,
-    badges: ["Astrojs"]
+    badges: ["Astrojs", "Web Design"]
   },
   {
     classes: 'featured',
@@ -143,22 +143,6 @@ export const projects: Project[] = [
     badges: ["Hugo", "Stripe", "Expressjs"]
   },
   {
-    classes: 'featured website',
-    title: {
-      it: "Mauro Bianchi Fisioterapista",
-      en: "Mauro Bianchi Fisioterapista"
-    },
-    description: {
-      it: "Progetto di landing page per un fisioterapista, completo di CV ed elenco di terapie offerte",
-      en: "Landing page project for a physiotherapist, complete with CV and list of therapies offered"
-    },
-    img: "/project_banners/banner-bianchi.png",
-    alt: "progetto di sito web Mauro Bianchi Fisioterapista",
-    url: "https://maurobianchi.netlify.app/",
-    preview: true,
-    repo_visibility: false
-  },
-  {
     classes: 'featured webapp',
     title: {
       it: "MarketMint Dashboard Criptovalute",
@@ -192,7 +176,7 @@ export const projects: Project[] = [
     readme: "https://github.com/elena563/hotel_sogno_in_maremma",
     preview: true,
     repo_visibility: true,
-    badges: ["Javascript"]
+    badges: ["Javascript", "Web Design"],
   },
   {
     classes: 'website',
@@ -228,40 +212,5 @@ export const projects: Project[] = [
     preview: true,
     repo_visibility: true,
     badges: ["Python", "Streamlit", "AI", "Langchain"]
-  },
-  {
-    classes: 'featured website',
-    title: {
-      it: "Energym Centro Fitness",
-      en: "Energym Centro Fitness"
-    },
-    description: {
-      it: "Progetto di landing page per una palestra che offre varie attività",
-      en: "Landing page project for a gym offering various activities"
-    },
-    img: "/project_banners/banner-energym.png",
-    alt: "Progetto di sito web palestra Energym",
-    url: "https://energymfit.netlify.app/",
-    readme: "https://github.com/elena563/energym",
-    preview: true,
-    repo_visibility: false
-  },
-  {
-    classes: 'website hidden',
-    title: {
-      it: "SB00 Reseller Store",
-      en: "SB00 Reseller Store"
-    },
-    description: {
-      it: "Frontend di un sito e-commerce per un rivenditore di sneakers e abbigliamento",
-      en: "Frontend of an e-commerce site for a sneakers and clothes reseller"
-    },
-    img: "/project_banners/banner-sb00.png",
-    alt: "Progetto di sito web SB00 Reseller Store",
-    url: "https://sb00.netlify.app/",
-    readme: "https://github.com/elena563/sb00",
-    preview: true,
-    repo_visibility: true,
-    badges: ["Javascript"]
   }
 ];
