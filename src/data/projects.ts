@@ -179,23 +179,6 @@ export const projects: Project[] = [
     badges: ["Javascript", "Web Design"],
   },
   {
-    classes: 'website',
-    title: {
-      it: "Autofficina Martelli",
-      en: "Autofficina Martelli"
-    },
-    description: {
-      it: "Progetto di landing page in design moderno per un'officina di riparazione auto storica",
-      en: "Landing page project in a modern design for an historical car repair garage"
-    },
-    img: "/project_banners/banner-autofficina.png",
-    alt: "autofficina martelli sito web vetrina frontend",
-    url: "https://autofficinamartelli.netlify.app/",
-    preview: true,
-    repo_visibility: false,
-    badges: ["Web Design"]
-  },
-  {
     classes: 'featured webapp',
     title: {
       it: "Hashtag Generator",

@@ -1,6 +1,6 @@
 # Elena Zen's Personal Portfolio 💻
 
-Welcome to my personal portfolio! I am Elena, an aspirant web developer and data analyst. In this digital dashboard, you'll find some information about me, a collection of my projects and skills in the fields of web development. 
+Welcome to my personal portfolio! I am Elena, a full-stack web developer passionate about data and AI. In this digital dashboard, you'll find some information about me, a collection of my projects and skills in the fields of web development. 
 
 Website sections:
 - Header with responsive navigation menu
@@ -15,9 +15,9 @@ Website sections:
   
 Built with:  
   
-[![Astro](https://img.shields.io/badge/Astro-bc52ee?style=flat&logo=astro&logoColor=white)](https://www.python.org/) 
-[![CSS](https://img.shields.io/badge/CSS3-663399?style=flat&logo=css&logoColor=white)](https://www.python.org/) 
-[![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat&logo=javascript&logoColor=323330)](https://www.python.org/)
+![Astro](https://img.shields.io/badge/Astro-bc52ee?style=flat&logo=astro&logoColor=white) 
+![CSS](https://img.shields.io/badge/CSS3-663399?style=flat&logo=css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 ## User Interface Preview
 
@@ -33,10 +33,20 @@ Explore the user interface online by visiting [my website](https://elenazen.it/)
 ## Key Projects
 Here there are the technologies used in my projects. You can find a more detailed description of each project in the readme file of the proper folder/repo.
 
-### 📊 StatPilot
+### 🍳 MamaChef
+Web application for recipe sharing and meal planning - Final project for CS50w course
+Django - TailwindCSS - Python - JavaScript - NLTK - Spacy
+https://mamachef.alwaysdata.net
+
+### 📈 StatPilot
 Web application for data analysis, machine learning and explainable AI - Final project for CS50x course  
-HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP - Figma  
+HTML - CSS - Jinja2 - Flask - Python - Pandas - Scikit-learn - Matplotlib - SHAP  
 https://statpilot.onrender.com/
+
+### 📊 WordViz
+Python library for visualization of word embeddings
+Python - Gensim - Matplotlib - Seaborn - Plotly - Numpy
+https://pypi.org/project/wordviz/
 
 ### 📸 Blacklisted M3dia
 Portfolio website with dynamic carousel pages and custom admin panel  
@@ -53,35 +63,15 @@ Web application for music listener classification based on a ML algorithm traine
 ReactJS - TailwindCSS - Recharts - Flask - Python - Pandas - Scikit-learn - Spotipy - ReccoBeats API  
 https://spotitype.vercel.app/
 
-### 👟 SB00 Sneakers Resell Store
-Frontend interface of a sneakers and streetwear e-commerce  
-HTML - CSS - JavaScript  
-"https://sb00.netlify.app/",
-
-### 🦴 Mauro Bianchi Fisioterapista
-Showcase website project for a physiotherapist, complete with CV and list of therapies offered  
-HTML - CSS  
-https://maurobianchi.netlify.app/
-
 ### 🛏️ Hotel Sogno in Maremma
 Frontend website interface for a 4 stars italian hotel with room price calculator  
 HTML - CSS - JavaScript  
 https://hotelsognoinmaremma.netlify.app/
 
-### 💪🏼 Energym
-One-page showcase website design for a gym offering various activities  
-HTML - CSS  
-https://energymfit.netlify.app/
-
 ### 🦈 Save the Shark
 Frontend website interface for a no profit association  
-HTML - CSS - Hugo  
+HTML - CSS - Hugo - Stripe
 https://savetheshark.netlify.app/
-
-### 🔧 Autofficina Martelli
-One-page showcase website project in a modern design for an historical car repair garage  
-HTML - CSS  
-https://autofficinamartelli.netlify.app/
 
 ### 🪙 MarketMint Dashboard
 Interactive dashboard for real-time cryptocurrency tracking  
@@ -100,7 +90,7 @@ Feel free to explore each project, learn more about my skills and capabilities, 
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.  
   
-If you have a suggestion that would make onw of my projects better, please fork the corresponding repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make one of my projects better, please fork the corresponding repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Find the Repository
