@@ -180,7 +180,7 @@ a.disabled:active {
 .hero{
     background-color: #c4a6ed;
     max-width: 1250px;
-    margin: 56px 8%;
+    margin: 28px 8%;
     padding: max(5%, 50px);
     display: flex;
     justify-content: center;
@@ -671,6 +671,41 @@ iconify-icon{
 .projtext{
     padding: 16px;
 }
+
+.numbers{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE5FA;
+    padding: 24px 60px;
+    border-radius: 20px;
+}
+
+.num span{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:#7F5BEB;
+    font-family: 'Coolvetica', sans-serif;
+    letter-spacing: 3px; 
+}
+
+.num p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .interests{
     margin-top: 28px;
     display: grid; 
