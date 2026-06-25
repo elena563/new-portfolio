@@ -1,5 +1,5 @@
 ---
-const { page } = Astro.props;
+const { page, t } = Astro.props;
 ---
 <header>
     <div class="navbar">
@@ -7,10 +7,10 @@ const { page } = Astro.props;
         <nav>
             <div id="menucont">
                 <ul id="menu">
-                    <span style="word-spacing: normal;"><a href="/#aboutme">Chi sono</a></span>
-                    <a href="/#services">Servizi</a>
-                    <a href="/portfolio">Portfolio</a>
-                    <a href="/#contacts">Contatti</a>
+                    <span style="word-spacing: normal;"><a href="/#aboutme">{t('nav.about')}</a></span>
+                    <a href="/#services">{t('nav.solutions')}</a>
+                    <a href="/portfolio">{t('nav.portfolio')}</a>
+                    <a href="/#contacts">{t('nav.contact')}</a>
                 </ul>
                 <a class="desktop" href={page === 'portfolio' ? '/en/portfolio' : page === 'privacy' ? '/en/privacy' : '/en'}><span class="icon-park--international desktop"></span></a>
             </div>

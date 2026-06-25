@@ -1,5 +1,5 @@
 ---
-import Header from '../../components/it/Header.astro';
+import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/it/Footer.astro';
 import ProjectCard from '../../components/it/ProjectCard.astro';
@@ -60,35 +60,33 @@ const reviews = [
 <Layout lang="it" 
 	title="Elena Zen Full-stack Web Developer" 
 	description="Elena Zen Full-stack Web Developer. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
-	<Header page="home"/>
+	<Header page="home" t={t}/>
 	<main>
 		<section style="margin-top: 3em; margin-bottom: 28px;">
 			<div class="hero">
 				<div class="text">
 					<div class="name">
 						<h2 class="intro" set:html={t('hero.title')} /></br>
-						<p>Aiuto le aziende a crescere combinando <strong>web design</strong> all'avanguardia e <strong> insights basati sui dati</strong>. 
-						Creo siti web coinvolgenti che offrono un'<strong>esperienza utente</strong> senza interruzioni, e utilizzo le analisi per guidare <strong> decisioni smart</strong>,
-						aiutando così <strong>il tuo brand</strong> a progredire nel mondo digitale</p>
+						<p set:html={t('hero.subtitle')} />
 					</div>
 					<div class="btncont">
-						<a href="#contacts" rel="noopener noreferrer" class="btn violet">Contattami</a>
-						<a href="#projects" rel="noopener noreferrer" class="readme">Guarda i miei progetti</a>
+						<a href="#contacts" rel="noopener noreferrer" class="btn violet" set:html={t('hero.cta1')}></a>
+						<a href="#projects" rel="noopener noreferrer" class="readme" set:html={t('hero.cta2')}></a>
 					</div>
 				</div>
 			</div>
 			<div class="numbers">
 				<div class="num">
 					<span>6+</span>
-					<p>Progetti sviluppati</p>
+					<p set:html={t('numbers.1')} />
 				</div>
 				<div class="num">
 					<span>14</span>
-					<p>Clienti supportati</p>
+					<p set:html={t('numbers.2')} />
 				</div>
 				<div class="num">
 					<span>2</span>
-					<p>Anni di esperienza</p>
+					<p set:html={t('numbers.3')} />
 				</div>
 			</div>
 		</section>
@@ -127,7 +125,7 @@ const reviews = [
 		</div>
 		<!--servizi-->
 		<section id="services">
-			<h2 class="me">Come posso aiutarti</h2>
+			<h2 class="me" set:html={t('solutions.title')}></h2>
 			<div class="swiper mySwiper1">
 				<ul class="list swiper-wrapper">
 					<li class="swiper-slide"><div class="product">
@@ -161,12 +159,13 @@ const reviews = [
 		</section>
 		<!--portfolio-->
 		<section id="projects">
-			<h2>Case Study</h2>
+			<h2 set:html={t('case-studies.title')}></h2>
+			<p set:html={t('case-studies.text')} />
 				<div class="grid-container">
 					{projects.map(p => <ProjectCard {...p} />)}
 				</div>
 				</br>
-			<div class="container"><a href="/portfolio" rel="noopener noreferrer" class="btn violet">Vedi di più!</a></div>
+			<div class="container"><a href="/portfolio" rel="noopener noreferrer" class="btn violet" set:html={t('case-studies.cta')}></a></div>
 		</section>
 		<div class="reviews">
             <h2 class="textcenter">Dicono di me</h2>

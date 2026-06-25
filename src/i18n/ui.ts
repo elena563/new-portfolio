@@ -15,9 +15,9 @@ export const ui = {
     'home.meta-description': '',
 
     'hero.title': 'Dal concept al <span>software</span>',
-    'hero.subtitle': '',
-    'hero.cta1': '',
-    'hero.cta2': '',
+    'hero.subtitle': 'Aiuto startup, professionisti e aziende a progettare e sviluppare <strong>prodotti digitali</strong> utilizzando tecnologie moderne e un approccio full-stack.',
+    'hero.cta1': 'Parliamo del tuo progetto',
+    'hero.cta2': 'Scopri i miei lavori',
     'numbers.1': 'Progetti sviluppati',
     'numbers.2': 'Clienti supportati',
     'numbers.3': 'Anni di esperienza',
@@ -40,10 +40,10 @@ export const ui = {
     'solutions.3.text': '',
 
     'case-studies.title': 'Case Study',
-    'case-studies.text': '',
-    'case-studies.cta': '',
+    'case-studies.text': 'Una selezione di progetti su cui ho lavorato, alcuni più recenti, altri evolutisi insieme a me. Ogni lavoro nasce da esigenze diverse, ma con un obiettivo comune: trasformare idee e requisiti in soluzioni digitali funzionali e facili da utilizzare.<br><br>',
+    'case-studies.cta': 'Scopri di più',
 
-    'reviews.title': '',
+    'reviews.title': 'Dicono di me',
 
     'contact.title': '',
     'contact.text': '',
@@ -65,9 +65,9 @@ export const ui = {
     'home.meta-description': '',
 
     'hero.title': 'From concept to <span>software</span>',
-    'hero.subtitle': '',
-    'hero.cta1': '',
-    'hero.cta2': '',
+    'hero.subtitle': 'I help startups, professionals, and companies design and develop <strong>digital products</strong> using modern technologies and a full-stack approach.',
+    'hero.cta1': 'Let\'s talk about your project',
+    'hero.cta2': 'Discover my works',
     'numbers.1': 'Projects developed',
     'numbers.2': 'Clients supported',
     'numbers.3': 'Years of experience',
@@ -90,10 +90,10 @@ export const ui = {
     'solutions.3.text': '',
 
     'case-studies.title': 'Case Studies',
-    'case-studies.text': '',
-    'case-studies.cta': '',
+    'case-studies.text': 'A selection of projects I\'ve worked on, some more recent, others that have evolved alongside me. Each project stems from different needs, but with a common goal: to transform ideas and requirements into functional, easy-to-use digital solutions.<br><br>',
+    'case-studies.cta': 'Discover more',
 
-    'reviews.title': '',
+    'reviews.title': 'What they say about me',
 
     'contact.title': '',
     'contact.text': '',
