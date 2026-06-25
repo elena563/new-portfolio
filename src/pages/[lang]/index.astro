@@ -99,41 +99,7 @@ const reviews = [
 					<h2 style="text-align: left;">{t('about.title')}</h2>
 					<h1>full-stack web developer</h1>
 					<div class="about-text">
-						<p>Sono una web developer studentessa di Informatica a Milano. Mi occupo di sviluppo web e applicazioni intelligenti, unendo design curato, funzionalità e dati.</p></br>
-						<p>Progetto e sviluppo <strong>siti web personalizzati</strong> con Next.js o Astro.js, offrendo anche supporto su piattaforme come WordPress, Shopify e Squarespace.</p>
-						<p>Sviluppo <strong>web app</strong> in React + Python (Django/FastAPI), spesso basate su funzionalità di <strong>data science, AI o NLP</strong>.</p>
-						
-					</br>
-						<p>Al momento aiuto freelance e piccoli brand a comunicare meglio online, con siti web curati e funzionali, e sono sempre alla ricerca di nuove sfide che mi permettano di imparare, sperimentare e creare qualcosa di utile.
-						</br>Il mio approccio è semplice e orientato al risultato: <span class="approach">ascolto</span>, <span class="approach">progetto</span>, <span class="approach">risolvo</span>.
-						</p>
-						<h4 style="margin-top: 1.5em;">I miei interessi</h4>
-						<div class="interests">
-							<div>
-							<img src="immagini/ai-icon.svg" alt="AI icon" height="28">
-							<p>AI</p>
-							</div>
-							<div>
-							<img src="immagini/coding.svg" alt="coding icon" height="30">
-							<p>Coding</p>
-							</div>
-							<div>
-							<img src="immagini/binoculars-icon.svg" alt="mistero icon" height="30">
-							<p>Mistero</p>
-							</div>
-							<div>
-							<img src="immagini/book-icon.svg" alt="libri icon" height="30">
-							<p>Libri</p>
-							</div>
-							<div>
-							<img src="immagini/pen-icon.svg" alt="design icon" height="30">
-							<p>Design</p>
-							</div>
-							<div>
-							<img src="immagini/gym-icon.svg" alt="fitness icon" height="30">
-							<p>Fitness</p>
-							</div>
-						</div>
+						<slot set:html={t('about.text')} />
 					</div>
 				</div>
 				<img src="/immagini/elena-web.jpg" alt="Elena web developer in formal clothing" />

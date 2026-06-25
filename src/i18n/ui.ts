@@ -12,6 +12,8 @@ export const ui = {
     'nav.portfolio': 'Portfolio',
     'nav.contact': 'Contatti',
 
+    'home.meta-description': '',
+
     'hero.title': 'Dal concept al <span>software</span>',
     'hero.subtitle': '',
     'hero.cta1': '',
@@ -21,7 +23,9 @@ export const ui = {
     'numbers.3': 'Anni di esperienza',
 
     'about.title': 'Ciao! Sono Elena',
-    'about.text': '',
+    'about.text': `<p>Sono una sviluppatrice e studentessa di Informatica con una laurea in Statistica, con base a Milano. Mi occupo di sviluppo web e applicazioni digitali, combinando esperienza utente, funzionalità e dati.</p><br>
+    <p>Progetto e sviluppo <strong>applicazioni e siti web moderni</strong> utilizzando tecnologie come React, Next.js, TypeScript e Python.<br> Il mio percorso tra Statistica e Informatica mi ha portata a unire pensiero analitico e sviluppo software, con un interesse crescente per i dati e le applicazioni dell'intelligenza artificiale.</p><br>
+    <p>Mi piace seguire l'intero processo di sviluppo: <span class="approach">comprendere</span> un problema, <span class="approach">progettare</span> una soluzione e <span class="approach">trasformarla</span> in qualcosa di concreto, utile e utilizzabile.</p>`,
 
     'solutions.title': 'Come posso aiutarti',
     'solutions.text': '',
@@ -40,12 +44,25 @@ export const ui = {
     'case-studies.cta': '',
 
     'reviews.title': '',
+
+    'contact.title': '',
+    'contact.text': '',
+    'contact.form.name': '',
+    'contact.form.email': '',
+    'contact.form.message': '',
+    'contact.form.submit': '',
+
+    'footer.contacts.title': 'Contatti',
+    'footer.position': 'Milano - Italia',
+    'footer.social': 'Trovami su',
   },
   en: {
-    'nav.about': 'About us',
+    'nav.about': 'About me',
     'nav.solutions': 'Solutions',
     'nav.portfolio': 'Portfolio',
     'nav.contact': 'Contact',
+
+    'home.meta-description': '',
 
     'hero.title': 'From concept to <span>software</span>',
     'hero.subtitle': '',
@@ -56,7 +73,9 @@ export const ui = {
     'numbers.3': 'Years of experience',
 
     'about.title': 'Hi there! This is Elena',
-    'about.text': '',
+    'about.text': `<p>I'm a developer and Computer Science student with a degree in Statistics, based in Milan. I work on web and digital applications, combining user experience, functionality, and data.</p><br>
+    <p>I design and develop <strong>modern applications and websites</strong> using technologies such as React, Next.js, TypeScript, and Python. <br> My journey between Statistics and Computer Science has led me to combine analytical thinking and software development, with a growing interest in data and artificial intelligence applications.</p><br>
+    <p>I enjoy following the entire development process: <span class="approach">understanding</span> a problem, <span class="approach">designing</span> a solution, and <span class="approach">transforming it</span> into something concrete, useful, and usable.</p>`,
 
     'solutions.title': 'How I can help you',
     'solutions.text': '',
@@ -75,6 +94,17 @@ export const ui = {
     'case-studies.cta': '',
 
     'reviews.title': '',
+
+    'contact.title': '',
+    'contact.text': '',
+    'contact.form.name': '',
+    'contact.form.email': '',
+    'contact.form.message': '',
+    'contact.form.submit': '',
+
+    'footer.contacts.title': 'Contacts',
+    'footer.position': 'Milan - Italy',
+    'footer.social': 'Find me on',
   },
 } as const;
 
