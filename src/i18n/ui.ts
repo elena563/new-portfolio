@@ -26,6 +26,9 @@ export const ui = {
     'about.text': `<p>Sono una sviluppatrice e studentessa di Informatica con una laurea in Statistica, con base a Milano. Mi occupo di sviluppo web e applicazioni digitali, combinando esperienza utente, funzionalità e dati.</p><br>
     <p>Progetto e sviluppo <strong>applicazioni e siti web moderni</strong> utilizzando tecnologie come React, Next.js, TypeScript e Python.<br> Il mio percorso tra Statistica e Informatica mi ha portata a unire pensiero analitico e sviluppo software, con un interesse crescente per i dati e le applicazioni dell'intelligenza artificiale.</p><br>
     <p>Mi piace seguire l'intero processo di sviluppo: <span class="approach">comprendere</span> un problema, <span class="approach">progettare</span> una soluzione e <span class="approach">trasformarla</span> in qualcosa di concreto, utile e utilizzabile.</p>`,
+    'about.swdev': 'Sviluppo Software',
+    'about.ai': 'Intelligenza Artificiale',
+    'about.areas': 'Software, dati e AI sono le aree in cui sto costruendo il mio percorso professionale.',
 
     'solutions.title': 'Come posso aiutarti',
     'solutions.text': '',
@@ -76,6 +79,9 @@ export const ui = {
     'about.text': `<p>I'm a developer and Computer Science student with a degree in Statistics, based in Milan. I work on web and digital applications, combining user experience, functionality, and data.</p><br>
     <p>I design and develop <strong>modern applications and websites</strong> using technologies such as React, Next.js, TypeScript, and Python. <br> My journey between Statistics and Computer Science has led me to combine analytical thinking and software development, with a growing interest in data and artificial intelligence applications.</p><br>
     <p>I enjoy following the entire development process: <span class="approach">understanding</span> a problem, <span class="approach">designing</span> a solution, and <span class="approach">transforming it</span> into something concrete, useful, and usable.</p>`,
+    'about.swdev': 'Software Development',
+    'about.ai': 'Artificial Intelligence',
+    'about.areas': 'Software, data, and AI are the areas in which I am building my professional path.',
 
     'solutions.title': 'How I can help you',
     'solutions.text': '',

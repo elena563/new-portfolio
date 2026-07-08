@@ -14,14 +14,14 @@ const { classes, title, description, img, alt, url, readme, preview, repo_visibi
     </div>}
     <p>{description}</p>
   </div>
-  <div class="buttons">
+  <div class="btncontfull">
     {preview && (
     <a href={url || "#"}
         class={`btn orange ${!url ? "disabled" : ""}`} 
         target="_blank" rel="noopener">Scopri</a>
     )}
     {repo_visibility && (
-    <a href={readme} target="_blank" rel="noopener" class="readme">
+    <a href={readme} target="_blank" rel="noopener" class="btn2">
         <i class="fa-brands fa-github fa-sm"></i> 
         <span>GitHub</span>
     </a>

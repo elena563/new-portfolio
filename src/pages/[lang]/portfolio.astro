@@ -1,9 +1,17 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/it/Footer.astro';
-import ProjectCard from '../components/it/ProjectCard.astro';
-import { projects as projectsData } from '../data/projects';
+import Header from '../../components/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/it/Footer.astro';
+import ProjectCard from '../../components/it/ProjectCard.astro';
+import { projects as projectsData } from '../../data/projects';
+import { languages, makeT } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = makeT(lang);
 
 const projects = projectsData.map(p => ({
   classes: p.classes,
@@ -23,7 +31,7 @@ const projects = projectsData.map(p => ({
 <Layout lang="it" 
 	title="Elena Zen Web Developer e Data Analyst" 
 	description="Elena Zen Full-stack Web Developer & Data Analyst. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
-	<Header page="portfolio"/>
+	<Header page="portfolio" t={t} lang={lang}/>
 
     <section id="portfolio">
             <h2>Il mio Portfolio</h2>
@@ -49,7 +57,7 @@ const projects = projectsData.map(p => ({
                     <p>NOTONLYDESK, o semplicemente NOD, è una startup innovativa che fornisce una piattaforma flessibile per accedere a una rete di spazi di coworking in tutta Italia e in Europa.<br><br> 
                       Attualmente collaboro con loro, supportando il CTO durante una fase chiave della loro crescita. Il mio ruolo prevede la gestione sia dello sviluppo frontend che backend, la creazione di nuove pagine, il contributo al nuovo pannello di amministrazione e l'implementazione di funzionalità aggiuntive.</p>
                   </div>
-                  <div class="btncontfull" style="justify-content: flex-start">
+                  <div class="buttons" style="justify-content: flex-start">
                     <a style="width: min(50%, 300px)" href="https://www.notonlydesk.com/it/"
                     class="btn orange "
                     target="_blank" rel="noopener">Scopri</a>

@@ -1,4 +1,8 @@
-<div class="foot">
+---
+const { page, t, lang } = Astro.props;
+---
+
+<footer>
     <div class="ftcont">
         <div>
             <div class="logo">
@@ -37,5 +41,5 @@
     </div>
     </div>
 </div>
-</div>
-<p id="cop">© 2025 Elena Zen All Rights Reserved  <a href="/privacy">Privacy Policy - Cookie Policy</a></p>
+</footer>
+<p id="cop">© 2025 Elena Zen All Rights Reserved  <a href={`/${lang}/privacy`}>Privacy Policy - Cookie Policy</a></p>

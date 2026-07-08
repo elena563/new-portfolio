@@ -1,5 +1,5 @@
 ---
-const { page, t } = Astro.props;
+const { page, t, lang } = Astro.props;
 ---
 <header>
     <div class="navbar">
@@ -9,10 +9,10 @@ const { page, t } = Astro.props;
                 <ul id="menu">
                     <span style="word-spacing: normal;"><a href="/#aboutme">{t('nav.about')}</a></span>
                     <a href="/#services">{t('nav.solutions')}</a>
-                    <a href="/portfolio">{t('nav.portfolio')}</a>
+                    <a href={`/${lang}/portfolio`}>{t('nav.portfolio')}</a>
                     <a href="/#contacts">{t('nav.contact')}</a>
                 </ul>
-                <a class="desktop" href={page === 'portfolio' ? '/en/portfolio' : page === 'privacy' ? '/en/privacy' : '/en'}><span class="icon-park--international desktop"></span></a>
+                <a class="desktop" href={page === 'portfolio' ? `/${lang}/portfolio` : page === 'privacy' ? `/${lang}/privacy` : `/${lang}`}><span class="icon-park--international desktop"></span></a>
             </div>
             <div class="mobilebtn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <label class="ham" for="ham">
@@ -21,7 +21,7 @@ const { page, t } = Astro.props;
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </label>
-                <a href={page === 'portfolio' ? '/en/portfolio' : '/en'} class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                <a href={page === 'portfolio' ? `/${lang}/portfolio` : `/${lang}`} class="mobile"><span class="icon-park--international mobile fix"></span></a>
             </div>
         </nav>
     </div>
