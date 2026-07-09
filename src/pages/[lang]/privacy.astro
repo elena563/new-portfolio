@@ -12,9 +12,9 @@ const { lang } = Astro.params;
 const t = makeT(lang);
 ---
 
-<Layout lang="it" 
-	title="Elena Zen Web Developer e Data Analyst" 
-	description="Elena Zen Full-stack Web Developer & Data Analyst. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
+<Layout lang={lang}
+	title="Privacy e Cookie Policy | Elena Zen · Full-Stack Web Developer" 
+	description="Informativa sulla privacy di Elena Zen relativa al trattamento dei dati personali, ai cookie e ai diritti degli utenti ai sensi del GDPR.">
 	<Header page="privacy" t={t} lang={lang}/>
 	<section class="policies">
 		<div id="privacy-policy">

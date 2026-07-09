@@ -28,15 +28,15 @@ const projects = projectsData.map(p => ({
 
 ---
 
-<Layout lang="it" 
-	title="Elena Zen Web Developer e Data Analyst" 
-	description="Elena Zen Full-stack Web Developer & Data Analyst. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
+<Layout lang={lang} 
+	title="Portfolio | Elena Zen · Full-Stack Web Developer" 
+	description="Portfolio di Elena Zen | Scopri una selezione di progetti tra applicazioni web, prodotti digitali e sviluppo full-stack realizzati con tecnologie moderne.">
 	<Header page="portfolio" t={t} lang={lang}/>
 
     <section id="portfolio">
       <div>
         <h2 class="textcenter" set:html={t('portfolio.title')}></h2>
-        <p set:html={t('portfolio.text')}></p></br></br>
+        <p set:html={t('portfolio.text')}></p><br>
         <div class="tabs">
             <button id="featured-btn" role="tab" class="tab active">{t('tab.featured')}</button>
             <button id="webapp-btn" role="tab" class="tab">{t('tab.webapps')}</button>
@@ -65,6 +65,12 @@ const projects = projectsData.map(p => ({
               </div>
             </div>
             {projects.map(p => <ProjectCard t={t} {...p} />)}
+        </div>
+        <div class="portfolio-final center">
+          <p set:html={t('portfolio.final')}></p>
+          <div class="btncont">
+            <a class="btn violet" href={`/${lang}#contacts`} set:html={t('portfolio.cta1')}></a>
+            <a class="btn2" href={`/${lang}#services`} set:html={t('portfolio.cta2')}></a>
         </div>
       </div>
     </section>

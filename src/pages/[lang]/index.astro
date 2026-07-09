@@ -57,9 +57,9 @@ const reviews = [
 ]
 ---
 
-<Layout lang="it" 
+<Layout lang={lang}
 	title="Elena Zen Full-stack Web Developer" 
-	description="Elena Zen Full-stack Web Developer. Creo esperienze digitali intuitive e analizzo dati per soluzioni intelligenti. Scopri di più sul mio lavoro!">
+	description="Elena Zen Full-stack Web Developer | Sviluppo applicazioni web e prodotti digitali moderni, con un background in Statistica e uno sguardo rivolto all'AI">
 	<Header page="home" t={t} lang={lang}/>
 	<main>
 		<section style="margin: 3em 20px 28px 20px;">
@@ -75,7 +75,7 @@ const reviews = [
 					</div>
 				</div>
 			</div>
-			<div class="numbers">
+			<!-- <div class="numbers">
 				<div class="num">
 					<span>6+</span>
 					<p set:html={t('numbers.1')} />
@@ -88,7 +88,7 @@ const reviews = [
 					<span>2</span>
 					<p set:html={t('numbers.3')} />
 				</div>
-			</div>
+			</div>-->
 		</section>
 		<!--chi sono-->
 		<section id="aboutme">

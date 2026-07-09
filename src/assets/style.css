@@ -515,6 +515,10 @@ a.disabled:active {
     text-align: center;
     margin-top: var(--margin-xs);
 }
+.portfolio-final{
+    flex-direction: column;
+    margin-top: var(--margin-2xl);
+}
 
 /* responsivity classes, menu */
 .mobile{

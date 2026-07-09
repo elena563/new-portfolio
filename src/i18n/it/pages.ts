@@ -1,6 +1,11 @@
 export default{
     'portfolio.title': 'Il mio Portfolio',
-    'portfolio.text': 'Qui puoi trovare tutti i miei principali progetti, tra cui siti web, web app e lavori di altro tipo. Alcuni sono legati ad attività realmente esistenti, mentre altri sono strettamente progetti. Puoi liberamente esplorarne l\'interfaccia, e per alcuni, il codice sorgente è pubblico sul mio <a href="https://github.com/elena563" target="_blank" class="anchor">GitHub</a>.',
+    'portfolio.text': `<p>Una selezione di progetti che raccontano il mio percorso come Full-Stack Developer. Dallo sviluppo di siti web moderni alla realizzazione di applicazioni digitali, ogni progetto nasce dall'obiettivo di trasformare un'idea in una soluzione concreta, funzionale e curata nei dettagli.</p>
+                    <p>Attraverso questi lavori esploro lo sviluppo frontend e backend, sperimentando tecnologie moderne e un approccio orientato alla qualità del prodotto, all'esperienza utente e alla continua crescita delle mie competenze.</p>`,
+    'portfolio.final': `<p>Cerchi una sviluppatrice per il tuo prossimo progetto?</p>
+            <p>Whether it's a new web application, a modern website, or a technical collaboration, I'm always excited about new challenges.</p>`,
+    'portfolio.cta1': 'Contattami',
+    'portfolio.cta2': 'Esplora le mie Soluzioni',
     'tab.featured': 'In Evidenza',
     'tab.websites': 'Siti Vetrina',
     'tab.webapps': 'Web App',

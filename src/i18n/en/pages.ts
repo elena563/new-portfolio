@@ -1,6 +1,11 @@
 export default{
     'portfolio.title': 'My Portfolio',
-    'portfolio.text': '<p>Here you can find all my main projects, such as websites, web apps and other kind of works. Some of them are related to actually existing activites, while others are purely project-based. You can freely explore interfaces, and for some of them, source code is public on my <a href="https://github.com/elena563" target="_blank" class="anchor">GitHub</a>.</p>',
+    'portfolio.text': `<p>A selection of projects that showcase my journey as a Full-Stack Developer. From developing modern websites to creating digital applications, each project stems from the goal of transforming an idea into a concrete, functional, and meticulously crafted solution.</p>
+                    <p>Through these jobs, I explore front-end and back-end development, experimenting with modern technologies and an approach focused on product quality, user experience, and the continuous growth of my skills.</p>`,
+    'portfolio.final': `<p>Are you looking for a developer for your next project?</p>
+            <p>Whether it's a new web application, a modern website, or a technical collaboration, I'm always excited about new challenges.</p>`,
+    'portfolio.cta1': 'Contact me',
+    'portfolio.cta2': 'Explore my Solutions',
     'tab.featured': 'Featured',
     'tab.websites': 'Websites',
     'tab.webapps': 'Web Apps',
