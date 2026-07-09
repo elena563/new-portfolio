@@ -24,13 +24,13 @@ export default{
 		<p>Per maggiori informazioni sulla privacy di Google Analytics, visita: <a class="anchor" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>`,
     'cookies.text': `<p>Il sito utilizza cookie per migliorare la navigazione e per raccogliere dati statistici anonimi tramite Google Analytics.</p>
 
-		<h3>Tipologia di cookie utilizzati:</h3>
+		<h4>Tipologia di cookie utilizzati:</h4>
 		<ul>
 			<li>Cookie tecnici necessari per il funzionamento del sito</li>
 			<li>Cookie di profilazione anonimi per analisi statistiche (Google Analytics)</li>
 		</ul>
 
-		<h3>Gestione dei cookie:</h3>
+		<h4>Gestione dei cookie:</h4>
 		<p>Puoi scegliere di accettare o rifiutare i cookie tramite il banner che appare al primo accesso al sito. Il rifiuto dei cookie di profilazione non impedirà la navigazione, ma potrà limitare alcune funzionalità.</p>
 		<p>Per maggiori dettagli sui cookie utilizzati da Google Analytics e su come disabilitarli, visita: <a class="anchor" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" rel="noopener noreferrer">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a></p>`,
 }

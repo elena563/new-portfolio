@@ -55,12 +55,12 @@ const projects = projectsData.map(p => ({
                   <span class="badge seo">SEO</span>
                   <span class="badge javascript">JAVASCRIPT</span>
                 </div>
-                <p>{t('nod.text')}</p>
-              </div>
-              <div class="buttons" style="justify-content: flex-start">
+                <p set:html={t('nod.text')}></p>
+                <div class="buttons" style="justify-content: flex-start">
                 <a style="width: min(50%, 300px)" href="https://www.notonlydesk.com/it/"
                 class="btn orange "
                 target="_blank" rel="noopener">{t('project.discover')}</a>
+              </div>
               </div>
               </div>
             </div>

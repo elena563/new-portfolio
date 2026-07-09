@@ -33,7 +33,7 @@ export default{
     'solutions.2.text': `<p>Il tuo sito è datato o <strong>poco efficace</strong> e vorresti migliorarlo?</p> 
 						<p>Mi occupo del restyling completo, migliorando il design, la struttura e l'esperienza utente. Ottimizzo le performance, l'adattabilità ai dispositivi mobili e la visibilità sui motori di ricerca per aumentare i risultati reali.</p>`,
     'solutions.3.title': 'Supporto Tecnico per Startup e Aziende',
-    'solutions.3.subtitle': 'ttimizzazione e Innovazione per il Tuo Progetto Digitale',
+    'solutions.3.subtitle': 'Ottimizzazione e Innovazione per il Tuo Progetto Digitale',
     'solutions.3.text': `<p>Hai un business in crescita e cerchi un aiuto affidabile <strong>lato tecnico</strong>?</p> 
 						<p>Collaboro con realtà innovative offrendo competenze come frontend, backend Python e soluzioni AI. Mi occupo di migliorare infrastrutture, automatizzare flussi e supportare la migrazione verso tecnologie moderne.</p>`,
     'solutions.4.title': 'Analisi Statistica dei Dati di Business',

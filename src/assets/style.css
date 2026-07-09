@@ -80,6 +80,7 @@ body{
 
 p, a, ul, body{
     font-size: var(--size-normal);
+    overflow-wrap: break-word;
 }
 h1, h2, h3, h4{
     font-family: var(--font-header);
@@ -113,7 +114,6 @@ header{
 header a{
     color: var(--bg-color);
     text-decoration: none;
-    padding: 5px 8px;
     border-radius: var(--radius-xs);
 }
 ul span{
@@ -288,7 +288,9 @@ section > div{
 .policies{
     list-style-position: inside;
 }
-
+.policies h4{
+    margin: var(--margin-sm) 0;
+}
 
 /* buttons */
 .btn{
@@ -311,16 +313,20 @@ a.disabled:active {
 }
 .violet{
     background-color: var(--accent-violet);
+    border: solid var(--accent-violet) 1px;
 }
 .violet:hover{
     background-color: var(--accent-violet-dark);
+    border: solid var(--accent-violet-dark) 1px;
 }
 .orange{
     background-color: var(--accent-orange);
+    border: solid var(--accent-orange) 1px;
     margin-bottom: var(--margin-lg);    
 }
 .orange:hover{
     background-color: var(--accent-orange-dark);
+    border: solid var(--accent-orange-dark) 1px;
 }
 .btncont{
     display: flex;
