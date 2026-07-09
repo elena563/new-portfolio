@@ -224,6 +224,7 @@ iconify-icon{
     display: flex;
     align-items: center;
     max-width: 200px;
+    margin-top: var(--margin-xs);
 }
 .icon-cont{
     display: flex;
@@ -396,6 +397,7 @@ a.disabled:active {
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
     justify-content: space-between;
+    margin: var(--margin-md) 0;
 }
 .tabs{
     margin-bottom: 32px;

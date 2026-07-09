@@ -1,7 +1,7 @@
 ---
 import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
-import Footer from '../../components/it/Footer.astro';
+import Footer from '../../components/Footer.astro';
 import { languages, makeT } from '../../i18n/ui';
 
 export function getStaticPaths() {
@@ -18,30 +18,16 @@ const t = makeT(lang);
 	<Header page="privacy" t={t} lang={lang}/>
 	<section class="policies">
 		<div id="privacy-policy">
-		<h2>Privacy Policy</h2>
-		<p>Questo sito raccoglie dati tramite Google Analytics per analizzare l'utilizzo e migliorare l'esperienza utente. I dati raccolti sono anonimi e non identificano personalmente gli utenti.</p>
-		<p>Non raccogliamo altre informazioni personali attraverso il sito.</p>
-		<p>I dati raccolti da Google Analytics includono informazioni come indirizzo IP anonimizzato, tipo di browser, pagine visitate e durata della visita.</p>
-		<p>Puoi gestire le preferenze sui cookie tramite il banner presente sul sito.</p>
-		<p>Per maggiori informazioni sulla privacy di Google Analytics, visita: <a class="anchor" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+			<h2>Privacy Policy</h2>
+			<div set:html={t('privacy.text')}></div>
 		</div>
 		<hr />
 
 		<div id="cookie-policy">
-		<h2>Cookie Policy</h2>
-		<p>Il sito utilizza cookie per migliorare la navigazione e per raccogliere dati statistici anonimi tramite Google Analytics.</p>
-
-		<h3>Tipologia di cookie utilizzati:</h3>
-		<ul>
-			<li>Cookie tecnici necessari per il funzionamento del sito</li>
-			<li>Cookie di profilazione anonimi per analisi statistiche (Google Analytics)</li>
-		</ul>
-
-		<h3>Gestione dei cookie:</h3>
-		<p>Puoi scegliere di accettare o rifiutare i cookie tramite il banner che appare al primo accesso al sito. Il rifiuto dei cookie di profilazione non impedirà la navigazione, ma potrà limitare alcune funzionalità.</p>
-		<p>Per maggiori dettagli sui cookie utilizzati da Google Analytics e su come disabilitarli, visita: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" rel="noopener noreferrer">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a></p>
+			<h2>Cookie Policy</h2>
+			<div set:html={t('cookies.text')}></div>
 		</div>
 	</section>
 	</main>	
-	<footer id="contacts"><Footer /></footer>
+	<Footer t={t} lang={lang} />
 </Layout>

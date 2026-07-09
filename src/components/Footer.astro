@@ -1,4 +1,8 @@
-<div class="foot">
+---
+const { t, lang } = Astro.props;
+---
+
+<footer>
     <div class="ftcont">
         <div>
             <div class="logo">
@@ -7,10 +11,10 @@
         </div>
         <div class="ftsubcont">  
         <div>
-            <h4>Contacts</h4>
+            <h4>{t('footer.contacts')}</h4>
             <div class="item">
                 <i class="fa-solid fa-location-dot fa-lg" style="color: #f5f5fa;"></i>
-                <p>Milan - Italy</p>
+                <p>{t('footer.position')}</p>
             </div>
             <div class="item">
                 <i class="fa-solid fa-envelope fa-lg" style="color: #f5f5fa;"></i>
@@ -19,7 +23,7 @@
         
         </div>
         <div>
-        <h4 class="socialtt">Social Networks</h4>
+        <h4 class="socialtt">{t('footer.social')}</h4>
         <div id="social">
             <div class="icon-cont">
                 <a href="https://github.com/elena563" target="_blank">
@@ -37,5 +41,5 @@
     </div>
     </div>
 </div>
-</div>
-<p id="cop">© {new Date().getFullYear()} Elena Zen All Rights Reserved  <a href="/en/privacy">Privacy Policy - Cookie Policy</a></p>
+</footer>
+<p id="cop">© 2025 Elena Zen All Rights Reserved  <a href={`/${lang}/privacy`}>Privacy Policy - Cookie Policy</a></p>

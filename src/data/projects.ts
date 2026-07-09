@@ -146,7 +146,7 @@ export const projects: Project[] = [
     classes: 'featured webapp',
     title: {
       it: "MarketMint Dashboard Criptovalute",
-      en: "MarketMint Dashboard Criptovalute"
+      en: "MarketMint Dashboard Cryptocurrencies"
     },
     description: {
       it: "Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale",

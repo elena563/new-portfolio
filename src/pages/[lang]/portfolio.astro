@@ -1,8 +1,8 @@
 ---
 import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
-import Footer from '../../components/it/Footer.astro';
-import ProjectCard from '../../components/it/ProjectCard.astro';
+import Footer from '../../components/Footer.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
 import { projects as projectsData } from '../../data/projects';
 import { languages, makeT } from '../../i18n/ui';
 
@@ -15,8 +15,8 @@ const t = makeT(lang);
 
 const projects = projectsData.map(p => ({
   classes: p.classes,
-  title: p.title.it,
-  description: p.description.it,
+  title: p.title[lang],
+  description: p.description[lang],
   img: p.img,
   alt: p.alt,
   url: p.url,
@@ -34,39 +34,40 @@ const projects = projectsData.map(p => ({
 	<Header page="portfolio" t={t} lang={lang}/>
 
     <section id="portfolio">
-            <h2 class="textcenter">Il mio Portfolio</h2>
-            <p>Qui puoi trovare tutti i miei principali progetti, tra cui siti web, web app e lavori di altro tipo. Alcuni sono legati ad attività realmente esistenti, mentre altri sono strettamente progetti. Puoi liberamente esplorarne l'interfaccia, e per alcuni, il codice sorgente è pubblico sul mio <a href="https://github.com/elena563" target="_blank" class="anchor">GitHub</a>.</p></br></br>
-            <div class="tabs">
-                <button id="featured-btn" role="tab" class="tab active">In Evidenza</button>
-                <button id="webapp-btn" role="tab" class="tab">Web App</button>
-                <!--<button id="data-btn" role="tab" class="tab">Data & AI</button>--> 
-                <button id="website-btn" role="tab" class="tab">Siti Vetrina</button>
-            </div>
-            <div class="grid-container">
-                <div class="work contrib featured">
-                  <img src="/project_banners/banner-nod.png" alt='Piattaforma coworking NOTONLYDESK' loading="lazy"/>
-                  <div style="display:flex; flex-direction: column;">
-                  <div class="projtext">
-                    <h4>NOTONLYDESK</h4>
-                    <div class="badges">
-                      <span class="badge python">PYTHON</span>
-                      <span class="badge django">DJANGO</span>
-                      <span class="badge seo">SEO</span>
-                      <span class="badge javascript">JAVASCRIPT</span>
-                    </div>
-                    <p>NOTONLYDESK, o semplicemente NOD, è una startup innovativa che fornisce una piattaforma flessibile per accedere a una rete di spazi di coworking in tutta Italia e in Europa.<br><br> 
-                      Attualmente collaboro con loro, supportando il CTO durante una fase chiave della loro crescita. Il mio ruolo prevede la gestione sia dello sviluppo frontend che backend, la creazione di nuove pagine, il contributo al nuovo pannello di amministrazione e l'implementazione di funzionalità aggiuntive.</p>
-                  </div>
-                  <div class="buttons" style="justify-content: flex-start">
-                    <a style="width: min(50%, 300px)" href="https://www.notonlydesk.com/it/"
-                    class="btn orange "
-                    target="_blank" rel="noopener">Scopri</a>
-                  </div>
-                  </div>
+      <div>
+        <h2 class="textcenter" set:html={t('portfolio.title')}></h2>
+        <p set:html={t('portfolio.text')}></p></br></br>
+        <div class="tabs">
+            <button id="featured-btn" role="tab" class="tab active">{t('tab.featured')}</button>
+            <button id="webapp-btn" role="tab" class="tab">{t('tab.webapps')}</button>
+            <!--<button id="data-btn" role="tab" class="tab">{t('tab.data')}</button>--> 
+            <button id="website-btn" role="tab" class="tab">{t('tab.websites')}</button>
+        </div>
+        <div class="grid-container">
+            <div class="work contrib featured">
+              <img src="/project_banners/banner-nod.png" alt='Piattaforma coworking NOTONLYDESK' loading="lazy"/>
+              <div style="display:flex; flex-direction: column;">
+              <div class="projtext">
+                <h4>NOTONLYDESK</h4>
+                <div class="badges">
+                  <span class="badge python">PYTHON</span>
+                  <span class="badge django">DJANGO</span>
+                  <span class="badge seo">SEO</span>
+                  <span class="badge javascript">JAVASCRIPT</span>
                 </div>
-                {projects.map(p => <ProjectCard {...p} />)}
+                <p>{t('nod.text')}</p>
+              </div>
+              <div class="buttons" style="justify-content: flex-start">
+                <a style="width: min(50%, 300px)" href="https://www.notonlydesk.com/it/"
+                class="btn orange "
+                target="_blank" rel="noopener">{t('project.discover')}</a>
+              </div>
+              </div>
             </div>
+            {projects.map(p => <ProjectCard t={t} {...p} />)}
+        </div>
+      </div>
     </section>
 
-    <footer id="contacts"><Footer /></footer>
+    <Footer t={t} lang={lang} />
 </Layout>

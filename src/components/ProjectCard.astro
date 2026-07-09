@@ -1,16 +1,16 @@
 ---
-const { classes, title, description, img, alt, url, readme, preview, repo_visibility, badges } = Astro.props;
+const { t, classes, title, description, img, alt, url, readme, preview, repo_visibility, badges } = Astro.props;
 ---
 
 <div class={`work ${classes || ""}`}>
-  <img src={img} alt={alt} loading="lazy"/>
+  <img src={img} alt={alt} loading="lazy" />
   <div class="projtext">
     <h4>{title}</h4>
     {badges && badges.length > 0 &&
     <div class="badges">
-        {badges.map((tech: string) => (
-          <span class={`badge ${tech.toLowerCase().replace(/\s+/g, '-')}`}>{tech.toUpperCase()}</span>        
-        ))}
+      {badges.map((tech: string) => (
+        <span class={`badge ${tech.toLowerCase().replace(/\s+/g, '-')}`}>{tech.toUpperCase()}</span>        
+      ))}
     </div>}
     <p>{description}</p>
   </div>
@@ -18,7 +18,7 @@ const { classes, title, description, img, alt, url, readme, preview, repo_visibi
     {preview && (
     <a href={url || "#"}
         class={`btn orange ${!url ? "disabled" : ""}`} 
-        target="_blank" rel="noopener">Discover</a>
+        target="_blank" rel="noopener">{t('project.discover')}</a>
     )}
     {repo_visibility && (
     <a href={readme} target="_blank" rel="noopener" class="btn2">

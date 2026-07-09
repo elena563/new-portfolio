@@ -1,6 +1,13 @@
 ---
 const { page, t, lang } = Astro.props;
 const changeLang = lang === 'en' ? 'it' : 'en';
+const href =
+  page === 'portfolio'
+    ? `/${changeLang}/portfolio`
+    : page === 'privacy'
+      ? `/${changeLang}/privacy`
+      : `/${changeLang}`;
+console.log(href);
 ---
 <header>
     <div class="navbar">
@@ -8,12 +15,12 @@ const changeLang = lang === 'en' ? 'it' : 'en';
         <nav>
             <div id="menucont">
                 <ul id="menu">
-                    <span style="word-spacing: normal;"><a href="/#aboutme">{t('nav.about')}</a></span>
-                    <a href="/#services">{t('nav.solutions')}</a>
+                    <span style="word-spacing: normal;"><a href={`/${lang}#aboutme`}>{t('nav.about')}</a></span>
+                    <a href={`/${lang}#services`}>{t('nav.solutions')}</a>
                     <a href={`/${lang}/portfolio`}>{t('nav.portfolio')}</a>
-                    <a href="/#contacts">{t('nav.contact')}</a>
+                    <a href={`/${lang}#contacts`}>{t('nav.contact')}</a>
                 </ul>
-                <a class="desktop" href={page === 'portfolio' ? `/${changeLang}/portfolio` : page === 'privacy' ? `/${changeLang}/privacy` : `/${changeLang}`}><span class="icon-park--international desktop"></span></a>
+                <a class="desktop" href={href}><span class="icon-park--international desktop"></span></a>
             </div>
             <div class="mobilebtn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <label class="ham" for="ham">
@@ -22,7 +29,7 @@ const changeLang = lang === 'en' ? 'it' : 'en';
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </label>
-                <a href={page === 'portfolio' ? `/${changeLang}/portfolio` : page === 'privacy' ? `/${changeLang}/privacy` : `/${changeLang}`} class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                <a href={href} class="mobile"><span class="icon-park--international mobile fix"></span></a>
             </div>
         </nav>
     </div>
