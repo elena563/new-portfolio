@@ -209,6 +209,20 @@
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .ftsubcont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ftsubcont div{
+        text-align: center;
+    }
+    .item{
+        justify-content: center;
+    }
+    #cop{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -250,13 +264,6 @@
     }
     #menu{
         gap: 64px;
-    }
-    .ftsubcont{
-        flex-direction: column;
-        align-items: center;
-    }
-    .ftsubcont div{
-        text-align: center;
     }
     .navbar img{
         height: 3em;

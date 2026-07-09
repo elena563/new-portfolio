@@ -269,7 +269,7 @@ section > div{
     margin: 0 auto;
 }
 #aboutme, #portfolio, .footcont, .policies, #services, .reviews, #projects, footer{
-    padding: var(--margin-2xl) 2%;
+    padding: var(--margin-2xl) max(2%, 15px);
 }
 #aboutme{
     background-color: var(--violet-light);
