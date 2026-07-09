@@ -86,9 +86,9 @@ export const projects: Project[] = [
     alt: "statpilot web app",
     url: "https://spotitype.vercel.app/",
     readme: "https://github.com/elena563/spotitype",
-    preview: false,
+    preview: true,
     repo_visibility: true,
-    badges: ["Python", "Flask", "Machine Learning", "under maintenance"]
+    badges: ["Python", "Flask", "Machine Learning"]
   },
   {
     classes: 'featured website',

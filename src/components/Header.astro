@@ -1,5 +1,6 @@
 ---
 const { page, t, lang } = Astro.props;
+const changeLang = lang === 'en' ? 'it' : 'en';
 ---
 <header>
     <div class="navbar">
@@ -12,7 +13,7 @@ const { page, t, lang } = Astro.props;
                     <a href={`/${lang}/portfolio`}>{t('nav.portfolio')}</a>
                     <a href="/#contacts">{t('nav.contact')}</a>
                 </ul>
-                <a class="desktop" href={page === 'portfolio' ? `/${lang}/portfolio` : page === 'privacy' ? `/${lang}/privacy` : `/${lang}`}><span class="icon-park--international desktop"></span></a>
+                <a class="desktop" href={page === 'portfolio' ? `/${changeLang}/portfolio` : page === 'privacy' ? `/${changeLang}/privacy` : `/${changeLang}`}><span class="icon-park--international desktop"></span></a>
             </div>
             <div class="mobilebtn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <label class="ham" for="ham">
@@ -21,7 +22,7 @@ const { page, t, lang } = Astro.props;
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </label>
-                <a href={page === 'portfolio' ? `/${lang}/portfolio` : `/${lang}`} class="mobile"><span class="icon-park--international mobile fix"></span></a>
+                <a href={page === 'portfolio' ? `/${changeLang}/portfolio` : page === 'privacy' ? `/${changeLang}/privacy` : `/${changeLang}`} class="mobile"><span class="icon-park--international mobile fix"></span></a>
             </div>
         </nav>
     </div>

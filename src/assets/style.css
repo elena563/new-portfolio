@@ -39,6 +39,7 @@
     --font-special: 'Lemon Milk', sans-serif;
     --size-normal: 18px;
     --size-lg: 24px;
+    --size-sm: 14px;
 
     --margin-xs: 5px;
     --margin-sm: 10px;
@@ -101,7 +102,6 @@ h3{
 }
 h4{
     font-size: 120%;
-    margin-bottom: var(--margin-sm);
 }
 hr{
     margin: var(--margin-2xl) 0;
@@ -168,11 +168,12 @@ input{
 }
 .subtitle{
     display: block;
-    font-size: 57%;
+    font-weight: bold;
+    font-size: var(--size-sm);
     font-family: var(--font-special);
     color: var(--primary-color);
     line-height: 1.8;
-    margin-top: var(--margin-xs);
+    letter-spacing: 1.6px;
 }
 .anchor{
     color: #271B46;
@@ -187,7 +188,7 @@ input{
     width: max(70%, 300px);
     margin: 0 auto;
     display: flex;
-    gap: var(--margin-md);
+    gap: var(--margin-sm);
     flex-direction: column;
     align-items: center;
 }

@@ -1,4 +1,8 @@
-
+@media (min-width: 600px) {
+    .swiper.mySwiper2 .swiper-slide {
+    width: calc(50% - 20px) !important;
+    }
+}
 @media (min-width: 851px) {
     #ham {
         display: none;
@@ -180,12 +184,6 @@
         left: 5px;
     }
 
-}
-
-@media (min-width: 600px) {
-    .swiper.mySwiper2 .swiper-slide {
-    width: calc(50% - 20px) !important;
-    }
 }
 
 @media (max-width: 600px) {
