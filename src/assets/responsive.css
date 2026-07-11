@@ -15,9 +15,7 @@
     .swiper.mySwiper2 .swiper-slide {
   width: calc(33.333% - 14px) !important;
 }
-.mySwiper1 .swiper-slide {
-        width: 33.5% !important;
-    }
+
 
 }
 

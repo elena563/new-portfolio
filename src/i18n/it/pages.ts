@@ -1,4 +1,7 @@
 export default{
+    'portfolio.meta-description': 'Portfolio di Elena Zen | Scopri una selezione di progetti tra applicazioni web, prodotti digitali e sviluppo full-stack realizzati con tecnologie moderne.',
+    'policies.meta-description': 'Informativa sulla privacy di Elena Zen relativa al trattamento dei dati personali, ai cookie e ai diritti degli utenti ai sensi del GDPR.',
+
     'portfolio.title': 'Il mio Portfolio',
     'portfolio.text': `<p>Una selezione di progetti che raccontano il mio percorso come Full-Stack Developer. Dallo sviluppo di siti web moderni alla realizzazione di applicazioni digitali, ogni progetto nasce dall'obiettivo di trasformare un'idea in una soluzione concreta, funzionale e curata nei dettagli.</p>
                     <p>Attraverso questi lavori esploro lo sviluppo frontend e backend, sperimentando tecnologie moderne e un approccio orientato alla qualità del prodotto, all'esperienza utente e alla continua crescita delle mie competenze.</p>`,
