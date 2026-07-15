@@ -19,7 +19,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    classes: 'featured webapp',
+    classes: 'featured webapp data',
     title: {
       it: "StatPilot",
       en: "StatPilot"
@@ -35,6 +35,24 @@ export const projects: Project[] = [
     preview: true,
     repo_visibility: true,
     badges: ["Python", "Flask", "Data Science"]
+  },
+  {
+    classes: 'featured webapp',
+    title: {
+      it: "MamaChef",
+      en: "MamaChef"
+    },
+    description: {
+      it: "Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa",
+      en: "Full-stack web application for creating recipes, cooking step by step, and managing your shopping list"
+    },
+    img: "/project_banners/banner-mamachef.png",
+    alt: "mamachef web app",
+    url: "https://mamachef.alwaysdata.net/",
+    readme: "https://github.com/elena563/mamachef",
+    preview: true,
+    repo_visibility: true,
+    badges: ["Django", "NLP", "Web Design", "JavaScript", "PostgreSQL"]
   },
   {
     classes: 'featured website',
@@ -73,7 +91,7 @@ export const projects: Project[] = [
     badges: ["Web Design"]
   },
   {
-    classes: 'featured webapp',
+    classes: 'featured webapp data',
     title: {
       it: "SpotiType",
       en: "SpotiType"
@@ -108,7 +126,7 @@ export const projects: Project[] = [
     badges: ["Astrojs", "Web Design"]
   },
   {
-    classes: 'featured',
+    classes: 'featured data',
     title: {
       it: "WordViz",
       en: "WordViz"
@@ -123,6 +141,23 @@ export const projects: Project[] = [
     preview: false,
     repo_visibility: true,
     badges: ["Python", "Gensim", "Matplotlib", "Plotly"]
+  },
+  {
+    classes: 'featured data',
+    title: {
+      it: "Analisi Recensioni Amazon Food",
+      en: "Amazon Food Reviews Analysis"
+    },
+    description: {
+      it: "Analisi esplorativa dei dati delle recensioni di prodotti Amazon, con analisi del sentiment utilizzando Python e tecniche di NLP",
+      en: "Exploratory data analysis of Amazon food reviews, with sentiment analysis using Python and NLP techniques"
+    },
+    img: "/project_banners/banner-reviews.png",
+    alt: "amazon food reviews analysis",
+    readme: "https://github.com/elena563/food-reviews-analysis",
+    preview: false,
+    repo_visibility: true,
+    badges: ["Python", "Data Analysis", "AI", "NLP"]
   },
   {
     classes: 'featured website',
@@ -179,7 +214,7 @@ export const projects: Project[] = [
     badges: ["Javascript", "Web Design"],
   },
   {
-    classes: 'featured webapp',
+    classes: 'featured data',
     title: {
       it: "Hashtag Generator",
       en: "Hashtag Generator"

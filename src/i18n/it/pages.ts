@@ -3,7 +3,7 @@ export default{
     'portfolio.text': `<p>Una selezione di progetti che raccontano il mio percorso come Full-Stack Developer. Dallo sviluppo di siti web moderni alla realizzazione di applicazioni digitali, ogni progetto nasce dall'obiettivo di trasformare un'idea in una soluzione concreta, funzionale e curata nei dettagli.</p>
                     <p>Attraverso questi lavori esploro lo sviluppo frontend e backend, sperimentando tecnologie moderne e un approccio orientato alla qualità del prodotto, all'esperienza utente e alla continua crescita delle mie competenze.</p>`,
     'portfolio.final': `<p>Cerchi una sviluppatrice per il tuo prossimo progetto?</p>
-            <p>Whether it's a new web application, a modern website, or a technical collaboration, I'm always excited about new challenges.</p>`,
+            <p>Sia che tu abbia bisogno di uno sviluppo web innovativo, un sito moderno o una collaborazione tecnica, sono sempre entusiasta di affrontare nuove sfide.</p>`,
     'portfolio.cta1': 'Contattami',
     'portfolio.cta2': 'Esplora le mie Soluzioni',
     'tab.featured': 'In Evidenza',
@@ -12,7 +12,7 @@ export default{
     'tab.data': 'Data & AI',
 
     //temp
-    'nod.text': `<p>NOTONLYDESK, o semplicemente NOD, è una startup innovativa che fornisce una piattaforma flessibile per accedere a una rete di spazi di coworking in tutta Italia e in Europa.<br><br> 
+    'nod.text': `<p style="margin-bottom: 10px;">NOTONLYDESK, o semplicemente NOD, è una startup innovativa che fornisce una piattaforma flessibile per accedere a una rete di spazi di coworking in tutta Italia e in Europa.<br><br> 
                       Attualmente collaboro con loro, supportando il CTO durante una fase chiave della loro crescita. Il mio ruolo prevede la gestione sia dello sviluppo frontend che backend, la creazione di nuove pagine, il contributo al nuovo pannello di amministrazione e l'implementazione di funzionalità aggiuntive.</p>`,
 
     'project.discover': 'Scopri',
