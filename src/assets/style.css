@@ -99,7 +99,7 @@ h2{
 }
 h3{
     font-size: 150%;
-    margin-top: var(--margin-lg);
+    margin-top: var(--margin-sm);
 }
 h4{
     font-size: 120%;
@@ -272,7 +272,7 @@ section > div{
     max-width: 1350px;
     margin: 0 auto;
 }
-#aboutme, #portfolio, .footcont, .policies, #services, .reviews, #projects, footer{
+#aboutme, #portfolio, .footcont, .policies, #services, .reviews, #projects, footer, .why-me{
     padding: var(--margin-2xl) max(2%, 15px);
 }
 #aboutme{
@@ -294,6 +294,18 @@ section > div{
 }
 .policies h4{
     margin: var(--margin-sm) 0;
+}
+.why-me-cont{
+    display: flex;
+    justify-content: space-around;
+    gap: var(--margin-md);
+}
+.why-me-cont > div{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-sm);
+    margin-top: var(--margin-sm);
 }
 
 /* buttons */
@@ -357,7 +369,7 @@ a.disabled:active {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 48px 0 16px 0;
+    margin: 48px 0 32px 0;
     align-items: center;
 }
 .duplicate{
