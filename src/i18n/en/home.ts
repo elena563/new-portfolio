@@ -22,6 +22,14 @@ export default{
     'about.ai': 'Artificial Intelligence',
     'about.areas': 'Software, data, and AI are the areas in which I am building my professional path.',
 
+    'why-me.title': 'What sets me apart',
+    'why-me.1.title': 'In the Idea Factory',
+    'why-me.1.text': 'I love building something useful. That\'s what motivates me to develop: seeing an idea take shape and evolve piece by piece. Every technical choice has a specific purpose and helps transform a need into a functional product, designed to be truly usable.',
+    'why-me.2.title': 'From Data to Software',
+    'why-me.2.text': 'My career path stems from the intersection of Statistics and Computer Science. This combination influences the way I approach development and is leading me to delve deeper into the world of data, machine learning, and AI, with the goal of integrating these technologies into the software products I build.',
+    'why-me.3.title': '360° Development',
+    'why-me.3.text': 'I enjoy following the project as a whole. On the one hand, I\'m passionate about creating clean and intuitive interfaces, with an interest in web design and user experience. On the other hand, designing APIs, databases, and backend logic is where I enjoy the most, solving problems and bringing order to complexity.',
+
     'solutions.title': 'How I can help you',
     'solutions.text': '',
     'solutions.1.title': 'Custom Web Applications',

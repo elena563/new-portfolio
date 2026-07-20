@@ -138,22 +138,22 @@ const reviews = [
 		</div>
 		<section>
 			<div class="why-me">
-				<h2 class="textcenter">What sets me apart</h2>
+				<h2 class="textcenter" set:html={t('why-me.title')}></h2>
 				<div class="why-me-cont">
 					<div>
 						<img src="/immagini/build-product.svg" alt="build product icon" width="150px">
-						<h3>Nel Cantiere delle Idee</h3>
-						<p>Mi piace costruire qualcosa di utile. È questo che mi motiva a sviluppare: vedere un'idea prendere forma ed evolvere un pezzo alla volta. Ogni scelta tecnica ha uno scopo preciso e contribuisce a trasformare un'esigenza in un prodotto funzionale, pensato per essere davvero utilizzato.</p>
+						<h3 set:html={t('why-me.1.title')}></h3>
+						<p>{t('why-me.1.text')}</p>
 					</div>
 					<div>
 						<img src="/immagini/statistics-computer-science.svg" alt="innovate icon" width="150px">
-						<h3>Dai Dati al Software</h3>
-						<p>La tecnologia è in costante evoluzione, e io mi aggiorno costantemente per offrire soluzioni all'avanguardia. Credo che l'innovazione sia il motore del progresso, e mi impegno a integrare le ultime tendenze nel mio lavoro.</p>
+						<h3 set:html={t('why-me.2.title')}></h3>
+						<p>{t('why-me.2.text')}</p>
 					</div>
 					<div>
 						<img src="/immagini/full-stack.svg" alt="collaborate icon" width="150px">
-						<h3>Sviluppo a 360°</h3>
-						<p>Il lavoro di squadra è fondamentale per raggiungere obiettivi comuni. Mi piace lavorare in sinergia con i miei colleghi, condividendo conoscenze e competenze per creare risultati eccellenti.</p>
+						<h3 set:html={t('why-me.3.title')}></h3>
+						<p>{t('why-me.3.text')}</p>
 					</div>
 				</div>
 			</div>
@@ -161,7 +161,7 @@ const reviews = [
 		<!--servizi-->
 		<section id="services">
 			<div>
-				<h2 set:html={t('solutions.title')}></h2>
+				<h2 class="textcenter" set:html={t('solutions.title')}></h2>
 				<div class="swiper mySwiper1">
 					<ul class="list swiper-wrapper">
 						<li class="swiper-slide"><div class="product">

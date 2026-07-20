@@ -22,6 +22,14 @@ export default{
     'about.ai': 'Intelligenza Artificiale',
     'about.areas': 'Software, dati e AI sono le aree in cui sto costruendo il mio percorso professionale.',
 
+    'why-me.title': 'Cosa mi distingue',
+    'why-me.1.title': 'Nel Cantiere delle Idee',
+    'why-me.1.text': 'Mi piace costruire qualcosa di utile. È questo che mi motiva a sviluppare: vedere un\'idea prendere forma ed evolvere un pezzo alla volta. Ogni scelta tecnica ha uno scopo preciso e contribuisce a trasformare un\'esigenza in un prodotto funzionale, pensato per essere davvero utilizzato.',
+    'why-me.2.title': 'Dai Dati al Software',
+    'why-me.2.text': 'Il mio percorso nasce dall\'incontro tra Statistica e Informatica. Una combinazione che influenza il modo in cui affronto lo sviluppo e che mi sta portando ad approfondire il mondo dei dati, del machine learning e dell\'IA, con l\'obiettivo di integrare queste tecnologie nei prodotti software che realizzo.',
+    'why-me.3.title': 'Sviluppo a 360°',
+    'why-me.3.text': 'Mi piace seguire il progetto nel suo insieme. Da un lato mi appassiona realizzare interfacce pulite e intuitive, con interesse per il web design e l\'esperienza utente. Dall\'altro, progettare API, database e logiche backend è la parte in cui mi diverto di più a risolvere problemi e dare ordine alla complessità.',
+
     'solutions.title': 'Come posso aiutarti',
     'solutions.text': '',
     'solutions.1.title': 'Applicazioni Web Custom',
