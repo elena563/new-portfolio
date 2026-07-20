@@ -15,9 +15,7 @@
     .swiper.mySwiper2 .swiper-slide {
   width: calc(33.333% - 14px) !important;
 }
-.mySwiper1 .swiper-slide {
-        width: 33.5% !important;
-    }
+
 
 }
 
@@ -185,7 +183,13 @@
         top: 28px;
         left: 5px;
     }
-
+    .why-me-cont{
+        flex-direction: column;
+    }
+    .why-me-cont > div{
+        width: 100%;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {

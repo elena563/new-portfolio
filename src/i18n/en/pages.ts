@@ -1,4 +1,7 @@
 export default{
+    'portfolio.meta-description': 'Elena Zen Portfolio | Discover a selection of projects including web applications, digital products, and full-stack development created with modern technologies.',
+    'policies.meta-description': 'Elena Zen Privacy Policy regarding the processing of personal data, cookies, and user rights under the GDPR.',
+
     'portfolio.title': 'My Portfolio',
     'portfolio.text': `<p>A selection of projects that showcase my journey as a Full-Stack Developer. From developing modern websites to creating digital applications, each project stems from the goal of transforming an idea into a concrete, functional, and meticulously crafted solution.</p>
                     <p>Through these jobs, I explore front-end and back-end development, experimenting with modern technologies and an approach focused on product quality, user experience, and the continuous growth of my skills.</p>`,
@@ -9,7 +12,7 @@ export default{
     'tab.featured': 'Featured',
     'tab.websites': 'Websites',
     'tab.webapps': 'Web Apps',
-    'tab.data': 'Data&AI',
+    'tab.data': 'Data & AI',
 
     //temp
     'nod.text': `<p style="margin-bottom: 10px;">NOTONLYDESK, or simply NOD, is an innovative startup that provides a flexible platform for accessing a network of coworking spaces across Italy and Europe.<br><br> 

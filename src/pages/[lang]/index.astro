@@ -59,7 +59,7 @@ const reviews = [
 
 <Layout lang={lang}
 	title="Elena Zen Full-stack Web Developer" 
-	description="Elena Zen Full-stack Web Developer | Sviluppo applicazioni web e prodotti digitali moderni, con un background in Statistica e uno sguardo rivolto all'AI">
+	description={t('home.meta-description')}>
 	<Header page="home" t={t} lang={lang}/>
 	<main>
 		<section style="margin: 3em 20px 28px 20px;">
@@ -136,32 +136,54 @@ const reviews = [
 			<img src="/immagini/fastapi.png" alt="fastapi logo" height="40" class="duplicate">
 			</div>
 		</div>
+		<section>
+			<div class="why-me">
+				<h2 class="textcenter" set:html={t('why-me.title')}></h2>
+				<div class="why-me-cont">
+					<div>
+						<img src="/immagini/build-product.svg" alt="build product icon" width="150px">
+						<h3 set:html={t('why-me.1.title')}></h3>
+						<p>{t('why-me.1.text')}</p>
+					</div>
+					<div>
+						<img src="/immagini/statistics-computer-science.svg" alt="innovate icon" width="150px">
+						<h3 set:html={t('why-me.2.title')}></h3>
+						<p>{t('why-me.2.text')}</p>
+					</div>
+					<div>
+						<img src="/immagini/full-stack.svg" alt="collaborate icon" width="150px">
+						<h3 set:html={t('why-me.3.title')}></h3>
+						<p>{t('why-me.3.text')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!--servizi-->
 		<section id="services">
 			<div>
-				<h2 set:html={t('solutions.title')}></h2>
+				<h2 class="textcenter" set:html={t('solutions.title')}></h2>
 				<div class="swiper mySwiper1">
 					<ul class="list swiper-wrapper">
 						<li class="swiper-slide"><div class="product">
-							<img src="/immagini/services1.png" alt="website development" width="60em">
+							<iconify-icon role="img" aria-label="" icon="fa7-solid:cubes" width="64" height="64" class="service-icon"></iconify-icon>
 							<h4 set:html={t('solutions.1.title')}></h4>
 							<span class="subtitle" set:html={t('solutions.1.subtitle')}></span>
 							<p set:html={t('solutions.1.text')}></p>
 						</div></li>
 						<li class="swiper-slide"><div class="product">
-							<img src="/immagini/services2.png" alt="website optimisation" width="60em">
+							<iconify-icon role="img" aria-label="" icon="ri:seedling-fill" width="64" height="64" class="service-icon"></iconify-icon>
 							<h4 set:html={t('solutions.2.title')}></h4>
 							<span class="subtitle" set:html={t('solutions.2.subtitle')}></span>
 							<p set:html={t('solutions.2.text')}></p>
 						</div></li>
 						<li class="swiper-slide"><div class="product">
-							<img src="/immagini/services3.png" alt="technical support for startups" width="60em">
+							<iconify-icon role="img" aria-label="" icon="mingcute:git-pull-request-fill" width="64" height="64" class="service-icon"></iconify-icon>
 							<h4 set:html={t('solutions.3.title')}></h4>
 							<span class="subtitle" set:html={t('solutions.3.subtitle')}></span>
 							<p set:html={t('solutions.3.text')}></p>
 						</div></li>
 						<li class="swiper-slide"><div class="product">
-							<img src="/immagini/services4.png" alt="data analysis" width="60em">
+							<iconify-icon role="img" aria-label="" icon="mingcute:code-line" width="64" height="64" class="service-icon"></iconify-icon>
 							<h4 set:html={t('solutions.4.title')}></h4>
 							<span class="subtitle" set:html={t('solutions.4.subtitle')}></span>
 							<p set:html={t('solutions.4.text')}></p>

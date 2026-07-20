@@ -4,7 +4,7 @@ export default{
     'nav.portfolio': 'Portfolio',
     'nav.contact': 'Contatti',
 
-    'home.meta-description': '',
+    'home.meta-description': 'Elena Zen Full-stack Web Developer | Sviluppo applicazioni web e prodotti digitali moderni, con un background in Statistica e uno sguardo rivolto all\'AI.',
 
     'hero.title': 'Dal concept al <span>software</span>',
     'hero.subtitle': 'Aiuto startup, professionisti e aziende a progettare e sviluppare <strong>prodotti digitali</strong> utilizzando tecnologie moderne e un approccio full-stack.',
@@ -22,24 +22,28 @@ export default{
     'about.ai': 'Intelligenza Artificiale',
     'about.areas': 'Software, dati e AI sono le aree in cui sto costruendo il mio percorso professionale.',
 
+    'why-me.title': 'Cosa mi distingue',
+    'why-me.1.title': 'Nel Cantiere delle Idee',
+    'why-me.1.text': 'Mi piace costruire qualcosa di utile. È questo che mi motiva a sviluppare: vedere un\'idea prendere forma ed evolvere un pezzo alla volta. Ogni scelta tecnica ha uno scopo preciso e contribuisce a trasformare un\'esigenza in un prodotto funzionale, pensato per essere davvero utilizzato.',
+    'why-me.2.title': 'Dai Dati al Software',
+    'why-me.2.text': 'Il mio percorso nasce dall\'incontro tra Statistica e Informatica. Una combinazione che influenza il modo in cui affronto lo sviluppo e che mi sta portando ad approfondire il mondo dei dati, del machine learning e dell\'IA, con l\'obiettivo di integrare queste tecnologie nei prodotti software che realizzo.',
+    'why-me.3.title': 'Sviluppo a 360°',
+    'why-me.3.text': 'Mi piace seguire il progetto nel suo insieme. Da un lato mi appassiona realizzare interfacce pulite e intuitive, con interesse per il web design e l\'esperienza utente. Dall\'altro, progettare API, database e logiche backend è la parte in cui mi diverto di più a risolvere problemi e dare ordine alla complessità.',
+
     'solutions.title': 'Come posso aiutarti',
     'solutions.text': '',
-    'solutions.1.title': 'Creazione Sito Web Personalizzato',
-    'solutions.1.subtitle': 'Porta la tua Attività Online in Modo Professionale',
-    'solutions.1.text': `<p>Hai un'attività e vuoi aumentare la tua <strong>presenza online</strong>?</p> 
-						<p>Realizzo siti web professionali che raccontano chi sei e cosa offri. Progetto ogni sito da zero per essere veloce, responsive, ben indicizzato su Google e in linea con l'identità del tuo brand. Il tuo spazio digitale su misura.</p>`,
-    'solutions.2.title': 'Restyling e Ottimizzazione Sito Web',
-    'solutions.2.subtitle': 'Redesign Moderno, Migliori Prestazioni e SEO Avanzata',
-    'solutions.2.text': `<p>Il tuo sito è datato o <strong>poco efficace</strong> e vorresti migliorarlo?</p> 
-						<p>Mi occupo del restyling completo, migliorando il design, la struttura e l'esperienza utente. Ottimizzo le performance, l'adattabilità ai dispositivi mobili e la visibilità sui motori di ricerca per aumentare i risultati reali.</p>`,
-    'solutions.3.title': 'Supporto Tecnico per Startup e Aziende',
-    'solutions.3.subtitle': 'Ottimizzazione e Innovazione per il Tuo Progetto Digitale',
-    'solutions.3.text': `<p>Hai un business in crescita e cerchi un aiuto affidabile <strong>lato tecnico</strong>?</p> 
-						<p>Collaboro con realtà innovative offrendo competenze come frontend, backend Python e soluzioni AI. Mi occupo di migliorare infrastrutture, automatizzare flussi e supportare la migrazione verso tecnologie moderne.</p>`,
-    'solutions.4.title': 'Analisi Statistica dei Dati di Business',
-    'solutions.4.subtitle': 'Trasforma i Dati in Decisioni Strategiche',
-    'solutions.4.text': `<p>Hai tanti dati ma non riesci a ricavarne<strong> informazioni utili</strong>?</p>
-						<p>Offro un servizio di analisi statistica professionale con Python che parte dalla pulizia dei dati, passa per l'analisi e arriva alla creazione di report comprensibili per migliorare le performance della tua attività.</p>`,
+    'solutions.1.title': 'Applicazioni Web Custom',
+    'solutions.1.subtitle': 'Dalla progettazione allo sviluppo di soluzioni su misura',
+    'solutions.1.text': `<p>Realizzo applicazioni web progettate attorno alle <strong>esigenze del tuo progetto</strong>, seguendo l'intero processo di sviluppo dalla progettazione al rilascio. Soluzioni moderne, scalabili e pensate per crescere insieme al tuo business.</p>`,
+    'solutions.2.title': 'Collaborazioni con Startup e PMI',
+    'solutions.2.subtitle': 'Dalla roadmap alle nuove funzionalità',
+    'solutions.2.text': `<p>Collaboro con startup contribuendo allo sviluppo e all'evoluzione di prodotti digitali.<br> Mi integro nella codebase esistente, sviluppando nuove funzionalità e migliorando quelle già presenti in sinergia con il team.</p>`,
+    'solutions.3.title': 'Collaborazioni con Agenzie e Software House',
+    'solutions.3.subtitle': 'Competenze Full-Stack on demand',
+    'solutions.3.text': `<p>Affianco agenzie e software house nello sviluppo di applicazioni web moderne, integrandomi nei workflow e nelle tecnologie già in uso. Una collaborazione flessibile per gestire nuove funzionalità, progetti o picchi di lavoro.</p>`,
+    'solutions.4.title': 'Siti Web Professionali',
+    'solutions.4.subtitle': 'Sviluppo in codice, SEO e prestazioni',
+    'solutions.4.text': `<p>Realizzo siti web professionali con tecnologie moderne, senza page builder o template preconfezionati. <br>Ogni sito è sviluppato direttamente in codice, con una resa pixel-perfect, prestazioni elevate, SEO tecnica e accessibilità.</p>`,
 
     'case-studies.title': 'Case Study',
     'case-studies.text': 'Una selezione di progetti su cui ho lavorato, alcuni più recenti, altri evolutisi insieme a me. Ogni lavoro nasce da esigenze diverse, ma con un obiettivo comune: trasformare idee e requisiti in soluzioni digitali funzionali e facili da utilizzare.<br><br>',
