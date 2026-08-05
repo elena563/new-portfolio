@@ -159,7 +159,7 @@ input{
     display: inline;
 }
 .headline span{
-    color: var(--accent-violet-dark);
+    color: var(--accent-violet);
 }
 .approach{
     font-weight: bold;
@@ -542,6 +542,9 @@ a.disabled:active {
 .portfolio-final{
     flex-direction: column;
     margin-top: var(--margin-2xl);
+}
+.portfolio-final h3{
+    margin-bottom: var(--margin-md);
 }
 
 /* responsivity classes, menu */

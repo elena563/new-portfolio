@@ -5,8 +5,8 @@ export default{
     'portfolio.title': 'Il mio Portfolio',
     'portfolio.text': `<p>Una selezione di progetti che raccontano il mio percorso come Full-Stack Developer. Dallo sviluppo di siti web moderni alla realizzazione di applicazioni digitali, ogni progetto nasce dall'obiettivo di trasformare un'idea in una soluzione concreta, funzionale e curata nei dettagli.</p>
                     <p>Attraverso questi lavori esploro lo sviluppo frontend e backend, sperimentando tecnologie moderne e un approccio orientato alla qualità del prodotto, all'esperienza utente e alla continua crescita delle mie competenze.</p>`,
-    'portfolio.final': `<p>Cerchi una sviluppatrice per il tuo prossimo progetto?</p>
-            <p>Sia che tu abbia bisogno di uno sviluppo web innovativo, un sito moderno o una collaborazione tecnica, sono sempre entusiasta di affrontare nuove sfide.</p>`,
+    'portfolio.final.title': 'Cerchi una sviluppatrice per il tuo prossimo progetto?',
+    'portfolio.final': `<p>Sia che tu abbia bisogno di uno sviluppo web innovativo, un sito moderno o una collaborazione tecnica, sono sempre entusiasta di affrontare nuove sfide.</p>`,
     'portfolio.cta1': 'Contattami',
     'portfolio.cta2': 'Esplora le mie Soluzioni',
     'tab.featured': 'In Evidenza',

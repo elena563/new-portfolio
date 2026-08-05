@@ -135,7 +135,7 @@
         display: block;
         width: max(60%, 350px);
         position: absolute;
-        top: 115px;
+        top: 111px;
         right: 0;
         background-color:#5a4180;
         padding: 32px;
@@ -188,7 +188,10 @@
     }
     .why-me-cont > div{
         width: 100%;
-        align-items: center;
+        align-items: left;
+    }
+    .why-me h2{
+        text-align: left;
     }
 }
 

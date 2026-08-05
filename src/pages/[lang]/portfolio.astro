@@ -67,6 +67,7 @@ const projects = projectsData.map(p => ({
             {projects.map(p => <ProjectCard t={t} {...p} />)}
         </div>
         <div class="portfolio-final center">
+          <h3 set:html={t('portfolio.final.title')}></h3>
           <p set:html={t('portfolio.final')}></p>
           <div class="btncont">
             <a class="btn violet" href={`/${lang}#contacts`} set:html={t('portfolio.cta1')}></a>
