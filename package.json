@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint public/js/",
+    "lint": "eslint public/ src/",
     "format": "prettier --write public/ src/"
   },
   "dependencies": {
@@ -15,10 +15,14 @@
     "astro": "^5.13.2"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.7.0",
+    "globals": "^17.11.0",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
-    "sass-embedded": "^1.100.0"
+    "sass-embedded": "^1.100.0",
+    "typescript-eslint": "^8.67.0"
   }
 }
