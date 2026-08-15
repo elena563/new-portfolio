@@ -7,6 +7,7 @@ The website has undergone a complete redesign to provide an enhanced user experi
 Dedicated to education, the website offers valuable insights into hysteroscopy and other gynecological topics, accessible to everyone,patients and curious readers alike, who wish to learn more. Additionally, Dr. Antonio frequently conducts hysteroscopy courses, with information about upcoming sessions soon to be made available on the site.
 
 Website sections:
+
 - Header with responsive navigation menu
 - Homepage (index): hero section, Google reviews slider widget, photo gallery
 - Chi siamo: Antonio's and his father Mario's presentation, link to Antonio's CV

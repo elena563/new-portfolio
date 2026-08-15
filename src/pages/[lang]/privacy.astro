@@ -5,29 +5,30 @@ import Footer from '../../components/Footer.astro';
 import { languages, makeT } from '../../i18n/ui';
 
 export function getStaticPaths() {
-  return languages.map(lang => ({ params: { lang } }));
+  return languages.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
 const t = makeT(lang);
 ---
 
-<Layout lang={lang}
-	title="Privacy e Cookie Policy | Elena Zen · Full-Stack Web Developer" 
-	description={t('policies.meta-description')}>
-	<Header page="privacy" t={t} lang={lang}/>
-	<section class="policies">
-		<div id="privacy-policy">
-			<h2>Privacy Policy</h2>
-			<div set:html={t('privacy.text')}></div>
-		</div>
-		<hr />
+<Layout
+  lang={lang}
+  title="Privacy e Cookie Policy | Elena Zen · Full-Stack Web Developer"
+  description={t('policies.meta-description')}
+>
+  <Header page="privacy" t={t} lang={lang} />
+  <section class="policies">
+    <div id="privacy-policy">
+      <h2>Privacy Policy</h2>
+      <div set:html={t('privacy.text')} />
+    </div>
+    <hr />
 
-		<div id="cookie-policy">
-			<h2>Cookie Policy</h2>
-			<div set:html={t('cookies.text')}></div>
-		</div>
-	</section>
-	</main>	
-	<Footer t={t} lang={lang} />
+    <div id="cookie-policy">
+      <h2>Cookie Policy</h2>
+      <div set:html={t('cookies.text')} />
+    </div>
+  </section>
 </Layout>
+<Footer t={t} lang={lang} />

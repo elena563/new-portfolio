@@ -1,102 +1,109 @@
 //info form (now inactive)
 function submit() {
-    const user = document.getElementsByTagName("input").value;
-    const uname = user[0];
-    const umail = user[1];
-    const umessage = document.querySelector("textarea").value;
-    const form = {
-        name: uname,
-        mail: umail,
-        message: umessage
-    }
+  const user = document.getElementsByTagName('input').value;
+  const uname = user[0];
+  const umail = user[1];
+  const umessage = document.querySelector('textarea').value;
+  const form = {
+    name: uname,
+    mail: umail,
+    message: umessage,
+  };
 }
 
 //responsive dropdown header (<=600px vw)
 function show() {
-    const menu = document.getElementById("menucont");
-    const isMobile = window.matchMedia("(max-width: 850px)").matches
+  const menu = document.getElementById('menucont');
+  const isMobile = window.matchMedia('(max-width: 850px)').matches;
 
-    if (isMobile) {
-        menu.classList.toggle("open");
-    }
+  if (isMobile) {
+    menu.classList.toggle('open');
+  }
 }
 
 // services manual slider
-if (document.querySelector(".mySwiper1")) {
-    var swiper1 = new Swiper(".mySwiper1", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+if (document.querySelector('.mySwiper1')) {
+  var swiper1 = new Swiper('.mySwiper1', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 }
 
 // reviews automatic slider
-if (document.querySelector(".mySwiper2")) {
-    const swiper2 = new Swiper(".mySwiper2", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            640: { 
-                slidesPerView: 2,
-                spaceBetween: 40
-            },
-            1000: { 
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-        },
-        autoplay: {
-        delay: 5000,
-        },
-        loop: true,
-        observer: true,
-        observeParents: true,
-        watchOverflow: true,
-      });
+if (document.querySelector('.mySwiper2')) {
+  const swiper2 = new Swiper('.mySwiper2', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+    autoplay: {
+      delay: 5000,
+    },
+    loop: true,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+  });
 
-    window.addEventListener('resize', () => {
-        swiper2.update();
-    });
+  window.addEventListener('resize', () => {
+    swiper2.update();
+  });
 }
 
 // tab filter in portfolio page
 function showProjects(evt, category) {
+  const projects = document.querySelectorAll('.work');
+  projects.forEach(function (proj) {
+    proj.classList.add('hidden');
+  });
 
-    const projects = document.querySelectorAll('.work');
-    projects.forEach(function (proj) {
-        proj.classList.add('hidden');
-    });
+  const buttons = document.querySelectorAll('.tab');
+  buttons.forEach(function (btn) {
+    btn.classList.remove('active');
+  });
 
-    const buttons = document.querySelectorAll('.tab');
-    buttons.forEach(function (btn) {
-        btn.classList.remove("active");
-    });
-
-    const selected = document.querySelectorAll(category);
-    console.log(selected)
-    selected.forEach(proj => {
-        proj.classList.remove('hidden');
-    });
-    evt.currentTarget.classList.add("active");
+  const selected = document.querySelectorAll(category);
+  console.log(selected);
+  selected.forEach((proj) => {
+    proj.classList.remove('hidden');
+  });
+  evt.currentTarget.classList.add('active');
 }
 
 if (document.getElementById('featured-btn')) {
-    document.getElementById('featured-btn').addEventListener('click', (event) => showProjects(event, '.featured'))
-    document.getElementById('website-btn').addEventListener('click', (event) => showProjects(event, '.website'))
-    document.getElementById('webapp-btn').addEventListener('click', (event) => showProjects(event, '.webapp'))
-    document.getElementById('data-btn').addEventListener('click', (event) => showProjects(event, '.data'))
-    
-    const projects = document.querySelectorAll('.work');
-    projects.forEach(function (proj) {
-        if (!proj.classList.contains('featured')) {
-            proj.classList.add('hidden');
-        }
-    });
+  document
+    .getElementById('featured-btn')
+    .addEventListener('click', (event) => showProjects(event, '.featured'));
+  document
+    .getElementById('website-btn')
+    .addEventListener('click', (event) => showProjects(event, '.website'));
+  document
+    .getElementById('webapp-btn')
+    .addEventListener('click', (event) => showProjects(event, '.webapp'));
+  document
+    .getElementById('data-btn')
+    .addEventListener('click', (event) => showProjects(event, '.data'));
+
+  const projects = document.querySelectorAll('.work');
+  projects.forEach(function (proj) {
+    if (!proj.classList.contains('featured')) {
+      proj.classList.add('hidden');
+    }
+  });
 }

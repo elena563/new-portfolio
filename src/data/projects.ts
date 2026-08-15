@@ -21,214 +21,216 @@ export const projects: Project[] = [
   {
     classes: 'featured webapp data',
     title: {
-      it: "StatPilot",
-      en: "StatPilot"
+      it: 'StatPilot',
+      en: 'StatPilot',
     },
     description: {
-      it: "Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli",
-      en: "Interactive web application for statistical data analysis, machine learning modeling, and model explainability"
+      it: 'Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli',
+      en: 'Interactive web application for statistical data analysis, machine learning modeling, and model explainability',
     },
-    img: "/project_banners/banner-statpilot.png",
-    alt: "statpilot web app",
-    url: "https://statpilot.onrender.com/",
-    readme: "https://github.com/elena563/statpilot",
+    img: '/project_banners/banner-statpilot.png',
+    alt: 'statpilot web app',
+    url: 'https://statpilot.onrender.com/',
+    readme: 'https://github.com/elena563/statpilot',
     preview: true,
     repo_visibility: true,
-    badges: ["Python", "Flask", "Data Science"]
+    badges: ['Python', 'Flask', 'Data Science'],
   },
   {
     classes: 'featured webapp',
     title: {
-      it: "MamaChef",
-      en: "MamaChef"
+      it: 'MamaChef',
+      en: 'MamaChef',
     },
     description: {
-      it: "Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa",
-      en: "Full-stack web application for creating recipes, cooking step by step, and managing your shopping list"
+      it: 'Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa',
+      en: 'Full-stack web application for creating recipes, cooking step by step, and managing your shopping list',
     },
-    img: "/project_banners/banner-mamachef.png",
-    alt: "mamachef web app",
-    url: "https://mamachef.alwaysdata.net/",
-    readme: "https://github.com/elena563/mamachef",
+    img: '/project_banners/banner-mamachef.png',
+    alt: 'mamachef web app',
+    url: 'https://mamachef.alwaysdata.net/',
+    readme: 'https://github.com/elena563/mamachef',
     preview: true,
     repo_visibility: true,
-    badges: ["Django", "NLP", "Web Design", "JavaScript", "PostgreSQL"]
+    badges: ['Django', 'NLP', 'Web Design', 'JavaScript', 'PostgreSQL'],
   },
   {
     classes: 'featured website',
     title: {
-      it: "Blacklisted M3dia",
-      en: "Blacklisted M3dia"
+      it: 'Blacklisted M3dia',
+      en: 'Blacklisted M3dia',
     },
     description: {
-      it: "Sito web per un fotografo con una forte passione per le supercar e i motori in generale",
-      en: "Website for a photographer with a strong passion for supercars and motors in general"
+      it: 'Sito web per un fotografo con una forte passione per le supercar e i motori in generale',
+      en: 'Website for a photographer with a strong passion for supercars and motors in general',
     },
-    img: "/project_banners/banner-blacklisted.png",
-    alt: "sito web blacklisted m3dia",
-    url: "https://blacklistedm3dia.com/it",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md",
+    img: '/project_banners/banner-blacklisted.png',
+    alt: 'sito web blacklisted m3dia',
+    url: 'https://blacklistedm3dia.com/it',
+    readme:
+      'https://github.com/elena563/new-portfolio/blob/main/public/readme/README_bm.md',
     preview: true,
     repo_visibility: false,
-    badges: ["Nextjs", "MongoDB", "Javascript", "Web Design"]
+    badges: ['Nextjs', 'MongoDB', 'Javascript', 'Web Design'],
   },
   {
     classes: 'featured website',
     title: {
-      it: "Antonio Accardi Isteroscopia",
-      en: "Antonio Accardi Isteroscopia"
+      it: 'Antonio Accardi Isteroscopia',
+      en: 'Antonio Accardi Isteroscopia',
     },
     description: {
-      it: "Sito web per un ginecologo specializzato in Isteroscopia",
-      en: "Website for a gynecologist specialized in hysteroscopy in Palermo, Italy"
+      it: 'Sito web per un ginecologo specializzato in Isteroscopia',
+      en: 'Website for a gynecologist specialized in hysteroscopy in Palermo, Italy',
     },
-    img: "/project_banners/banner-isteroscopia.png",
-    alt: "sito web isteroscopia",
-    url: "http://www.isteroscopia.eu/pagine/",
-    readme: "https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md",
+    img: '/project_banners/banner-isteroscopia.png',
+    alt: 'sito web isteroscopia',
+    url: 'http://www.isteroscopia.eu/pagine/',
+    readme:
+      'https://github.com/elena563/new-portfolio/blob/main/public/readme/README_ister.md',
     preview: true,
     repo_visibility: false,
-    badges: ["Web Design"]
+    badges: ['Web Design'],
   },
   {
     classes: 'featured webapp data',
     title: {
-      it: "SpotiType",
-      en: "SpotiType"
+      it: 'SpotiType',
+      en: 'SpotiType',
     },
     description: {
-      it: "Web app interattiva che, data una playlist Spotify o una lista di 5 canzoni, ti dirà che tipo di ascoltatore sei",
-      en: "Interactive web application that, given a Spotify playlist or a list of 5 songs, can tell you what kind of listener you are"
+      it: 'Web app interattiva che, data una playlist Spotify o una lista di 5 canzoni, ti dirà che tipo di ascoltatore sei',
+      en: 'Interactive web application that, given a Spotify playlist or a list of 5 songs, can tell you what kind of listener you are',
     },
-    img: "/project_banners/banner-spotitype.png",
-    alt: "statpilot web app",
-    url: "https://spotitype.vercel.app/",
-    readme: "https://github.com/elena563/spotitype",
+    img: '/project_banners/banner-spotitype.png',
+    alt: 'statpilot web app',
+    url: 'https://spotitype.vercel.app/',
+    readme: 'https://github.com/elena563/spotitype',
     preview: true,
     repo_visibility: true,
-    badges: ["Python", "Flask", "Machine Learning"]
+    badges: ['Python', 'Flask', 'Machine Learning'],
   },
   {
     classes: 'featured website',
     title: {
-      it: "Professor Navid Nobani",
-      en: "Professor Navid Nobani"
+      it: 'Professor Navid Nobani',
+      en: 'Professor Navid Nobani',
     },
     description: {
-      it: "Sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti",
-      en: "Showcase website for a university professor, presenting his work and the courses he teaches"
+      it: 'Sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti',
+      en: 'Showcase website for a university professor, presenting his work and the courses he teaches',
     },
-    img: "/project_banners/banner-nobani.png",
-    alt: "progetto di sito web Professor Navid Nobani",
-    url: "https://nobani.it/",
+    img: '/project_banners/banner-nobani.png',
+    alt: 'progetto di sito web Professor Navid Nobani',
+    url: 'https://nobani.it/',
     preview: true,
     repo_visibility: false,
-    badges: ["Astrojs", "Web Design"]
+    badges: ['Astrojs', 'Web Design'],
   },
   {
     classes: 'featured data',
     title: {
-      it: "WordViz",
-      en: "WordViz"
+      it: 'WordViz',
+      en: 'WordViz',
     },
     description: {
-      it: "Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing",
-      en: "Python library for word embeddings visualization and analysis, useful in Natural Language Processing"
+      it: 'Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing',
+      en: 'Python library for word embeddings visualization and analysis, useful in Natural Language Processing',
     },
-    img: "/project_banners/banner-wordviz.png",
-    alt: "wordviz python library",
-    readme: "https://github.com/elena563/wordviz",
+    img: '/project_banners/banner-wordviz.png',
+    alt: 'wordviz python library',
+    readme: 'https://github.com/elena563/wordviz',
     preview: false,
     repo_visibility: true,
-    badges: ["Python", "Gensim", "Matplotlib", "Plotly"]
+    badges: ['Python', 'Gensim', 'Matplotlib', 'Plotly'],
   },
   {
     classes: 'featured data',
     title: {
-      it: "Analisi Recensioni Amazon Food",
-      en: "Amazon Food Reviews Analysis"
+      it: 'Analisi Recensioni Amazon Food',
+      en: 'Amazon Food Reviews Analysis',
     },
     description: {
-      it: "Analisi esplorativa dei dati delle recensioni di prodotti Amazon, con analisi del sentiment utilizzando Python e tecniche di NLP",
-      en: "Exploratory data analysis of Amazon food reviews, with sentiment analysis using Python and NLP techniques"
+      it: 'Analisi esplorativa dei dati delle recensioni di prodotti Amazon, con analisi del sentiment utilizzando Python e tecniche di NLP',
+      en: 'Exploratory data analysis of Amazon food reviews, with sentiment analysis using Python and NLP techniques',
     },
-    img: "/project_banners/banner-reviews.png",
-    alt: "amazon food reviews analysis",
-    readme: "https://github.com/elena563/food-reviews-analysis",
+    img: '/project_banners/banner-reviews.png',
+    alt: 'amazon food reviews analysis',
+    readme: 'https://github.com/elena563/food-reviews-analysis',
     preview: false,
     repo_visibility: true,
-    badges: ["Python", "Data Analysis", "AI", "NLP"]
+    badges: ['Python', 'Data Analysis', 'AI', 'NLP'],
   },
   {
     classes: 'featured website',
     title: {
-      it: "Save the Shark",
-      en: "Save the Shark"
+      it: 'Save the Shark',
+      en: 'Save the Shark',
     },
     description: {
       it: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
-      en: "Website for a no-profit organisation protecting sharks and all sea life in general"
+      en: 'Website for a no-profit organisation protecting sharks and all sea life in general',
     },
-    img: "/project_banners/banner-savetheshark.png",
-    alt: "Progetto di sito web Save the Shark",
-    url: "https://savetheshark.netlify.app/",
-    readme: "https://github.com/elena563/save_the_shark",
+    img: '/project_banners/banner-savetheshark.png',
+    alt: 'Progetto di sito web Save the Shark',
+    url: 'https://savetheshark.netlify.app/',
+    readme: 'https://github.com/elena563/save_the_shark',
     preview: true,
     repo_visibility: true,
-    badges: ["Hugo", "Stripe", "Expressjs"]
+    badges: ['Hugo', 'Stripe', 'Expressjs'],
   },
   {
     classes: 'featured webapp',
     title: {
-      it: "MarketMint Dashboard Criptovalute",
-      en: "MarketMint Dashboard Cryptocurrencies"
+      it: 'MarketMint Dashboard Criptovalute',
+      en: 'MarketMint Dashboard Cryptocurrencies',
     },
     description: {
-      it: "Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale",
-      en: "Dynamic platform for tracking cryptocurrency trends and market insights in real time"
+      it: 'Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale',
+      en: 'Dynamic platform for tracking cryptocurrency trends and market insights in real time',
     },
-    img: "/project_banners/banner-crypto.png",
-    alt: "MarketMint dashboard criptovalute",
-    url: "https://marketmint.netlify.app/",
-    readme: "https://github.com/elena563/marketmint",
+    img: '/project_banners/banner-crypto.png',
+    alt: 'MarketMint dashboard criptovalute',
+    url: 'https://marketmint.netlify.app/',
+    readme: 'https://github.com/elena563/marketmint',
     preview: true,
     repo_visibility: true,
-    badges: ["React"]
+    badges: ['React'],
   },
   {
     classes: 'featured website',
     title: {
-      it: "Hotel Sogno in Maremma",
-      en: "Hotel Sogno in Maremma"
+      it: 'Hotel Sogno in Maremma',
+      en: 'Hotel Sogno in Maremma',
     },
     description: {
-      it: "Sito web per un hotel 4 stelle nella Maremma toscana in Italia",
-      en: "Website for a charming 4 stars hotel nestled in the heart of the Tuscan Maremma, Italy"
+      it: 'Sito web per un hotel 4 stelle nella Maremma toscana in Italia',
+      en: 'Website for a charming 4 stars hotel nestled in the heart of the Tuscan Maremma, Italy',
     },
-    img: "/project_banners/banner-hotel.png",
-    alt: "Progetto di sito web Hotel Sogno in Maremma",
-    url: "https://hotelsognoinmaremma.netlify.app/",
-    readme: "https://github.com/elena563/hotel_sogno_in_maremma",
+    img: '/project_banners/banner-hotel.png',
+    alt: 'Progetto di sito web Hotel Sogno in Maremma',
+    url: 'https://hotelsognoinmaremma.netlify.app/',
+    readme: 'https://github.com/elena563/hotel_sogno_in_maremma',
     preview: true,
     repo_visibility: true,
-    badges: ["Javascript", "Web Design"],
+    badges: ['Javascript', 'Web Design'],
   },
   {
     classes: 'featured data',
     title: {
-      it: "Hashtag Generator",
-      en: "Hashtag Generator"
+      it: 'Hashtag Generator',
+      en: 'Hashtag Generator',
     },
     description: {
       it: "Interfaccia web intuitiva per generare con l'AI hashtag efficaci e puliti per annunci di prodotti online",
-      en: "Intuitive web interface to generate with AI effective and clean hashtags for online product listings"
+      en: 'Intuitive web interface to generate with AI effective and clean hashtags for online product listings',
     },
-    img: "/project_banners/banner-hashtag.png",
-    alt: "hashtag generator web app",
-    url: "https://hashtaggenerator.streamlit.app/",
-    readme: "https://github.com/elena563/hashtag_generator",
+    img: '/project_banners/banner-hashtag.png',
+    alt: 'hashtag generator web app',
+    url: 'https://hashtaggenerator.streamlit.app/',
+    readme: 'https://github.com/elena563/hashtag_generator',
     preview: true,
     repo_visibility: true,
-    badges: ["Python", "Streamlit", "AI", "Langchain"]
-  }
+    badges: ['Python', 'Streamlit', 'AI', 'Langchain'],
+  },
 ];

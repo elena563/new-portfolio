@@ -4,10 +4,10 @@ import pagesIt from './it/pages';
 import pagesEn from './en/pages';
 
 export const languages = ['it', 'en'] as const;
-export type Lang = typeof languages[number];
+export type Lang = (typeof languages)[number];
 
 export function makeT(lang: Lang) {
-  return (key: keyof typeof ui['it']) => ui[lang][key] ?? ui['it'][key];
+  return (key: keyof (typeof ui)['it']) => ui[lang][key] ?? ui['it'][key];
 }
 
 export const ui = {
@@ -21,6 +21,6 @@ export const ui = {
   },
 } as const;
 
-export function t(lang: Lang, key: keyof typeof ui['it']) {
+export function t(lang: Lang, key: keyof (typeof ui)['it']) {
   return ui[lang][key] ?? ui['it'][key];
 }

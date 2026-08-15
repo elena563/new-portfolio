@@ -10,213 +10,359 @@ const { lang } = Astro.props;
 const currentLang = (lang ?? 'it') as (typeof languages)[number];
 const t = makeT(currentLang);
 
-const projects = projectsData.slice(0, 3).map(p => ({
-	classes: p.classes,
-	title: p.title[currentLang],
-	description: p.description[currentLang],
-	img: p.img,
-	alt: p.alt,
-	url: p.url,
-	readme: p.readme,
-	preview: p.preview,
-	repo_visibility: p.repo_visibility
+const projects = projectsData.slice(0, 3).map((p) => ({
+  classes: p.classes,
+  title: p.title[currentLang],
+  description: p.description[currentLang],
+  img: p.img,
+  alt: p.alt,
+  url: p.url,
+  readme: p.readme,
+  preview: p.preview,
+  repo_visibility: p.repo_visibility,
 }));
 
 const reviews = [
-	{
-		username: "@alessandrostega",
-		review: "Ottima sviluppatrice, comunicazione chiara ed efficace, sono molto soddisfatto del risultato finale."
-	},
-	{
-		username: "@drahard",
-		review: "Persona seria, preparata e professionale, in grado di comprendere subito le tue esigenze e trasformare le idee in grafica e codici. Persona polivalente in grado di affrontare la situazione a 360 gradi e risolvere tutti i problemi. Rapporto prezzo\qualità\competenza assolutamente ottimo; scelta che rifarei immediatamente, consigliata!"
-	},
-	{
-		username:"@nano84",
-		review:"Mi sono trovato molto bene con Elena, ha fatto veloce e ha comunicato con calma e pazienza tutti i passaggi. Ha pienamente adempito alle mie aspettative.",
-	},
-	{
-		username:"@miriamcermelj",
-		review:"Elena is very responsive and a great problem solver, creative and attentive to details. She helped me building the website with squarespace with the intergrationof the transaltions with weglot. She has excellent skills in programming. Wouldabsolutly reccomend her!",
-	},
-	{
-		username:"@heikostribl",
-		review:"Getting this done with attention to detail is a skill... and this seller has such skill. Thanks also for some valuable input. will be happy to use your services again.",
-	},
-	{
-		username:"@mik_gia",
-		review:"È la seconda volta che affido un lavoro a Elena e, come sempre, si è dimostrata estremamente professionale, competente e affidabile. Riesce a capire subito le esigenze e a trovare le soluzioni migliori in tempi rapidi. Una vera garanzia: ogni volta mi risolve tutto con precisione e grande attenzione ai dettagli. Consigliatissima!",
-	},
-	{
-		username:"@lovelysrls",
-		review:"Disponibile, veloce nel lavoro e professionale. Abbiamo apprezzato i suoi lavori svolti e la consigliamo per le sue doti.",
-	},
+  {
+    username: '@alessandrostega',
+    review:
+      'Ottima sviluppatrice, comunicazione chiara ed efficace, sono molto soddisfatto del risultato finale.',
+  },
+  {
+    username: '@drahard',
+    review:
+      'Persona seria, preparata e professionale, in grado di comprendere subito le tue esigenze e trasformare le idee in grafica e codici. Persona polivalente in grado di affrontare la situazione a 360 gradi e risolvere tutti i problemi. Rapporto prezzo\qualità\competenza assolutamente ottimo; scelta che rifarei immediatamente, consigliata!',
+  },
+  {
+    username: '@nano84',
+    review:
+      'Mi sono trovato molto bene con Elena, ha fatto veloce e ha comunicato con calma e pazienza tutti i passaggi. Ha pienamente adempito alle mie aspettative.',
+  },
+  {
+    username: '@miriamcermelj',
+    review:
+      'Elena is very responsive and a great problem solver, creative and attentive to details. She helped me building the website with squarespace with the intergrationof the transaltions with weglot. She has excellent skills in programming. Wouldabsolutly reccomend her!',
+  },
+  {
+    username: '@heikostribl',
+    review:
+      'Getting this done with attention to detail is a skill... and this seller has such skill. Thanks also for some valuable input. will be happy to use your services again.',
+  },
+  {
+    username: '@mik_gia',
+    review:
+      'È la seconda volta che affido un lavoro a Elena e, come sempre, si è dimostrata estremamente professionale, competente e affidabile. Riesce a capire subito le esigenze e a trovare le soluzioni migliori in tempi rapidi. Una vera garanzia: ogni volta mi risolve tutto con precisione e grande attenzione ai dettagli. Consigliatissima!',
+  },
+  {
+    username: '@lovelysrls',
+    review:
+      'Disponibile, veloce nel lavoro e professionale. Abbiamo apprezzato i suoi lavori svolti e la consigliamo per le sue doti.',
+  },
 ];
 ---
 
-<Layout lang={currentLang}
-	title="Elena Zen Full-stack Web Developer"
-	description={t('home.meta-description')}>
-	<Header page="home" t={t} lang={currentLang}/>
-	<main>
-		<section style="margin: 3em 20px 28px 20px;">
-			<div class="hero">
-				<div>
-					<div class="headline">
-						<h2 class="intro" set:html={t('hero.title')} /></br>
-						<p set:html={t('hero.subtitle')} />
-					</div>
-					<div class="btncont">
-						<a href="#contacts" rel="noopener noreferrer" class="btn violet" set:html={t('hero.cta1')}></a>
-						<a href="#projects" rel="noopener noreferrer" class="btn2" set:html={t('hero.cta2')}></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="aboutme">
-			<div>
-				<div>
-				<div style="margin-bottom: 50px;">
-					<h2 style="text-align: left;">{t('about.title')}</h2>
-					<h1>full-stack web developer</h1>
-					<div class="about-text">
-						<slot set:html={t('about.text')} />
-					</div>
-				</div>
-					<div style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; gap: 10px;">
-						<i class="fa-solid fa-laptop-code fa-2xl" style="color: #271b46;"></i>
-						<p style="margin-left: 10px; font-size: 1.2em;" set:html={t('about.swdev')}></p>
-					</div>
-					<i class="fa-solid fa-plus" style="color: #271b46; margin-left: 13px;"></i>
-					<div style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 40px; gap: 10px;">
-						<i class="fa-solid fa-robot fa-2xl" style="color: #271b46;"></i>
-						<p style="margin-left: 10px; font-size: 1.2em;" set:html={t('about.ai')}></p>
-					</div>
-					<p set:html={t('about.areas')}></p>
-				</div>
-				
-				<img src="/immagini/elena-web.jpg" alt="Elena web developer in formal clothing" />
-			</div>
-		</section>
-		<div class="wrapper">
-			<div class="stack">
-			<img src="/immagini/astro.png" alt="astro logo" height="45">
-			<img src="/immagini/ts.png" alt="typescript logo" height="70">
-			<img src="/immagini/django.png" alt="django logo" height="40">
-			<img src="/immagini/Tailwind.png" alt="tailwind css logo" height="45">
-			<img src="/immagini/React.png" alt="reactjs logo" height="70">
-			<img src="/immagini/Nextjs.png" alt="nextjs" height="30">
-			<img src="/immagini/python.png" alt="python logo" height="70">
-			<img src="/immagini/fastapi.png" alt="fastapi logo" height="50">
-			<img src="/immagini/astro.png" alt="astro logo" height="45" class="duplicate">
-			<img src="/immagini/ts.png" alt="typescript logo" height="70" class="duplicate">
-			<img src="/immagini/django.png" alt="django logo" height="30" class="duplicate">
-			<img src="/immagini/Tailwind.png" alt="tailwind css logo" height="45" class="duplicate">
-			<img src="/immagini/React.png" alt="reactjs logo" height="70" class="duplicate">
-			<img src="/immagini/Nextjs.png" alt="nextjs" height="35" class="duplicate">
-			<img src="/immagini/python.png" alt="python logo" height="70" class="duplicate">
-			<img src="/immagini/fastapi.png" alt="fastapi logo" height="40" class="duplicate">
-			</div>
-		</div>
-		<section>
-			<div class="why-me">
-				<h2 class="textcenter" set:html={t('why-me.title')}></h2>
-				<div class="why-me-cont">
-					<div>
-						<img src="/immagini/build-product.svg" alt="build product icon" width="150px">
-						<h3 set:html={t('why-me.1.title')}></h3>
-						<p>{t('why-me.1.text')}</p>
-					</div>
-					<div>
-						<img src="/immagini/statistics-computer-science.svg" alt="innovate icon" width="150px">
-						<h3 set:html={t('why-me.2.title')}></h3>
-						<p>{t('why-me.2.text')}</p>
-					</div>
-					<div>
-						<img src="/immagini/full-stack.svg" alt="collaborate icon" width="150px">
-						<h3 set:html={t('why-me.3.title')}></h3>
-						<p>{t('why-me.3.text')}</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="services">
-			<div>
-				<h2 class="textcenter" set:html={t('solutions.title')}></h2>
-				<div class="swiper mySwiper1">
-					<ul class="list swiper-wrapper">
-						<li class="swiper-slide"><div class="product">
-							<iconify-icon role="img" aria-label="" icon="fa7-solid:cubes" width="64" height="64" class="service-icon"></iconify-icon>
-							<h4 set:html={t('solutions.1.title')}></h4>
-							<span class="subtitle" set:html={t('solutions.1.subtitle')}></span>
-							<p set:html={t('solutions.1.text')}></p>
-						</div></li>
-						<li class="swiper-slide"><div class="product">
-							<iconify-icon role="img" aria-label="" icon="ri:seedling-fill" width="64" height="64" class="service-icon"></iconify-icon>
-							<h4 set:html={t('solutions.2.title')}></h4>
-							<span class="subtitle" set:html={t('solutions.2.subtitle')}></span>
-							<p set:html={t('solutions.2.text')}></p>
-						</div></li>
-						<li class="swiper-slide"><div class="product">
-							<iconify-icon role="img" aria-label="" icon="mingcute:git-pull-request-fill" width="64" height="64" class="service-icon"></iconify-icon>
-							<h4 set:html={t('solutions.3.title')}></h4>
-							<span class="subtitle" set:html={t('solutions.3.subtitle')}></span>
-							<p set:html={t('solutions.3.text')}></p>
-						</div></li>
-						<li class="swiper-slide"><div class="product">
-							<iconify-icon role="img" aria-label="" icon="mingcute:code-line" width="64" height="64" class="service-icon"></iconify-icon>
-							<h4 set:html={t('solutions.4.title')}></h4>
-							<span class="subtitle" set:html={t('solutions.4.subtitle')}></span>
-							<p set:html={t('solutions.4.text')}></p>
-						</div></li>
-					</ul>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-			</div>
-		</section>
-		<section id="projects">
-			<div>
-				<h2 class="textcenter" set:html={t('case-studies.title')}></h2>
-				<p set:html={t('case-studies.text')} />
-					<div class="grid-container">
-						{projects.map(p => <ProjectCard t={t} {...p} />)}
-					</div>
-					</br>
-				<div class="center"><a href={`/${currentLang}/portfolio`} rel="noopener noreferrer" class="btn violet" set:html={t('case-studies.cta')}></a></div>
-			</div>
-		</section>
-		<section class="reviews">
-            <h2 class="textcenter" set:html={t('reviews.title')}></h2>
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-					{reviews.map(p => 
-					<div class="review swiper-slide">
-						<div class="clientrev">
-						<b>{p.username}</b>
-						<img src="/immagini/Fiverr-Logo.png" alt="fiverr logo" width="30px">
-						</div>
-						<img src="/immagini/5stars.png" alt="5 stars review" height="30px">
-						<p>{p.review}</p>
-					</div>
-					)}
-                </div>
+<Layout
+  lang={currentLang}
+  title="Elena Zen Full-stack Web Developer"
+  description={t('home.meta-description')}
+>
+  <Header page="home" t={t} lang={currentLang} />
+  <main>
+    <section style="margin: 3em 20px 28px 20px;">
+      <div class="hero">
+        <div>
+          <div class="headline">
+            <h2 class="intro" set:html={t('hero.title')} />
+          </div>
+          <p set:html={t('hero.subtitle')} />
+        </div>
+        <div class="btncont">
+          <a
+            href="#contacts"
+            rel="noopener noreferrer"
+            class="btn violet"
+            set:html={t('hero.cta1')}
+          />
+          <a
+            href="#projects"
+            rel="noopener noreferrer"
+            class="btn2"
+            set:html={t('hero.cta2')}
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="aboutme">
+    <div>
+      <div>
+        <div style="margin-bottom: 50px;">
+          <h2 style="text-align: left;">{t('about.title')}</h2>
+          <h1>full-stack web developer</h1>
+          <div class="about-text">
+            <slot set:html={t('about.text')} />
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; gap: 10px;"
+        >
+          <i class="fa-solid fa-laptop-code fa-2xl" style="color: #271b46;"></i>
+          <p
+            style="margin-left: 10px; font-size: 1.2em;"
+            set:html={t('about.swdev')}
+          />
+        </div>
+        <i class="fa-solid fa-plus" style="color: #271b46; margin-left: 13px;"
+        ></i>
+        <div
+          style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 40px; gap: 10px;"
+        >
+          <i class="fa-solid fa-robot fa-2xl" style="color: #271b46;"></i>
+          <p
+            style="margin-left: 10px; font-size: 1.2em;"
+            set:html={t('about.ai')}
+          />
+        </div>
+        <p set:html={t('about.areas')} />
+      </div>
+
+      <img
+        src="/immagini/elena-web.jpg"
+        alt="Elena web developer in formal clothing"
+      />
+    </div>
+  </section>
+  <div class="wrapper">
+    <div class="stack">
+      <img src="/immagini/astro.png" alt="astro logo" height="45" />
+      <img src="/immagini/ts.png" alt="typescript logo" height="70" />
+      <img src="/immagini/django.png" alt="django logo" height="40" />
+      <img src="/immagini/Tailwind.png" alt="tailwind css logo" height="45" />
+      <img src="/immagini/React.png" alt="reactjs logo" height="70" />
+      <img src="/immagini/Nextjs.png" alt="nextjs" height="30" />
+      <img src="/immagini/python.png" alt="python logo" height="70" />
+      <img src="/immagini/fastapi.png" alt="fastapi logo" height="50" />
+      <img
+        src="/immagini/astro.png"
+        alt="astro logo"
+        height="45"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/ts.png"
+        alt="typescript logo"
+        height="70"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/django.png"
+        alt="django logo"
+        height="30"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/Tailwind.png"
+        alt="tailwind css logo"
+        height="45"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/React.png"
+        alt="reactjs logo"
+        height="70"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/Nextjs.png"
+        alt="nextjs"
+        height="35"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/python.png"
+        alt="python logo"
+        height="70"
+        class="duplicate"
+      />
+      <img
+        src="/immagini/fastapi.png"
+        alt="fastapi logo"
+        height="40"
+        class="duplicate"
+      />
+    </div>
+  </div>
+  <section>
+    <div class="why-me">
+      <h2 class="textcenter" set:html={t('why-me.title')} />
+      <div class="why-me-cont">
+        <div>
+          <img
+            src="/immagini/build-product.svg"
+            alt="build product icon"
+            width="150px"
+          />
+          <h3 set:html={t('why-me.1.title')} />
+          <p>{t('why-me.1.text')}</p>
+        </div>
+        <div>
+          <img
+            src="/immagini/statistics-computer-science.svg"
+            alt="innovate icon"
+            width="150px"
+          />
+          <h3 set:html={t('why-me.2.title')} />
+          <p>{t('why-me.2.text')}</p>
+        </div>
+        <div>
+          <img
+            src="/immagini/full-stack.svg"
+            alt="collaborate icon"
+            width="150px"
+          />
+          <h3 set:html={t('why-me.3.title')} />
+          <p>{t('why-me.3.text')}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div>
+      <h2 class="textcenter" set:html={t('solutions.title')} />
+      <div class="swiper mySwiper1">
+        <ul class="list swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="product">
+              <iconify-icon
+                role="img"
+                aria-label=""
+                icon="fa7-solid:cubes"
+                width="64"
+                height="64"
+                class="service-icon"></iconify-icon>
+              <h4 set:html={t('solutions.1.title')} />
+              <span class="subtitle" set:html={t('solutions.1.subtitle')} />
+              <p set:html={t('solutions.1.text')} />
             </div>
-        </section>
-	</main>
-	<div id="contacts">
-		<div > 
-			<div class="footcont">
-				<div class="getintouch">
-						<h2 class="textcenter" set:html={t('contact.title')}></h2>
-						<p set:html={t('contact.text')}></p>
-					<div class="btncont">
-						<a href="mailto:info.elenazen@gmail.com"  target="_blank" rel="noopener noreferrer" class="btn2" set:html={t('contact.cta1')}></a>
-						<a href="https://calendly.com/info-elenazen/30min" target="_blank" rel="noopener noreferrer" class="btn violet" set:html={t('contact.cta2')}></a>
-					</div>
-				</div>
-			</div>
-			<Footer t={t} lang={currentLang} />
-		</div>
-	</div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product">
+              <iconify-icon
+                role="img"
+                aria-label=""
+                icon="ri:seedling-fill"
+                width="64"
+                height="64"
+                class="service-icon"></iconify-icon>
+              <h4 set:html={t('solutions.2.title')} />
+              <span class="subtitle" set:html={t('solutions.2.subtitle')} />
+              <p set:html={t('solutions.2.text')} />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product">
+              <iconify-icon
+                role="img"
+                aria-label=""
+                icon="mingcute:git-pull-request-fill"
+                width="64"
+                height="64"
+                class="service-icon"></iconify-icon>
+              <h4 set:html={t('solutions.3.title')} />
+              <span class="subtitle" set:html={t('solutions.3.subtitle')} />
+              <p set:html={t('solutions.3.text')} />
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product">
+              <iconify-icon
+                role="img"
+                aria-label=""
+                icon="mingcute:code-line"
+                width="64"
+                height="64"
+                class="service-icon"></iconify-icon>
+              <h4 set:html={t('solutions.4.title')} />
+              <span class="subtitle" set:html={t('solutions.4.subtitle')} />
+              <p set:html={t('solutions.4.text')} />
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div>
+      <h2 class="textcenter" set:html={t('case-studies.title')} />
+      <p set:html={t('case-studies.text')} />
+      <div class="grid-container">
+        {projects.map((p) => <ProjectCard t={t} {...p} />)}
+      </div>
+    </div>
+    <div class="center">
+      <a
+        href={`/${currentLang}/portfolio`}
+        rel="noopener noreferrer"
+        class="btn violet"
+        set:html={t('case-studies.cta')}
+      />
+    </div>
+  </section>
 </Layout>
+<section class="reviews">
+  <h2 class="textcenter" set:html={t('reviews.title')} />
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      {
+        reviews.map((p) => (
+          <div class="review swiper-slide">
+            <div class="clientrev">
+              <b>{p.username}</b>
+              <img
+                src="/immagini/Fiverr-Logo.png"
+                alt="fiverr logo"
+                width="30px"
+              />
+            </div>
+            <img
+              src="/immagini/5stars.png"
+              alt="5 stars review"
+              height="30px"
+            />
+            <p>{p.review}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<div id="contacts">
+  <div>
+    <div class="footcont">
+      <div class="getintouch">
+        <h2 class="textcenter" set:html={t('contact.title')} />
+        <p set:html={t('contact.text')} />
+        <div class="btncont">
+          <a
+            href="mailto:info.elenazen@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn2"
+            set:html={t('contact.cta1')}
+          />
+          <a
+            href="https://calendly.com/info-elenazen/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn violet"
+            set:html={t('contact.cta2')}
+          />
+        </div>
+      </div>
+    </div>
+    <Footer t={t} lang={currentLang} />
+  </div>
+</div>

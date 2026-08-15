@@ -7,13 +7,13 @@ import { projects as projectsData } from '../../data/projects';
 import { languages, makeT } from '../../i18n/ui';
 
 export function getStaticPaths() {
-  return languages.map(lang => ({ params: { lang } }));
+  return languages.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
 const t = makeT(lang);
 
-const projects = projectsData.map(p => ({
+const projects = projectsData.map((p) => ({
   classes: p.classes,
   title: p.title[lang],
   description: p.description[lang],
@@ -23,58 +23,82 @@ const projects = projectsData.map(p => ({
   readme: p.readme,
   preview: p.preview,
   repo_visibility: p.repo_visibility,
-  badges: p.badges
+  badges: p.badges,
 }));
-
 ---
 
-<Layout lang={lang} 
-	title="Portfolio | Elena Zen · Full-Stack Web Developer" 
-	description={t('portfolio.meta-description')}>
-	<Header page="portfolio" t={t} lang={lang}/>
+<Layout
+  lang={lang}
+  title="Portfolio | Elena Zen · Full-Stack Web Developer"
+  description={t('portfolio.meta-description')}
+>
+  <Header page="portfolio" t={t} lang={lang} />
 
-    <section id="portfolio">
-      <div>
-        <h2 class="textcenter" set:html={t('portfolio.title')}></h2>
-        <p set:html={t('portfolio.text')}></p><br>
-        <div class="tabs">
-            <button id="featured-btn" role="tab" class="tab active">{t('tab.featured')}</button>
-            <button id="webapp-btn" role="tab" class="tab">{t('tab.webapps')}</button>
-            <button id="data-btn" role="tab" class="tab">{t('tab.data')}</button>
-            <button id="website-btn" role="tab" class="tab">{t('tab.websites')}</button>
-        </div>
-        <div class="grid-container">
-            <div class="work contrib featured">
-              <img src="/project_banners/banner-nod.png" alt='Piattaforma coworking NOTONLYDESK' loading="lazy"/>
-              <div style="display:flex; flex-direction: column;">
-              <div class="projtext">
-                <h4>NOTONLYDESK</h4>
-                <div class="badges">
-                  <span class="badge python">PYTHON</span>
-                  <span class="badge django">DJANGO</span>
-                  <span class="badge seo">SEO</span>
-                  <span class="badge javascript">JAVASCRIPT</span>
-                </div>
-                <p set:html={t('nod.text')}></p>
-                <div class="buttons" style="justify-content: flex-start">
-                <a style="width: min(50%, 300px)" href="https://www.notonlydesk.com/it/"
-                class="btn orange "
-                target="_blank" rel="noopener">{t('project.discover')}</a>
+  <section id="portfolio">
+    <div>
+      <h2 class="textcenter" set:html={t('portfolio.title')} />
+      <p set:html={t('portfolio.text')} /><br />
+      <div class="tabs">
+        <button id="featured-btn" role="tab" class="tab active"
+          >{t('tab.featured')}</button
+        >
+        <button id="webapp-btn" role="tab" class="tab"
+          >{t('tab.webapps')}</button
+        >
+        <button id="data-btn" role="tab" class="tab">{t('tab.data')}</button>
+        <button id="website-btn" role="tab" class="tab"
+          >{t('tab.websites')}</button
+        >
+      </div>
+      <div class="grid-container">
+        <div class="work contrib featured">
+          <img
+            src="/project_banners/banner-nod.png"
+            alt="Piattaforma coworking NOTONLYDESK"
+            loading="lazy"
+          />
+          <div style="display:flex; flex-direction: column;">
+            <div class="projtext">
+              <h4>NOTONLYDESK</h4>
+              <div class="badges">
+                <span class="badge python">PYTHON</span>
+                <span class="badge django">DJANGO</span>
+                <span class="badge seo">SEO</span>
+                <span class="badge javascript">JAVASCRIPT</span>
               </div>
-              </div>
+              <p set:html={t('nod.text')} />
+              <div class="buttons" style="justify-content: flex-start">
+                <a
+                  style="width: min(50%, 300px)"
+                  href="https://www.notonlydesk.com/it/"
+                  class="btn orange"
+                  target="_blank"
+                  rel="noopener">{t('project.discover')}</a
+                >
               </div>
             </div>
-            {projects.map(p => <ProjectCard t={t} {...p} />)}
+          </div>
         </div>
-        <div class="portfolio-final center">
-          <h3 set:html={t('portfolio.final.title')}></h3>
-          <p set:html={t('portfolio.final')}></p>
-          <div class="btncont">
-            <a class="btn violet" href={`/${lang}#contacts`} set:html={t('portfolio.cta1')}></a>
-            <a class="btn2" href={`/${lang}#services`} set:html={t('portfolio.cta2')}></a>
+        {projects.map((p) => <ProjectCard t={t} {...p} />)}
+      </div>
+      <div class="portfolio-final center">
+        <h3 set:html={t('portfolio.final.title')} />
+        <p set:html={t('portfolio.final')} />
+        <div class="btncont">
+          <a
+            class="btn violet"
+            href={`/${lang}#contacts`}
+            set:html={t('portfolio.cta1')}
+          />
+          <a
+            class="btn2"
+            href={`/${lang}#services`}
+            set:html={t('portfolio.cta2')}
+          />
         </div>
       </div>
-    </section>
+    </div>
 
     <Footer t={t} lang={lang} />
-</Layout>
+  </section></Layout
+>
