@@ -158,8 +158,8 @@ input {
   margin: 28px auto;
   padding: max(5%, 50px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   border-radius: 30px;
 }
 .hero p {
@@ -411,7 +411,7 @@ a.disabled:active {
   padding: var(--margin-xl);
   margin: 20px 1rem 0.5rem 0;
   border-radius: var(--radius-lg);
-  width: 95%;
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -627,7 +627,7 @@ nav {
 }
 
 .mySwiper1 .swiper-button-next,
-.swiper-button-prev {
+.mySwiper1 .swiper-button-prev {
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
@@ -650,7 +650,7 @@ nav {
   display: none !important;
 }
 .mySwiper1 .swiper-button-next:active,
-.swiper-button-prev:active {
+.mySwiper1 .swiper-button-prev:active {
   color: var(--bg-color);
 }
 .list {

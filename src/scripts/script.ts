@@ -1,5 +1,10 @@
+import Swiper from 'swiper';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 //info form (now inactive)
-function submit() {
+/* function submit() {
   const user = document.getElementsByTagName('input').value;
   const uname = user[0];
   const umail = user[1];
@@ -9,14 +14,14 @@ function submit() {
     mail: umail,
     message: umessage,
   };
-}
+} */
 
 //responsive dropdown header (<=600px vw)
 function show() {
   const menu = document.getElementById('menucont');
   const isMobile = window.matchMedia('(max-width: 850px)').matches;
 
-  if (isMobile) {
+  if (isMobile && menu) {
     menu.classList.toggle('open');
   }
 }
@@ -24,9 +29,20 @@ function show() {
 // services manual slider
 if (document.querySelector('.mySwiper1')) {
   var swiper1 = new Swiper('.mySwiper1', {
+    modules: [Navigation],
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      851: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
     },
   });
 }
@@ -34,10 +50,7 @@ if (document.querySelector('.mySwiper1')) {
 // reviews automatic slider
 if (document.querySelector('.mySwiper2')) {
   const swiper2 = new Swiper('.mySwiper2', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    modules: [Autoplay],
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -67,7 +80,7 @@ if (document.querySelector('.mySwiper2')) {
 }
 
 // tab filter in portfolio page
-function showProjects(evt, category) {
+function showProjects(evt: Event, category: string) {
   const projects = document.querySelectorAll('.work');
   projects.forEach(function (proj) {
     proj.classList.add('hidden');
@@ -83,27 +96,25 @@ function showProjects(evt, category) {
   selected.forEach((proj) => {
     proj.classList.remove('hidden');
   });
-  evt.currentTarget.classList.add('active');
+  (evt.currentTarget as HTMLElement).classList.add('active');
 }
 
-if (document.getElementById('featured-btn')) {
-  document
-    .getElementById('featured-btn')
-    .addEventListener('click', (event) => showProjects(event, '.featured'));
-  document
-    .getElementById('website-btn')
-    .addEventListener('click', (event) => showProjects(event, '.website'));
-  document
-    .getElementById('webapp-btn')
-    .addEventListener('click', (event) => showProjects(event, '.webapp'));
-  document
-    .getElementById('data-btn')
-    .addEventListener('click', (event) => showProjects(event, '.data'));
+const projectFilters = [
+  { id: 'featured-btn', selector: '.featured' },
+  { id: 'website-btn', selector: '.website' },
+  { id: 'webapp-btn', selector: '.webapp' },
+  { id: 'data-btn', selector: '.data' },
+];
 
-  const projects = document.querySelectorAll('.work');
-  projects.forEach(function (proj) {
-    if (!proj.classList.contains('featured')) {
-      proj.classList.add('hidden');
-    }
+projectFilters.forEach(({ id, selector }) => {
+  document.getElementById(id)?.addEventListener('click', (event) => {
+    showProjects(event, selector);
   });
-}
+});
+
+const projects = document.querySelectorAll('.work');
+projects.forEach(function (proj) {
+  if (!proj.classList.contains('featured')) {
+    proj.classList.add('hidden');
+  }
+});

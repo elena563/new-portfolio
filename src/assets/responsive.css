@@ -7,9 +7,6 @@
   #ham {
     display: none;
   }
-  .mySwiper1 .swiper-slide {
-    width: 50.5% !important;
-  }
 }
 @media (min-width: 1000px) {
   .swiper.mySwiper2 .swiper-slide {

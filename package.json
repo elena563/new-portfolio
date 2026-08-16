@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^5.13.2"
+    "astro": "^5.13.2",
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/swiper": "^6.0.0",
     "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.7.0",
@@ -24,5 +26,11 @@
     "prettier-plugin-astro": "^0.14.1",
     "sass-embedded": "^1.100.0",
     "typescript-eslint": "^8.67.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.27.7": true,
+    "esbuild@0.25.9": true,
+    "sharp@0.34.5": true
   }
 }
