@@ -26,6 +26,8 @@ function show() {
   }
 }
 
+document.getElementById('ham')?.addEventListener('click', show);
+
 // services manual slider
 if (document.querySelector('.mySwiper1')) {
   var swiper1 = new Swiper('.mySwiper1', {
