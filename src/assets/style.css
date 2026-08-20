@@ -385,6 +385,14 @@ a.disabled:active {
   background-color: var(--fg-color);
   color: var(--bg-color);
 }
+.btn-ghost {
+  text-decoration: none;
+  padding: 10px 30px;
+  color: var(--accent-violet);
+  border-radius: var(--radius-xl);
+  background-color: transparent;
+  min-width: 150px;
+}
 
 /* stack */
 .stack {
@@ -453,6 +461,13 @@ a.disabled:active {
   justify-content: space-between;
   margin: var(--margin-md) 0;
 }
+.large-grid {
+  display: flex;
+  flex-direction: column;
+  gap: max(2vw, 10px);
+  width: 100%;
+  margin: var(--margin-md) 0;
+}
 .tabs {
   margin-bottom: 32px;
   display: flex;
@@ -507,6 +522,29 @@ a.disabled:active {
   gap: var(--margin-md);
   flex-wrap: wrap;
 }
+.large-card {
+  background-color: var(--bg-color);
+  padding: var(--margin-md);
+  display: flex;
+  gap: var(--margin-md);
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+}
+.large-content {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--margin-md);
+  flex-wrap: wrap;
+}
+.large-content .projtext {
+  flex: 1 1 50%;
+  min-width: 450px;
+}
+.large-content .btncontfull {
+  margin-top: var(--margin-md);
+}
 .work.contrib {
   flex-direction: row;
   gap: var(--margin-sm);
@@ -528,7 +566,13 @@ a.disabled:active {
   flex: 1 1 250px;
   min-width: 0;
   max-width: 100%;
-
+  border-radius: var(--radius-xs);
+  object-fit: contain;
+}
+.large-card img {
+  flex: 1 1 40%;
+  min-width: 0;
+  border-radius: var(--radius-xs);
   object-fit: contain;
 }
 .projtext {

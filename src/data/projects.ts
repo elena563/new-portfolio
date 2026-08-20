@@ -16,6 +16,10 @@ export interface Project {
   preview: boolean;
   repo_visibility: boolean;
   badges?: string[];
+  more_info?: {
+    title: string;
+    text: string;
+  }[];
 }
 
 export const projects: Project[] = [
@@ -46,7 +50,8 @@ export const projects: Project[] = [
       en: 'MamaChef',
     },
     description: {
-      it: 'Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa',
+      it: `Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa<br><br>
+      MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno successivamente dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.`,
       en: 'Full-stack web application for creating recipes, cooking step by step, and managing your shopping list',
     },
     img: '/project_banners/banner-mamachef.png',
@@ -56,6 +61,12 @@ export const projects: Project[] = [
     preview: true,
     repo_visibility: true,
     badges: ['Django', 'JavaScript', 'PostgreSQL'],
+    more_info: [
+      {
+        title: 'test',
+        text: 'test',
+      },
+    ],
   },
   {
     classes: 'featured website',

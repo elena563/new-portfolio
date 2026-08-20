@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import ProjectCardSmall from '../../components/ProjectCardSmall.astro';
+import ProjectCardLarge from '../../components/ProjectCardLarge.astro';
 import { projects as projectsData } from '../../data/projects';
 import { languages, makeT } from '../../i18n/ui';
 
@@ -26,9 +27,11 @@ const projects = projectsData.map((p) => ({
   preview: p.preview,
   repo_visibility: p.repo_visibility,
   badges: p.badges,
+  more_info: p.more_info,
 }));
 
 const projectsSmall = projects.filter((p) => p.card_dim === 'small');
+const projectsLarge = projects.filter((p) => p.card_dim === 'large');
 ---
 
 <Layout
@@ -84,6 +87,9 @@ const projectsSmall = projects.filter((p) => p.card_dim === 'small');
           </div>
         </div>
         {projects.map((p) => <ProjectCard t={t} {...p} />)}
+      </div>
+      <div class="large-grid">
+        {projectsLarge.map((p) => <ProjectCardLarge t={t} {...p} />)}
       </div>
       <div class="small-grid">
         {projectsSmall.map((p) => <ProjectCardSmall t={t} {...p} />)}

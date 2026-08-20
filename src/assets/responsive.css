@@ -233,6 +233,17 @@
   .small-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .large-content .projtext {
+    min-width: 350px;
+  }
+  .large-content {
+    flex-direction: column;
+  }
+  .large-card img {
+    flex: none;
+    width: 100%;
+    max-width: none;
+  }
 }
 
 @media (max-width: 400px) {

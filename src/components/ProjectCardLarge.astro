@@ -1,0 +1,79 @@
+---
+const {
+  t,
+  classes,
+  title,
+  description,
+  img,
+  alt,
+  url,
+  readme,
+  preview,
+  repo_visibility,
+  badges,
+  more_info,
+} = Astro.props;
+
+type Paragraph = {
+  title: string;
+  text: string;
+};
+---
+
+<div class={`large-card ${classes || ''}`}>
+  <div class="large-content">
+    <img src={img} alt={alt} loading="lazy" />
+    <div class="projtext">
+      <h4>{title}</h4>
+      {
+        badges && badges.length > 0 && (
+          <div class="badges">
+            {badges.map((tech: string) => (
+              <span class={`badge ${tech.toLowerCase().replace(/\s+/g, '-')}`}>
+                {tech.toUpperCase()}
+              </span>
+            ))}
+          </div>
+        )
+      }
+      <p set:html={description} />
+      <div class="btncontfull">
+        {
+          preview && (
+            <a
+              href={url || '#'}
+              class={`btn orange ${!url ? 'disabled' : ''}`}
+              target="_blank"
+              rel="noopener"
+            >
+              {t('project.discover')}
+            </a>
+          )
+        }
+        {
+          repo_visibility && (
+            <a href={readme} target="_blank" rel="noopener" class="btn2">
+              <i class="fa-brands fa-github fa-sm" />
+              <span>GitHub</span>
+            </a>
+          )
+        }
+        {
+          more_info && (
+            <details>
+              <summary class="btn-ghost">Discover More</summary>
+              <div>
+                {more_info.map((par: Paragraph) => (
+                  <p class="text-sm text-text-mid leading-relaxed">
+                    <strong>{par.title}</strong> <br />
+                    {par.text}
+                  </p>
+                ))}
+              </div>
+            </details>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</div>
