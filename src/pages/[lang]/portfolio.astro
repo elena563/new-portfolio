@@ -3,6 +3,7 @@ import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import ProjectCardSmall from '../../components/ProjectCardSmall.astro';
 import { projects as projectsData } from '../../data/projects';
 import { languages, makeT } from '../../i18n/ui';
 
@@ -15,6 +16,7 @@ const t = makeT(lang);
 
 const projects = projectsData.map((p) => ({
   classes: p.classes,
+  card_dim: p.card_dim,
   title: p.title[lang],
   description: p.description[lang],
   img: p.img,
@@ -25,6 +27,8 @@ const projects = projectsData.map((p) => ({
   repo_visibility: p.repo_visibility,
   badges: p.badges,
 }));
+
+const projectsSmall = projects.filter((p) => p.card_dim === 'small');
 ---
 
 <Layout
@@ -80,6 +84,9 @@ const projects = projectsData.map((p) => ({
           </div>
         </div>
         {projects.map((p) => <ProjectCard t={t} {...p} />)}
+      </div>
+      <div class="small-grid">
+        {projectsSmall.map((p) => <ProjectCardSmall t={t} {...p} />)}
       </div>
       <div class="portfolio-final center">
         <h3 set:html={t('portfolio.final.title')} />

@@ -1,5 +1,6 @@
 export interface Project {
   classes: string;
+  card_dim: 'small' | 'large';
   title: {
     it: string;
     en: string;
@@ -20,6 +21,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     classes: 'featured webapp data',
+    card_dim: 'large',
     title: {
       it: 'StatPilot',
       en: 'StatPilot',
@@ -34,10 +36,11 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/statpilot',
     preview: true,
     repo_visibility: true,
-    badges: ['Python', 'Flask', 'Data Science'],
+    badges: ['Python', 'Flask'],
   },
   {
     classes: 'featured webapp',
+    card_dim: 'large',
     title: {
       it: 'MamaChef',
       en: 'MamaChef',
@@ -52,10 +55,11 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/mamachef',
     preview: true,
     repo_visibility: true,
-    badges: ['Django', 'NLP', 'Web Design', 'JavaScript', 'PostgreSQL'],
+    badges: ['Django', 'JavaScript', 'PostgreSQL'],
   },
   {
     classes: 'featured website',
+    card_dim: 'small',
     title: {
       it: 'Blacklisted M3dia',
       en: 'Blacklisted M3dia',
@@ -75,6 +79,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured website',
+    card_dim: 'small',
     title: {
       it: 'Antonio Accardi Isteroscopia',
       en: 'Antonio Accardi Isteroscopia',
@@ -94,6 +99,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured webapp data',
+    card_dim: 'small',
     title: {
       it: 'SpotiType',
       en: 'SpotiType',
@@ -108,10 +114,11 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/spotitype',
     preview: true,
     repo_visibility: true,
-    badges: ['Python', 'Flask', 'Machine Learning'],
+    badges: ['Python', 'Flask', 'Scikit-learn'],
   },
   {
     classes: 'featured website',
+    card_dim: 'small',
     title: {
       it: 'Professor Navid Nobani',
       en: 'Professor Navid Nobani',
@@ -129,6 +136,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured data',
+    card_dim: 'large',
     title: {
       it: 'WordViz',
       en: 'WordViz',
@@ -146,6 +154,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured data',
+    card_dim: 'small',
     title: {
       it: 'Analisi Recensioni Amazon Food',
       en: 'Amazon Food Reviews Analysis',
@@ -159,10 +168,11 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/food-reviews-analysis',
     preview: false,
     repo_visibility: true,
-    badges: ['Python', 'Data Analysis', 'AI', 'NLP'],
+    badges: ['Python', 'Pandas', 'AI'],
   },
   {
     classes: 'featured website',
+    card_dim: 'small',
     title: {
       it: 'Save the Shark',
       en: 'Save the Shark',
@@ -181,6 +191,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured webapp',
+    card_dim: 'small',
     title: {
       it: 'MarketMint Dashboard Criptovalute',
       en: 'MarketMint Dashboard Cryptocurrencies',
@@ -199,6 +210,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured website',
+    card_dim: 'small',
     title: {
       it: 'Hotel Sogno in Maremma',
       en: 'Hotel Sogno in Maremma',
@@ -217,6 +229,7 @@ export const projects: Project[] = [
   },
   {
     classes: 'featured data',
+    card_dim: 'small',
     title: {
       it: 'Hashtag Generator',
       en: 'Hashtag Generator',
@@ -231,6 +244,6 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/hashtag_generator',
     preview: true,
     repo_visibility: true,
-    badges: ['Python', 'Streamlit', 'AI', 'Langchain'],
+    badges: ['Python', 'Streamlit', 'Langchain'],
   },
 ];
