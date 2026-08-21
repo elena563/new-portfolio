@@ -193,6 +193,15 @@
   .why-me h2 {
     text-align: left;
   }
+  .large-content {
+    grid-template-areas:
+      'img  text'
+      'extra extra';
+  }
+
+  .large-content img {
+    grid-row: 1;
+  }
 }
 
 @media (max-width: 600px) {
@@ -233,16 +242,12 @@
   .small-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .large-content .projtext {
-    min-width: 350px;
-  }
   .large-content {
-    flex-direction: column;
-  }
-  .large-card img {
-    flex: none;
-    width: 100%;
-    max-width: none;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'img'
+      'text'
+      'extra';
   }
 }
 

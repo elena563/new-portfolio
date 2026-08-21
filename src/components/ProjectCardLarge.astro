@@ -4,6 +4,7 @@ const {
   classes,
   title,
   description,
+  description_more,
   img,
   alt,
   url,
@@ -37,6 +38,9 @@ type Paragraph = {
         )
       }
       <p set:html={description} />
+    </div>
+    <div class="third-area">
+      {description_more && <p set:html={description_more} />}
       <div class="btncontfull">
         {
           preview && (
@@ -60,20 +64,24 @@ type Paragraph = {
         }
         {
           more_info && (
-            <details>
-              <summary class="btn-ghost">Discover More</summary>
-              <div>
-                {more_info.map((par: Paragraph) => (
-                  <p class="text-sm text-text-mid leading-relaxed">
-                    <strong>{par.title}</strong> <br />
-                    {par.text}
-                  </p>
-                ))}
-              </div>
-            </details>
+            <button class="btn-ghost">
+              <i class="fa-solid fa-arrow-down" style="color: #7f5beb;" />
+              <span>Discover More</span>
+            </button>
           )
         }
       </div>
     </div>
+  </div>
+  <div>
+    {
+      more_info &&
+        more_info.map((par: Paragraph) => (
+          <p class="text-sm text-text-mid leading-relaxed">
+            <strong>{par.title}</strong> <br />
+            {par.text}
+          </p>
+        ))
+    }
   </div>
 </div>

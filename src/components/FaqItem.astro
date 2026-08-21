@@ -1,0 +1,54 @@
+---
+const { q, a } = Astro.props;
+---
+
+<details class="group bg-white mb-2 shadow-md">
+  <summary
+    class="flex py-5 px-3 border-l-4 border-aqua items-center justify-between gap-4 cursor-pointer list-none"
+  >
+    <span
+      class="font-sans text-xl font-medium group-open:text-aqua transition-colors"
+    >
+      {q}
+    </span>
+    <span
+      class="shrink-0 w-5 h-5 flex items-center justify-center text-aqua"
+      aria-hidden="true"
+    >
+      <svg
+        class="block group-open:hidden"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M8 3v10M3 8h10"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"></path>
+      </svg>
+      <svg
+        class="hidden group-open:block"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M3 8h10"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"></path>
+      </svg>
+    </span>
+  </summary>
+  {
+    a && (
+      <p
+        class="px-5 py-5 mt-4 font-sans text-sm text-text-mid leading-relaxed pr-8"
+        set:html={a}
+      ></p>
+    )
+  }
+</details>

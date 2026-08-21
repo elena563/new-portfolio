@@ -9,6 +9,10 @@ export interface Project {
     it: string;
     en: string;
   };
+  description_more?: {
+    it: string;
+    en: string;
+  };
   img: string;
   alt: string;
   url?: string;
@@ -50,9 +54,12 @@ export const projects: Project[] = [
       en: 'MamaChef',
     },
     description: {
-      it: `Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa<br><br>
-      MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno successivamente dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.`,
+      it: `Applicazione web full-stack per creare ricette, cucinare passo passo e gestire la tua lista della spesa`,
       en: 'Full-stack web application for creating recipes, cooking step by step, and managing your shopping list',
+    },
+    description_more: {
+      it: 'MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno successivamente dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.',
+      en: 'MamaChef was born from a university project of Software Design and Development, initially developed with two colleagues who later gave me the opportunity to carry on the project independently. The project was then migrated to Django and completed in a first phase, becoming the final submission for the CS50 Web course.',
     },
     img: '/project_banners/banner-mamachef.png',
     alt: 'mamachef web app',

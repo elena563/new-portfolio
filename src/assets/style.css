@@ -87,8 +87,10 @@ body {
 p,
 a,
 ul,
+button,
 body {
   font-size: var(--size-normal);
+  font-family: var(--font-base);
   overflow-wrap: break-word;
 }
 h1,
@@ -387,7 +389,8 @@ a.disabled:active {
 }
 .btn-ghost {
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  border: none;
   color: var(--accent-violet);
   border-radius: var(--radius-xl);
   background-color: transparent;
@@ -533,14 +536,20 @@ a.disabled:active {
   border-radius: var(--radius-sm);
 }
 .large-content {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
   gap: var(--margin-md);
-  flex-wrap: wrap;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'img text'
+    'img extra';
 }
 .large-content .projtext {
-  flex: 1 1 50%;
-  min-width: 450px;
+  grid-area: text;
+  min-width: 0;
+}
+.third-area {
+  grid-area: extra;
 }
 .large-content .btncontfull {
   margin-top: var(--margin-md);
@@ -570,10 +579,12 @@ a.disabled:active {
   object-fit: contain;
 }
 .large-card img {
-  flex: 1 1 40%;
-  min-width: 0;
-  border-radius: var(--radius-xs);
+  grid-area: img;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  border-radius: var(--radius-xs);
+  align-self: start;
 }
 .projtext {
   flex: 1 1 250px;
@@ -588,9 +599,11 @@ a.disabled:active {
   flex-wrap: wrap;
 }
 .btncontfull > * {
+  flex: 1 1 150px;
+  min-width: 0;
   margin: 0;
   text-align: center;
-  flex: 1;
+  white-space: nowrap;
 }
 .ftcont {
   display: flex;

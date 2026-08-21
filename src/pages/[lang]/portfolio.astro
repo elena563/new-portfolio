@@ -20,6 +20,7 @@ const projects = projectsData.map((p) => ({
   card_dim: p.card_dim,
   title: p.title[lang],
   description: p.description[lang],
+  description_more: p.description_more ? p.description_more[lang] : undefined,
   img: p.img,
   alt: p.alt,
   url: p.url,
