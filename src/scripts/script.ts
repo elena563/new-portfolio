@@ -28,6 +28,23 @@ function show() {
 
 document.getElementById('ham')?.addEventListener('click', show);
 
+// Large project card more info button
+const moreInfoButtons = document.querySelectorAll('.more-info-btn');
+
+moreInfoButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const projectCard = button.closest('.large-card');
+    if (projectCard) {
+      const moreInfoSection = projectCard.querySelector('.accordion');
+      if (moreInfoSection) {
+        const isOpen = moreInfoSection.classList.toggle('open');
+        button.classList.toggle('open', isOpen);
+        button.setAttribute('aria-expanded', String(isOpen));
+      }
+    }
+  });
+});
+
 // services manual slider
 if (document.querySelector('.mySwiper1')) {
   var swiper1 = new Swiper('.mySwiper1', {

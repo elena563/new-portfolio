@@ -21,7 +21,9 @@ export default {
   'nod.text': `<p style="margin-bottom: 10px;">NOTONLYDESK, o semplicemente NOD, è una startup innovativa che fornisce una piattaforma flessibile per accedere a una rete di spazi di coworking in tutta Italia e in Europa.<br><br> 
                       Attualmente collaboro con loro, supportando il CTO durante una fase chiave della loro crescita. Il mio ruolo prevede la gestione sia dello sviluppo frontend che backend, la creazione di nuove pagine, il contributo al nuovo pannello di amministrazione e l'implementazione di funzionalità aggiuntive.</p>`,
 
-  'project.discover': 'Scopri',
+  'project.visit': 'Visita',
+  'project.discover-more': 'Scopri di più',
+  'project.discover-less': 'Mostra meno',
 
   'privacy.text': `<p>Questo sito raccoglie dati tramite Google Analytics per analizzare l'utilizzo e migliorare l'esperienza utente. I dati raccolti sono anonimi e non identificano personalmente gli utenti.</p>
 		<p>Non raccogliamo altre informazioni personali attraverso il sito.</p>

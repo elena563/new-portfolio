@@ -121,6 +121,9 @@ h4 {
 hr {
   margin: var(--margin-2xl) 0;
 }
+button {
+  cursor: pointer;
+}
 header {
   background-color: var(--secondary-color);
   color: var(--bg-color);
@@ -396,6 +399,9 @@ a.disabled:active {
   background-color: transparent;
   min-width: 150px;
 }
+.btn-ghost:hover {
+  color: var(--accent-violet-dark);
+}
 
 /* stack */
 .stack {
@@ -604,6 +610,49 @@ a.disabled:active {
   margin: 0;
   text-align: center;
   white-space: nowrap;
+}
+.accordion {
+  display: grid;
+  grid-template-rows: 0fr;
+  margin-top: 0;
+  transition:
+    grid-template-rows 350ms ease,
+    margin-top 350ms ease;
+}
+.accordion.open {
+  grid-template-rows: 1fr;
+  margin-top: var(--margin-sm);
+}
+.accordion .more-info {
+  overflow: hidden;
+  min-height: 0;
+  border-top: solid 0 rgba(0, 0, 0, 0.075);
+  padding: 0 var(--margin-md);
+  opacity: 0;
+  transition:
+    padding 350ms ease,
+    border-top-width 350ms ease,
+    opacity 300ms ease;
+}
+.accordion.open .more-info {
+  border-top-width: 2px;
+  padding: var(--margin-md);
+  opacity: 1;
+}
+.more-info-btn i {
+  transition: transform 350ms ease;
+}
+.more-info-btn.open i {
+  transform: rotate(180deg);
+}
+.more-info-btn .label-less {
+  display: none;
+}
+.more-info-btn.open .label-more {
+  display: none;
+}
+.more-info-btn.open .label-less {
+  display: inline;
 }
 .ftcont {
   display: flex;

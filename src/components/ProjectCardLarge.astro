@@ -50,7 +50,7 @@ type Paragraph = {
               target="_blank"
               rel="noopener"
             >
-              {t('project.discover')}
+              {t('project.visit')}
             </a>
           )
         }
@@ -64,24 +64,27 @@ type Paragraph = {
         }
         {
           more_info && (
-            <button class="btn-ghost">
+            <button class="btn-ghost more-info-btn" aria-expanded="false">
               <i class="fa-solid fa-arrow-down" style="color: #7f5beb;" />
-              <span>Discover More</span>
+              <span class="label-more">{t('project.discover-more')}</span>
+              <span class="label-less">{t('project.discover-less')}</span>
             </button>
           )
         }
       </div>
     </div>
   </div>
-  <div>
-    {
-      more_info &&
-        more_info.map((par: Paragraph) => (
-          <p class="text-sm text-text-mid leading-relaxed">
-            <strong>{par.title}</strong> <br />
-            {par.text}
-          </p>
-        ))
-    }
+  <div class="accordion">
+    <div class="more-info">
+      {
+        more_info &&
+          more_info.map((par: Paragraph) => (
+            <p class="">
+              <strong>{par.title}</strong> <br />
+              {par.text}
+            </p>
+          ))
+      }
+    </div>
   </div>
 </div>
