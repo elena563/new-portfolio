@@ -54,14 +54,6 @@
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .work.contrib {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .work.contrib img {
-    width: 100%;
-    height: auto;
-  }
   .intro {
     font-size: 4rem;
   }
@@ -78,7 +70,6 @@
     display: flex;
     width: 23em;
     position: relative;
-    left: 2vw;
   }
 
   .ham {
@@ -193,6 +184,15 @@
   .why-me h2 {
     text-align: left;
   }
+  .large-content {
+    grid-template-areas:
+      'img  text'
+      'extra extra';
+  }
+
+  .large-content img {
+    grid-row: 1;
+  }
 }
 
 @media (max-width: 600px) {
@@ -229,6 +229,17 @@
   #cop {
     flex-direction: column;
     text-align: center;
+  }
+  .small-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .large-content {
+    gap: var(--margin-md);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'img'
+      'text'
+      'extra';
   }
 }
 

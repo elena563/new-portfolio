@@ -28,6 +28,23 @@ function show() {
 
 document.getElementById('ham')?.addEventListener('click', show);
 
+// Large project card more info button
+const moreInfoButtons = document.querySelectorAll('.more-info-btn');
+
+moreInfoButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const projectCard = button.closest('.large-card');
+    if (projectCard) {
+      const moreInfoSection = projectCard.querySelector('.accordion');
+      if (moreInfoSection) {
+        const isOpen = moreInfoSection.classList.toggle('open');
+        button.classList.toggle('open', isOpen);
+        button.setAttribute('aria-expanded', String(isOpen));
+      }
+    }
+  });
+});
+
 // services manual slider
 if (document.querySelector('.mySwiper1')) {
   var swiper1 = new Swiper('.mySwiper1', {
@@ -83,7 +100,7 @@ if (document.querySelector('.mySwiper2')) {
 
 // tab filter in portfolio page
 function showProjects(evt: Event, category: string) {
-  const projects = document.querySelectorAll('.work');
+  const projects = document.querySelectorAll('.large-card, .small-card');
   projects.forEach(function (proj) {
     proj.classList.add('hidden');
   });
@@ -114,7 +131,7 @@ projectFilters.forEach(({ id, selector }) => {
   });
 });
 
-const projects = document.querySelectorAll('.work');
+const projects = document.querySelectorAll('.large-card, .small-card');
 projects.forEach(function (proj) {
   if (!proj.classList.contains('featured')) {
     proj.classList.add('hidden');
