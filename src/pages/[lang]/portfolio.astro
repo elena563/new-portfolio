@@ -57,36 +57,6 @@ const projectsLarge = projects.filter((p) => p.card_dim === 'large');
           >{t('tab.websites')}</button
         >
       </div>
-      <div class="grid-container">
-        <div class="work contrib featured">
-          <img
-            src="/project_banners/banner-nod.png"
-            alt="Piattaforma coworking NOTONLYDESK"
-            loading="lazy"
-          />
-          <div style="display:flex; flex-direction: column;">
-            <div class="projtext">
-              <h4>NOTONLYDESK</h4>
-              <div class="badges">
-                <span class="badge python">PYTHON</span>
-                <span class="badge django">DJANGO</span>
-                <span class="badge seo">SEO</span>
-                <span class="badge javascript">JAVASCRIPT</span>
-              </div>
-              <p set:html={t('nod.text')} />
-              <div class="buttons" style="justify-content: flex-start">
-                <a
-                  style="width: min(50%, 300px)"
-                  href="https://www.notonlydesk.com/it/"
-                  class="btn orange"
-                  target="_blank"
-                  rel="noopener">{t('project.visit')}</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="large-grid">
         {projectsLarge.map((p) => <ProjectCardLarge t={t} {...p} />)}
       </div>

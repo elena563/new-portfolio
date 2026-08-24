@@ -54,14 +54,6 @@
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .work.contrib {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .work.contrib img {
-    width: 100%;
-    height: auto;
-  }
   .intro {
     font-size: 4rem;
   }

@@ -56,7 +56,12 @@ type Paragraph = {
         }
         {
           repo_visibility && (
-            <a href={readme} target="_blank" rel="noopener" class="btn2">
+            <a
+              href={readme}
+              target="_blank"
+              rel="noopener"
+              class="btn2 icon-btn"
+            >
               <i class="fa-brands fa-github fa-sm" />
               <span>GitHub</span>
             </a>
@@ -64,7 +69,10 @@ type Paragraph = {
         }
         {
           more_info && (
-            <button class="btn-ghost more-info-btn" aria-expanded="false">
+            <button
+              class="btn-ghost more-info-btn icon-btn"
+              aria-expanded="false"
+            >
               <i class="fa-solid fa-arrow-down" style="color: #7f5beb;" />
               <span class="label-more">{t('project.discover-more')}</span>
               <span class="label-less">{t('project.discover-less')}</span>
