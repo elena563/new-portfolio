@@ -100,7 +100,7 @@ if (document.querySelector('.mySwiper2')) {
 
 // tab filter in portfolio page
 function showProjects(evt: Event, category: string) {
-  const projects = document.querySelectorAll('.work, .large-card, .small-card');
+  const projects = document.querySelectorAll('.large-card, .small-card');
   projects.forEach(function (proj) {
     proj.classList.add('hidden');
   });
@@ -131,7 +131,7 @@ projectFilters.forEach(({ id, selector }) => {
   });
 });
 
-const projects = document.querySelectorAll('.work, .large-card, .small-card');
+const projects = document.querySelectorAll('.large-card, .small-card');
 projects.forEach(function (proj) {
   if (!proj.classList.contains('featured')) {
     proj.classList.add('hidden');

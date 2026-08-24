@@ -2,7 +2,7 @@
 import Header from './Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Footer from './Footer.astro';
-import ProjectCard from './ProjectCard.astro';
+import ProjectCardLarge from './ProjectCardLarge.astro';
 import { projects as projectsData } from '../data/projects';
 import { languages, makeT } from '../i18n/ui';
 
@@ -12,14 +12,20 @@ const t = makeT(currentLang);
 
 const projects = projectsData.slice(0, 3).map((p) => ({
   classes: p.classes,
+  card_dim: p.card_dim,
   title: p.title[currentLang],
   description: p.description[currentLang],
+  description_more: p.description_more
+    ? p.description_more[currentLang]
+    : undefined,
   img: p.img,
   alt: p.alt,
   url: p.url,
   readme: p.readme,
   preview: p.preview,
   repo_visibility: p.repo_visibility,
+  badges: p.badges,
+  more_info: p.more_info ? p.more_info[currentLang] || undefined : undefined,
 }));
 
 const reviews = [
@@ -100,7 +106,7 @@ const reviews = [
           <h2 style="text-align: left;">{t('about.title')}</h2>
           <h1>full-stack web developer</h1>
           <div class="about-text">
-            <slot set:html={t('about.text')} />
+            <p set:html={t('about.text')} />
           </div>
         </div>
         <div
@@ -297,8 +303,8 @@ const reviews = [
     <div>
       <h2 class="textcenter" set:html={t('case-studies.title')} />
       <p set:html={t('case-studies.text')} />
-      <div class="grid-container">
-        {projects.map((p) => <ProjectCard t={t} {...p} />)}
+      <div class="large-grid">
+        {projects.map((p) => <ProjectCardLarge t={t} {...p} />)}
       </div>
     </div>
     <div class="center">

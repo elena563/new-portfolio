@@ -34,39 +34,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    classes: 'featured webapp data',
-    card_dim: 'large',
-    title: {
-      it: 'StatPilot',
-      en: 'StatPilot',
-    },
-    description: {
-      it: 'Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli',
-      en: 'Interactive web application for statistical data analysis, machine learning modeling, and model explainability',
-    },
-    img: '/project_banners/banner-statpilot.png',
-    alt: 'statpilot web app',
-    url: 'https://statpilot.onrender.com/',
-    readme: 'https://github.com/elena563/statpilot',
-    preview: true,
-    repo_visibility: true,
-    badges: ['Python', 'Flask'],
-    more_info: {
-      it: [
-        {
-          title: 'test',
-          text: ``,
-        },
-      ],
-      en: [
-        {
-          title: 'test',
-          text: ``,
-        },
-      ],
-    },
-  },
-  {
     classes: 'featured webapp',
     card_dim: 'large',
     title: {
@@ -121,6 +88,71 @@ When an ingredient is not already present, the system verifies that it is indeed
         {
           title: 'Full-stack Implementation',
           text: `The application's architecture integrates a complex relational data model, Django-based backend logic, and JavaScript-driven frontend interactions. I also developed features requiring coordination across the application's various layers, such as a guided cooking mode with timers, ingredient autocomplete, asynchronous shopping list updates, and PDF export.`,
+        },
+      ],
+    },
+  },
+  {
+    classes: 'featured data',
+    card_dim: 'large',
+    title: {
+      it: 'WordViz',
+      en: 'WordViz',
+    },
+    description: {
+      it: 'Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing',
+      en: 'Python library for word embeddings visualization and analysis, useful in Natural Language Processing',
+    },
+    img: '/project_banners/banner-wordviz.png',
+    alt: 'wordviz python library',
+    readme: 'https://github.com/elena563/wordviz',
+    preview: false,
+    repo_visibility: true,
+    badges: ['Python', 'Matplotlib', 'Gensim', 'Plotly'],
+    more_info: {
+      it: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+      en: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+    },
+  },
+  {
+    classes: 'featured webapp data',
+    card_dim: 'large',
+    title: {
+      it: 'StatPilot',
+      en: 'StatPilot',
+    },
+    description: {
+      it: 'Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli',
+      en: 'Interactive web application for statistical data analysis, machine learning modeling, and model explainability',
+    },
+    img: '/project_banners/banner-statpilot.png',
+    alt: 'statpilot web app',
+    url: 'https://statpilot.onrender.com/',
+    readme: 'https://github.com/elena563/statpilot',
+    preview: true,
+    repo_visibility: true,
+    badges: ['Python', 'Flask'],
+    more_info: {
+      it: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+      en: [
+        {
+          title: 'test',
+          text: ``,
         },
       ],
     },
@@ -201,38 +233,6 @@ When an ingredient is not already present, the system verifies that it is indeed
     preview: true,
     repo_visibility: false,
     badges: ['Astrojs', 'Web Design'],
-  },
-  {
-    classes: 'featured data',
-    card_dim: 'large',
-    title: {
-      it: 'WordViz',
-      en: 'WordViz',
-    },
-    description: {
-      it: 'Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing',
-      en: 'Python library for word embeddings visualization and analysis, useful in Natural Language Processing',
-    },
-    img: '/project_banners/banner-wordviz.png',
-    alt: 'wordviz python library',
-    readme: 'https://github.com/elena563/wordviz',
-    preview: false,
-    repo_visibility: true,
-    badges: ['Python', 'Matplotlib', 'Gensim', 'Plotly'],
-    more_info: {
-      it: [
-        {
-          title: 'test',
-          text: ``,
-        },
-      ],
-      en: [
-        {
-          title: 'test',
-          text: ``,
-        },
-      ],
-    },
   },
   {
     classes: 'featured data',

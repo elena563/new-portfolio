@@ -2,7 +2,6 @@
 import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
 import Footer from '../../components/Footer.astro';
-import ProjectCard from '../../components/ProjectCard.astro';
 import ProjectCardSmall from '../../components/ProjectCardSmall.astro';
 import ProjectCardLarge from '../../components/ProjectCardLarge.astro';
 import { projects as projectsData } from '../../data/projects';
@@ -87,7 +86,6 @@ const projectsLarge = projects.filter((p) => p.card_dim === 'large');
             </div>
           </div>
         </div>
-        {projects.map((p) => <ProjectCard t={t} {...p} />)}
       </div>
       <div class="large-grid">
         {projectsLarge.map((p) => <ProjectCardLarge t={t} {...p} />)}
