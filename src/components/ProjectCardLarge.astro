@@ -79,9 +79,11 @@ type Paragraph = {
       {
         more_info &&
           more_info.map((par: Paragraph) => (
-            <p class="">
-              <strong>{par.title}</strong> <br />
-              {par.text}
+            <p style="margin-bottom: 1rem;">
+              <strong style="display:block; margin-bottom: 0.2rem;">
+                {par.title}
+              </strong>
+              <span set:html={par.text} />
             </p>
           ))
       }

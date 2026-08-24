@@ -21,9 +21,15 @@ export interface Project {
   repo_visibility: boolean;
   badges?: string[];
   more_info?: {
-    title: string;
-    text: string;
-  }[];
+    it: {
+      title: string;
+      text: string;
+    }[];
+    en: {
+      title: string;
+      text: string;
+    }[];
+  };
 }
 
 export const projects: Project[] = [
@@ -45,6 +51,20 @@ export const projects: Project[] = [
     preview: true,
     repo_visibility: true,
     badges: ['Python', 'Flask'],
+    more_info: {
+      it: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+      en: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+    },
   },
   {
     classes: 'featured webapp',
@@ -58,7 +78,7 @@ export const projects: Project[] = [
       en: 'Full-stack web application for creating recipes, cooking step by step, and managing your shopping list',
     },
     description_more: {
-      it: 'MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno successivamente dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.',
+      it: 'MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno poi dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.',
       en: 'MamaChef was born from a university project of Software Design and Development, initially developed with two colleagues who later gave me the opportunity to carry on the project independently. The project was then migrated to Django and completed in a first phase, becoming the final submission for the CS50 Web course.',
     },
     img: '/project_banners/banner-mamachef.png',
@@ -67,13 +87,43 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/mamachef',
     preview: true,
     repo_visibility: true,
-    badges: ['Django', 'JavaScript', 'PostgreSQL'],
-    more_info: [
-      {
-        title: 'test',
-        text: 'test',
-      },
-    ],
+    badges: ['Django', 'JavaScript', 'PostgreSQL', 'NLTK'],
+    more_info: {
+      it: [
+        {
+          title: 'Progettazione',
+          text: `Prima dello sviluppo è stata svolta una fase di raccolta dei requisiti e progettazione, basata sulle esigenze emerse da potenziali utenti.<br>
+Tra le funzionalità nate da questa fase ci sono la ricerca delle ricette per ingrediente, la modalità di cucina guidata e la possibilità di aggiungere direttamente gli ingredienti di una ricetta alla propria lista della spesa.`,
+        },
+        {
+          title: 'Validazione Ingredienti con NLP',
+          text: `L'inserimento di nuovi ingredienti è uno degli aspetti in cui ho potuto applicare più direttamente le mie conoscenze di data science.<br>
+Ogni ingrediente viene sottoposto a diversi livelli di validazione per verificare che sia coerente con gli ingredienti già presenti nel database. Il sistema è in grado di individuare nomi molto simili, suggerire corrispondenze ed evitare duplicati.<br>
+Quando l'ingrediente non è già presente, viene inoltre verificato che corrisponda effettivamente a un alimento e viene normalizzato linguisticamente attraverso la lemmatizzazione, così da mantenere uniformi le informazioni nel database.`,
+        },
+        {
+          title: 'Implementazione Full-stack',
+          text: `La struttura dell'applicazione integra un modello dati relazionale articolato, logiche backend in Django e interazioni frontend in JavaScript. Ho inoltre sviluppato funzionalità che richiedono coordinamento tra i diversi livelli dell'applicazione, come la modalità di cucina guidata con timer, l'autocomplete degli ingredienti, gli aggiornamenti asincroni della lista della spesa e l'esportazione in PDF.`,
+        },
+      ],
+      en: [
+        {
+          title: 'Design',
+          text: `Prior to development, a requirements-gathering and design phase was conducted, based on needs identified by potential users.<br>
+Features resulting from this phase include recipe search by ingredient, a guided cooking mode, and the ability to add a recipe's ingredients directly to one's shopping list.`,
+        },
+        {
+          title: 'Ingredient Validation with NLP',
+          text: `Adding new ingredients is one of the areas where I have been able to apply my data science knowledge most directly.<br>
+Each ingredient undergoes various levels of validation to ensure consistency with the ingredients already in the database. The system can identify very similar names, suggest matches, and prevent duplicates.<br>
+When an ingredient is not already present, the system verifies that it is indeed a food item and normalizes it linguistically through lemmatization to ensure data consistency within the database.`,
+        },
+        {
+          title: 'Full-stack Implementation',
+          text: `The application's architecture integrates a complex relational data model, Django-based backend logic, and JavaScript-driven frontend interactions. I also developed features requiring coordination across the application's various layers, such as a guided cooking mode with timers, ingredient autocomplete, asynchronous shopping list updates, and PDF export.`,
+        },
+      ],
+    },
   },
   {
     classes: 'featured website',
@@ -168,7 +218,21 @@ export const projects: Project[] = [
     readme: 'https://github.com/elena563/wordviz',
     preview: false,
     repo_visibility: true,
-    badges: ['Python', 'Gensim', 'Matplotlib', 'Plotly'],
+    badges: ['Python', 'Matplotlib', 'Gensim', 'Plotly'],
+    more_info: {
+      it: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+      en: [
+        {
+          title: 'test',
+          text: ``,
+        },
+      ],
+    },
   },
   {
     classes: 'featured data',

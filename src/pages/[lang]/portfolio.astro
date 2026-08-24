@@ -28,7 +28,7 @@ const projects = projectsData.map((p) => ({
   preview: p.preview,
   repo_visibility: p.repo_visibility,
   badges: p.badges,
-  more_info: p.more_info,
+  more_info: p.more_info ? p.more_info[lang] || undefined : undefined,
 }));
 
 const projectsSmall = projects.filter((p) => p.card_dim === 'small');
@@ -81,7 +81,7 @@ const projectsLarge = projects.filter((p) => p.card_dim === 'large');
                   href="https://www.notonlydesk.com/it/"
                   class="btn orange"
                   target="_blank"
-                  rel="noopener">{t('project.discover')}</a
+                  rel="noopener">{t('project.visit')}</a
                 >
               </div>
             </div>
