@@ -186,7 +186,6 @@ input {
 }
 .subtitle {
   display: block;
-  font-weight: bold;
   font-size: var(--size-sm);
   font-family: var(--font-special);
   color: var(--primary-color);
@@ -406,6 +405,15 @@ a.disabled:active {
   min-width: 150px;
 }
 .btn-ghost:hover {
+  color: var(--accent-violet-dark);
+}
+.btn-ghost i {
+  color: var(--accent-violet);
+  transition:
+    transform 350ms ease,
+    color 350ms ease;
+}
+.btn-ghost:hover i {
   color: var(--accent-violet-dark);
 }
 
@@ -702,6 +710,7 @@ a.disabled:active {
   font-family: var(--font-header);
   letter-spacing: 0.5px;
   font-size: var(--size-lg);
+  padding: 4px 8px;
 }
 #menu :is(a, ul span):hover {
   background-color: var(--secondary-dark);
@@ -808,31 +817,25 @@ nav {
 .badge.javascript,
 .badge.js {
   color: #b8930f;
-  background-color: #fffbea;
+  background-color: #faf8ec;
   border-color: #b8930f;
 }
 .badge.typescript,
-.badge.ts,
 .badge.gsc {
   color: #2d79c7;
   background-color: #e3f2fd;
   border-color: #2d79c7;
 }
-.badge.react {
-  color: #0d96b8;
-  background-color: #e0f7fa;
-  border-color: #0d96b8;
+.badge.reactjs,
+.badge.tailwindcss {
+  color: #00c0f0;
+  background-color: #edfafd;
+  border-color: #00c0f0;
 }
 .badge.django {
   color: #2c6f4d;
   background-color: #e8f5e9;
   border-color: #2c6f4d;
-}
-.badge.html,
-.badge.html5 {
-  color: #c44125;
-  background-color: #fff3e0;
-  border-color: #c44125;
 }
 .badge.pandas {
   color: #072c54;
@@ -845,7 +848,7 @@ nav {
   background-color: #e8f5e9;
   border-color: #3c6e3e;
 }
-.badge.database,
+.badge.css,
 .badge.sql,
 .badge.mysql,
 .badge.postgresql {
@@ -864,15 +867,15 @@ nav {
   background-color: #e3f2fd;
   border-color: #0c5d9e;
 }
-.badge.web-design,
-.badge.matplotlib {
+.badge.matplotlib,
+.badge.scikit-learn {
   color: #b85e0e;
   background-color: #fff3e0;
   border-color: #b85e0e;
 }
-.badge.machine,
+.badge.astrojs,
 .badge.plotly,
-.badge.machine-learning {
+.badge.ai {
   color: #6a1b9a;
   background-color: #f3e5f5;
   border-color: #6a1b9a;
@@ -882,33 +885,19 @@ nav {
   background-color: #e0f2f1;
   border-color: #00796b;
 }
-.badge.ai,
-.badge.artificial {
-  color: #6a1b9a;
-  background-color: #f3e5f5;
-  border-color: #6a1b9a;
-}
 .badge.stripe {
   color: #5b63a8;
   background-color: #ede7f6;
   border-color: #5b63a8;
 }
-.badge.streamlit {
+.badge.streamlit,
+.badge.figma {
   color: #d24726;
-  background-color: #fff3e0;
+  background-color: #f5e4df;
   border-color: #d24726;
 }
-.badge.astrojs {
-  color: #b85e0e;
-  background-color: #fff3e0;
-  border-color: #b85e0e;
-}
-.badge.seo {
-  color: #558b2f;
-  background-color: #f1f8e9;
-  border-color: #558b2f;
-}
-.badge.hugo {
+.badge.hugo,
+.badge.shap {
   color: #c71585;
   background-color: #fce4ec;
   border-color: #c71585;

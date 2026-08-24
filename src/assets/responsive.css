@@ -70,7 +70,6 @@
     display: flex;
     width: 23em;
     position: relative;
-    left: 2vw;
   }
 
   .ham {
@@ -235,6 +234,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .large-content {
+    gap: var(--margin-md);
     grid-template-columns: 1fr;
     grid-template-areas:
       'img'

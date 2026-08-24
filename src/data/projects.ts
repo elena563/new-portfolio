@@ -22,11 +22,11 @@ export interface Project {
   badges?: string[];
   more_info?: {
     it: {
-      title: string;
+      title?: string;
       text: string;
     }[];
     en: {
-      title: string;
+      title?: string;
       text: string;
     }[];
   };
@@ -103,6 +103,12 @@ When an ingredient is not already present, the system verifies that it is indeed
       it: 'Libreria Python per visualizzare e analizzare word embeddings, utile nel campo del Natural Language Processing',
       en: 'Python library for word embeddings visualization and analysis, useful in Natural Language Processing',
     },
+    description_more: {
+      it: `WordViz nasce per rendere più immediata un'attività comune nell'analisi degli embedding: esplorarne la struttura attraverso similarità, clustering e riduzione della dimensionalità.<br>
+La libreria raccoglie in un'interfaccia semplice diversi passaggi che normalmente richiederebbero implementazioni separate, trasformandoli in visualizzazioni interattive e personalizzabili accessibili attraverso poche righe di codice.`,
+      en: `WordViz is designed to make a common activity in embedding analysis more accessible: exploring their structure through similarity, clustering, and dimensionality reduction.<br>
+The library consolidates several steps that would normally require separate implementations into a simple interface, transforming them into interactive and customizable visualizations accessible through a few lines of code.`,
+    },
     img: '/project_banners/banner-wordviz.png',
     alt: 'wordviz python library',
     readme: 'https://github.com/elena563/wordviz',
@@ -112,14 +118,42 @@ When an ingredient is not already present, the system verifies that it is indeed
     more_info: {
       it: [
         {
-          title: 'test',
-          text: ``,
+          title: 'Semplicità',
+          text: `WordViz gestisce internamente operazioni come riduzione della dimensionalità, clustering e calcolo delle distanze, lasciando all'utente la possibilità di concentrarsi sull'esplorazione dei propri embedding.<br>
+Le visualizzazioni sono configurabili attraverso metriche e parametri dedicati, così da mantenere un equilibrio tra semplicità d'uso e controllo sull'analisi.`,
+        },
+        {
+          title: 'Loading Universale',
+          text: `L'oggetto EmbeddingLoader semplifica il caricamento degli embedding, gestendo sia il download sia il caricamento diretto da file e supportando diversi formati.<br>
+Una volta caricati, gli embedding possono essere passati direttamente al Visualizer, senza richiedere ulteriori operazioni di preparazione.`,
+        },
+        {
+          title: 'Visualizzazioni Dedicate',
+          text: `WordViz offre visualizzazioni progettate specificamente per l'analisi degli embedding, tra cui esplorazione delle parole più simili, heatmap di similarità e distanze, dendrogrammi e rappresentazioni bidimensionali e tridimensionali.<br>
+La libreria include inoltre strumenti per personalizzare l'aspetto delle visualizzazioni attraverso palette e temi predefiniti e funzionalità dedicate alla gestione dei plot più affollati, come il posizionamento automatico delle label.`,
+        },
+        {
+          text: `È in programma lo sviluppo di un'interfaccia grafica che permetterà di esplorare le funzionalità di WordViz anche senza utilizzare direttamente Python.`,
         },
       ],
       en: [
         {
-          title: 'test',
-          text: ``,
+          title: 'Simplicity',
+          text: `WordViz handles internally operations such as dimensionality reduction, clustering, and distance calculation, allowing the user to focus on exploring their own embeddings.<br>
+The visualizations are configurable through dedicated metrics and parameters, maintaining a balance between ease of use and control over the analysis.`,
+        },
+        {
+          title: 'Universal Loading',
+          text: `The EmbeddingLoader object simplifies the loading of embeddings, handling both downloads and direct file loading while supporting various formats.<br>
+Once loaded, the embeddings can be passed directly to the Visualizer, without requiring additional preparation steps.`,
+        },
+        {
+          title: 'Dedicated Visualizations',
+          text: `WordViz offers visualizations specifically designed for embedding analysis, including exploration of most similar words, similarity and distance heatmaps, dendrograms, and two- and three-dimensional representations.<br>
+The library also includes tools for customizing the appearance of visualizations through predefined palettes and themes, as well as features for managing more crowded plots, such as automatic label placement.`,
+        },
+        {
+          text: `An interface will be developed to allow users to explore WordViz's features without directly using Python.`,
         },
       ],
     },
@@ -179,7 +213,7 @@ I also took care of technical decisions, maintenance, and necessary intervention
     },
   },
   {
-    classes: 'featured webapp data',
+    classes: 'webapp data',
     card_dim: 'large',
     title: {
       it: 'StatPilot',
@@ -189,24 +223,56 @@ I also took care of technical decisions, maintenance, and necessary intervention
       it: 'Web app interattiva per analisi statistica dei dati, addestramento di modelli di machine learning, e spiegazione dei modelli',
       en: 'Interactive web application for statistical data analysis, machine learning modeling, and model explainability',
     },
+    description_more: {
+      it: "StatPilot nasce con l'obiettivo di offrire un ambiente completamente no-code per svolgere rapidamente piccole attività di data science, senza rinunciare alla possibilità di approfondire i dati e i modelli utilizzati. L'app accompagna l'utente dall'upload di un dataset alla sua analisi, fino all'addestramento e all'interpretazione di modelli di machine learning, attraverso un flusso semplice e leggero.",
+      en: 'StatPilot is designed to offer a completely no-code environment for quickly performing small data science tasks, without sacrificing the opportunity to delve deeper into the data and models used. The app guides the user from uploading a dataset to its analysis, up to the training and interpretation of machine learning models, through a simple and lightweight workflow.',
+    },
     img: '/project_banners/banner-statpilot.png',
     alt: 'statpilot web app',
     url: 'https://statpilot.onrender.com/',
     readme: 'https://github.com/elena563/statpilot',
     preview: true,
     repo_visibility: true,
-    badges: ['Python', 'Flask'],
+    badges: ['Python', 'Flask', 'Pandas', 'Scikit-learn', 'SHAP'],
     more_info: {
       it: [
         {
-          title: 'test',
-          text: ``,
+          title: 'Analisi dei dati',
+          text: `L'utente può caricare un dataset e ottenere una prima analisi esplorativa senza configurazioni preliminari. StatPilot identifica automaticamente il tipo delle variabili, numeriche, qualitative e testuali, e adatta le analisi disponibili di conseguenza, restituendo statistiche descrittive, distribuzioni e correlazioni sia in formato numerico che attraverso visualizzazioni.`,
+        },
+        {
+          title: 'Machine Learning',
+          text: `La sezione Machine Learning permette di scegliere tra tre modelli di classificazione e tre di regressione, selezionare il target e addestrare il modello direttamente dall'interfaccia.<br>
+Oltre alle metriche di valutazione, è possibile utilizzare il modello su nuove osservazioni per ottenere predizioni.`,
+        },
+        {
+          title: 'Explainable AI',
+          text: `StatPilot utilizza SHAP per analizzare il comportamento dei modelli a diversi livelli.<br>
+L'analisi globale permette di osservare l'importanza delle variabili nel comportamento complessivo del modello, mentre l'analisi locale consente di spiegare una singola predizione specificando l'indice dell'osservazione da analizzare.`,
+        },
+        {
+          title: 'Validazione dei Dataset',
+          text: `Rendere l'applicazione utilizzabile con dataset diversi ha richiesto di gestire numerosi casi legati alla struttura e alla qualità degli input. Ho sviluppato un sistema di validazione degli input che controlla i dati forniti dall'utente e intercetta le condizioni che potrebbero compromettere le successive fasi di analisi o modellazione.`,
         },
       ],
       en: [
         {
-          title: 'test',
-          text: ``,
+          title: 'Data Analysis',
+          text: `The user can upload a dataset and obtain an initial exploratory analysis without preliminary configurations. StatPilot automatically identifies the type of variables, numeric, qualitative and textual, and adapts the available analyses accordingly, returning descriptive statistics, distributions and correlations both in numeric format and through visualizations.`,
+        },
+        {
+          title: 'Machine Learning',
+          text: `The Machine Learning section allows users to choose from three classification and three regression models, select the target variable, and train the model directly from the interface.<br>
+In addition to evaluation metrics, the model can be used on new observations to obtain predictions.`,
+        },
+        {
+          title: 'Explainable AI',
+          text: `StatPilot uses SHAP to analyze model behavior at different levels.<br>
+Global analysis allows users to observe the importance of variables in the overall model behavior, while local analysis enables the explanation of a single prediction by specifying the index of the observation to be analyzed.`,
+        },
+        {
+          title: 'Dataset Validation',
+          text: `Making the application usable with different datasets required handling numerous cases related to the structure and quality of the input. I developed an input validation system that checks the data provided by the user and intercepts conditions that could compromise the subsequent phases of analysis or modeling.`,
         },
       ],
     },
@@ -226,7 +292,7 @@ I also took care of technical decisions, maintenance, and necessary intervention
       it: 'Il pannello permette di gestire lo spazio a 360°, da prenotazioni e postazioni fino al CRM della versione gratuita, alla pipeline commerciale e alla creazione dei contratti per il piano Pro.<br> Il pannello non è pubblicamente accessibile, ma è possibile richiedere una demo contattando direttamente NOD.',
       en: 'The panel allows for comprehensive space management, from bookings and workstations, to CRM in the free version, sales pipeline, and contract creation for the Pro plan. <br> The panel is not publicly accessible, but a demo can be requested by contacting NOD directly.',
     },
-    img: '/project_banners/banner-nod.png',
+    img: '/project_banners/banner-spaceadmin.png',
     alt: 'NOD Space Admin platform',
     url: 'https://notonlydesk.com/',
     preview: true,
@@ -283,7 +349,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
     url: 'https://blacklistedm3dia.com/it',
     preview: true,
     repo_visibility: false,
-    badges: ['Nextjs', 'MongoDB', 'Javascript', 'Web Design'],
+    badges: ['Nextjs', 'MongoDB', 'Javascript', 'Figma', 'tailwindcss'],
   },
   {
     classes: 'featured website',
@@ -293,15 +359,15 @@ The work is still in progress, with the goal of preparing the product for sale.`
       en: 'Antonio Accardi Isteroscopia',
     },
     description: {
-      it: 'Sito web per un ginecologo specializzato in Isteroscopia',
-      en: 'Website for a gynecologist specialized in hysteroscopy in Palermo, Italy',
+      it: 'Redesign del vecchio sito web di un ginecologo specializzato in Isteroscopia',
+      en: 'Redesign of the old website for a gynecologist specialized in hysteroscopy in Palermo, Italy',
     },
     img: '/project_banners/banner-isteroscopia.png',
     alt: 'sito web isteroscopia',
     url: 'http://www.isteroscopia.eu/pagine/',
     preview: true,
     repo_visibility: false,
-    badges: ['Web Design'],
+    badges: ['css'],
   },
   {
     classes: 'featured webapp data',
@@ -320,10 +386,10 @@ The work is still in progress, with the goal of preparing the product for sale.`
     readme: 'https://github.com/elena563/spotitype',
     preview: true,
     repo_visibility: true,
-    badges: ['Python', 'Flask', 'Scikit-learn'],
+    badges: ['Reactjs', 'tailwindcss', 'Python', 'Flask', 'Scikit-learn'],
   },
   {
-    classes: 'featured website',
+    classes: 'website',
     card_dim: 'small',
     title: {
       it: 'Professor Navid Nobani',
@@ -338,7 +404,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
     url: 'https://nobani.it/',
     preview: true,
     repo_visibility: false,
-    badges: ['Astrojs', 'Web Design'],
+    badges: ['Astrojs', 'tailwindcss'],
   },
   {
     classes: 'featured data',
@@ -375,10 +441,10 @@ The work is still in progress, with the goal of preparing the product for sale.`
     readme: 'https://github.com/elena563/save_the_shark',
     preview: true,
     repo_visibility: true,
-    badges: ['Hugo', 'Stripe', 'Expressjs'],
+    badges: ['Hugo', 'Stripe', 'Expressjs', 'css'],
   },
   {
-    classes: 'featured webapp',
+    classes: 'webapp',
     card_dim: 'small',
     title: {
       it: 'MarketMint Dashboard Criptovalute',
@@ -394,10 +460,10 @@ The work is still in progress, with the goal of preparing the product for sale.`
     readme: 'https://github.com/elena563/marketmint',
     preview: true,
     repo_visibility: true,
-    badges: ['React'],
+    badges: ['Reactjs'],
   },
   {
-    classes: 'featured website',
+    classes: 'website',
     card_dim: 'small',
     title: {
       it: 'Hotel Sogno in Maremma',
@@ -413,7 +479,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
     readme: 'https://github.com/elena563/hotel_sogno_in_maremma',
     preview: true,
     repo_visibility: true,
-    badges: ['Javascript', 'Web Design'],
+    badges: ['Javascript', 'css'],
   },
   {
     classes: 'featured data',
