@@ -33,6 +33,18 @@ const moreInfoButtons = document.querySelectorAll('.more-info-btn');
 
 moreInfoButtons.forEach((button) => {
   button.addEventListener('click', () => {
+    moreInfoButtons.forEach((otherBtn) => {
+      if (otherBtn !== button) {
+        const otherCard = otherBtn.closest('.large-card');
+        const otherAccordion = otherCard?.querySelector('.accordion');
+        if (otherAccordion?.classList.contains('open')) {
+          otherAccordion.classList.remove('open');
+          otherBtn.classList.remove('open');
+          otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
     const projectCard = button.closest('.large-card');
     if (projectCard) {
       const moreInfoSection = projectCard.querySelector('.accordion');

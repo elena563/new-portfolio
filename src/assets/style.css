@@ -124,6 +124,15 @@ hr {
 button {
   cursor: pointer;
 }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--violet-light);
+  outline-offset: 2px;
+}
 header {
   background-color: var(--secondary-color);
   color: var(--bg-color);

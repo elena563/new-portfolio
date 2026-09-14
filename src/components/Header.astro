@@ -13,7 +13,7 @@ console.log(href);
 <header>
   <div class="navbar">
     <a href=`/${lang}`
-      ><img src="/immagini/completelogonew.png" alt="elena-zen-logo" /></a
+      ><img src="/immagini/completelogonew.webp" alt="elena-zen-logo" /></a
     >
     <nav>
       <div id="menucont">
@@ -26,7 +26,7 @@ console.log(href);
           <a href={`/${lang}#contacts`}>{t('nav.contact')}</a>
         </ul>
         <a class="desktop" href={href}
-          ><span class="icon-park--international desktop"></span></a
+          ><span class={`${lang === 'en' ? 'emojione--flag-for-italy' : 'icon-park--international'} desktop`}></span></a
         >
       </div>
       <div
@@ -42,7 +42,7 @@ console.log(href);
           <span class="line line3"></span>
         </label>
         <a href={href} class="mobile"
-          ><span class="icon-park--international mobile fix"></span></a
+          ><span class={`${lang === 'en' ? 'emojione--flag-for-italy' : 'icon-park--international'} mobile fix`}></span></a
         >
       </div>
     </nav>
