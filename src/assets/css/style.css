@@ -10,21 +10,21 @@
   src:
     local('Outfit'),
     url('/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Coolvetica';
   src:
     local('Coolvetica'),
     url('/fonts/coolvetica-rg.ttf') format('truetype');
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Lemon Milk';
   src:
     local('Lemon Milk'),
     url('/fonts/LEMONMILK-Regular.otf') format('opentype');
-  font-display: block;
+  font-display: swap;
 }
 
 :root {

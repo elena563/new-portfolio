@@ -26,7 +26,10 @@ console.log(href);
           <a href={`/${lang}/portfolio`}>{t('nav.portfolio')}</a>
           <a href={`/${lang}#contacts`}>{t('nav.contact')}</a>
         </ul>
-        <a class="desktop" href={href}
+        <a
+          class="desktop"
+          href={href}
+          aria-label={changeLang === 'it' ? 'Italiano' : 'English'}
           ><span
             class={`${lang === 'en' ? 'emojione--flag-for-italy' : 'icon-park--international'} desktop`}
           ></span></a
@@ -37,6 +40,7 @@ console.log(href);
         aria-haspopup="true"
         aria-controls="menu"
         aria-expanded="false"
+        role="button"
       >
         <label class="ham" for="ham">
           <input type="checkbox" id="ham" />
@@ -44,7 +48,10 @@ console.log(href);
           <span class="line line2"></span>
           <span class="line line3"></span>
         </label>
-        <a href={href} class="mobile"
+        <a
+          href={href}
+          class="mobile"
+          aria-label={changeLang === 'it' ? 'Italiano' : 'English'}
           ><span
             class={`${lang === 'en' ? 'emojione--flag-for-italy' : 'icon-park--international'} mobile fix`}
           ></span></a
