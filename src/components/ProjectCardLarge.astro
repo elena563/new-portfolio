@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 const {
   t,
   classes,
@@ -23,7 +25,7 @@ type Paragraph = {
 
 <div class={`large-card ${classes || ''}`}>
   <div class="large-content">
-    <img src={img} alt={alt} loading="lazy" />
+    <Image src={img} alt={alt} loading="lazy" />
     <div class="projtext">
       <h4>{title}</h4>
       {

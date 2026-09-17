@@ -1,3 +1,19 @@
+import type { ImageMetadata } from 'astro';
+import bannerMamachef from '../assets/project_banners/banner-mamachef.webp';
+import bannerWordviz from '../assets/project_banners/banner-wordviz.webp';
+import bannerNod from '../assets/project_banners/banner-nod.webp';
+import bannerStatpilot from '../assets/project_banners/banner-statpilot.webp';
+import bannerSpaceadmin from '../assets/project_banners/banner-spaceadmin.webp';
+import bannerBlacklisted from '../assets/project_banners/banner-blacklisted.webp';
+import bannerIsteroscopia from '../assets/project_banners/banner-isteroscopia.webp';
+import bannerSpotiType from '../assets/project_banners/banner-spotitype.webp';
+import bannerNobani from '../assets/project_banners/banner-nobani.webp';
+import bannerReviews from '../assets/project_banners/banner-reviews.webp';
+import bannerSavetheshark from '../assets/project_banners/banner-savetheshark.webp';
+import bannerCrypto from '../assets/project_banners/banner-crypto.webp';
+import bannerHotel from '../assets/project_banners/banner-hotel.webp';
+import bannerHashtag from '../assets/project_banners/banner-hashtag.webp';
+
 export interface Project {
   classes: string;
   card_dim: 'small' | 'large';
@@ -13,7 +29,7 @@ export interface Project {
     it: string;
     en: string;
   };
-  img: string;
+  img: ImageMetadata;
   alt: string;
   url?: string;
   readme?: string;
@@ -48,7 +64,7 @@ export const projects: Project[] = [
       it: 'MamaChef nasce da un progetto universitario di Progetto e Sviluppo del Software, sviluppato inizialmente con due colleghi che mi hanno poi dato la possibilità di portare avanti il progetto in autonomia. Il progetto è stato poi migrato in Django e completato in una prima fase, diventando la consegna finale per il corso CS50 Web.',
       en: 'MamaChef was born from a university project of Software Design and Development, initially developed with two colleagues who later gave me the opportunity to carry on the project independently. The project was then migrated to Django and completed in a first phase, becoming the final submission for the CS50 Web course.',
     },
-    img: '/project_banners/banner-mamachef.webp',
+    img: bannerMamachef,
     alt: 'mamachef web app',
     url: 'https://mamachef.alwaysdata.net/',
     readme: 'https://github.com/elena563/mamachef',
@@ -109,7 +125,7 @@ La libreria raccoglie in un'interfaccia semplice diversi passaggi che normalment
       en: `WordViz is designed to make a common activity in embedding analysis more accessible: exploring their structure through similarity, clustering, and dimensionality reduction.<br>
 The library consolidates several steps that would normally require separate implementations into a simple interface, transforming them into interactive and customizable visualizations accessible through a few lines of code.`,
     },
-    img: '/project_banners/banner-wordviz.webp',
+    img: bannerWordviz,
     alt: 'wordviz python library',
     readme: 'https://github.com/elena563/wordviz',
     preview: false,
@@ -173,7 +189,7 @@ The library also includes tools for customizing the appearance of visualizations
       it: "Collaboro con loro, supportando il CTO durante una fase di crescita e sviluppo del prodotto, occupandomi di attività che spaziano dallo sviluppo full-stack alla SEO tecnica, fino all'analisi dei dati e al machine learning.",
       en: 'I collaborate with them, supporting the CTO during a phase of growth and product development, handling activities that range from full-stack development to technical SEO, up to data analysis and machine learning.',
     },
-    img: '/project_banners/banner-nod.webp',
+    img: bannerNod,
     alt: 'NOTONLYDESK platform',
     url: 'https://notonlydesk.com/',
     preview: true,
@@ -227,7 +243,7 @@ I also took care of technical decisions, maintenance, and necessary intervention
       it: "StatPilot nasce con l'obiettivo di offrire un ambiente completamente no-code per svolgere rapidamente piccole attività di data science, senza rinunciare alla possibilità di approfondire i dati e i modelli utilizzati. L'app accompagna l'utente dall'upload di un dataset alla sua analisi, fino all'addestramento e all'interpretazione di modelli di machine learning, attraverso un flusso semplice e leggero.",
       en: 'StatPilot is designed to offer a completely no-code environment for quickly performing small data science tasks, without sacrificing the opportunity to delve deeper into the data and models used. The app guides the user from uploading a dataset to its analysis, up to the training and interpretation of machine learning models, through a simple and lightweight workflow.',
     },
-    img: '/project_banners/banner-statpilot.webp',
+    img: bannerStatpilot,
     alt: 'statpilot web app',
     url: 'https://statpilot.onrender.com/',
     readme: 'https://github.com/elena563/statpilot',
@@ -292,7 +308,7 @@ Global analysis allows users to observe the importance of variables in the overa
       it: 'Il pannello permette di gestire lo spazio a 360°, da prenotazioni e postazioni fino al CRM della versione gratuita, alla pipeline commerciale e alla creazione dei contratti per il piano Pro.<br> Il pannello non è pubblicamente accessibile, ma è possibile richiedere una demo contattando direttamente NOD.',
       en: 'The panel allows for comprehensive space management, from bookings and workstations, to CRM in the free version, sales pipeline, and contract creation for the Pro plan. <br> The panel is not publicly accessible, but a demo can be requested by contacting NOD directly.',
     },
-    img: '/project_banners/banner-spaceadmin.webp',
+    img: bannerSpaceadmin,
     alt: 'NOD Space Admin platform',
     url: 'https://notonlydesk.com/',
     preview: true,
@@ -344,7 +360,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Sito web per un fotografo con una forte passione per le supercar e i motori in generale',
       en: 'Website for a photographer with a strong passion for supercars and motors in general',
     },
-    img: '/project_banners/banner-blacklisted.webp',
+    img: bannerBlacklisted,
     alt: 'sito web blacklisted m3dia',
     url: 'https://blacklistedm3dia.com/it',
     preview: true,
@@ -362,7 +378,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Redesign del vecchio sito web di un ginecologo specializzato in Isteroscopia',
       en: 'Redesign of the old website for a gynecologist specialized in hysteroscopy in Palermo, Italy',
     },
-    img: '/project_banners/banner-isteroscopia.webp',
+    img: bannerIsteroscopia,
     alt: 'sito web isteroscopia',
     url: 'http://www.isteroscopia.eu/pagine/',
     preview: true,
@@ -380,7 +396,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Web app interattiva che, data una playlist Spotify o una lista di 5 canzoni, ti dirà che tipo di ascoltatore sei',
       en: 'Interactive web application that, given a Spotify playlist or a list of 5 songs, can tell you what kind of listener you are',
     },
-    img: '/project_banners/banner-spotitype.webp',
+    img: bannerSpotiType,
     alt: 'statpilot web app',
     url: 'https://spotitype.vercel.app/',
     readme: 'https://github.com/elena563/spotitype',
@@ -399,7 +415,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Sito web vetrina per un professore universitario, che lo presenta attraverso i suoi lavori e i corsi tenuti',
       en: 'Showcase website for a university professor, presenting his work and the courses he teaches',
     },
-    img: '/project_banners/banner-nobani.webp',
+    img: bannerNobani,
     alt: 'progetto di sito web Professor Navid Nobani',
     url: 'https://nobani.it/',
     preview: true,
@@ -417,7 +433,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Analisi esplorativa dei dati delle recensioni di prodotti Amazon, con analisi del sentiment utilizzando Python e tecniche di NLP',
       en: 'Exploratory data analysis of Amazon food reviews, with sentiment analysis using Python and NLP techniques',
     },
-    img: '/project_banners/banner-reviews.webp',
+    img: bannerReviews,
     alt: 'amazon food reviews analysis',
     readme: 'https://github.com/elena563/food-reviews-analysis',
     preview: false,
@@ -435,7 +451,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: "Sito web per un'organizzazione no-profit che protegge squali e tutta la vita marina in generale",
       en: 'Website for a no-profit organisation protecting sharks and all sea life in general',
     },
-    img: '/project_banners/banner-savetheshark.webp',
+    img: bannerSavetheshark,
     alt: 'Progetto di sito web Save the Shark',
     url: 'https://savetheshark.netlify.app/',
     readme: 'https://github.com/elena563/save_the_shark',
@@ -454,7 +470,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Piattaforma dinamica per tracciare i trend delle criptovalute e insights del mercato in tempo reale',
       en: 'Dynamic platform for tracking cryptocurrency trends and market insights in real time',
     },
-    img: '/project_banners/banner-crypto.webp',
+    img: bannerCrypto,
     alt: 'MarketMint dashboard criptovalute',
     url: 'https://marketmint.netlify.app/',
     readme: 'https://github.com/elena563/marketmint',
@@ -473,7 +489,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: 'Sito web per un hotel 4 stelle nella Maremma toscana in Italia',
       en: 'Website for a charming 4 stars hotel nestled in the heart of the Tuscan Maremma, Italy',
     },
-    img: '/project_banners/banner-hotel.webp',
+    img: bannerHotel,
     alt: 'Progetto di sito web Hotel Sogno in Maremma',
     url: 'https://hotelsognoinmaremma.netlify.app/',
     readme: 'https://github.com/elena563/hotel_sogno_in_maremma',
@@ -492,7 +508,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       it: "Interfaccia web intuitiva per generare con l'AI hashtag efficaci e puliti per annunci di prodotti online",
       en: 'Intuitive web interface to generate with AI effective and clean hashtags for online product listings',
     },
-    img: '/project_banners/banner-hashtag.webp',
+    img: bannerHashtag,
     alt: 'hashtag generator web app',
     url: 'https://hashtaggenerator.streamlit.app/',
     readme: 'https://github.com/elena563/hashtag_generator',

@@ -1,10 +1,25 @@
 ---
+import { Image } from 'astro:assets';
 import Header from './Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Footer from './Footer.astro';
 import ProjectCardLarge from './ProjectCardLarge.astro';
 import { projects as projectsData } from '../data/projects';
 import { languages, makeT } from '../i18n/ui';
+import BuildProductIcon from '../assets/immagini/build-product.svg';
+import StatisticsIcon from '../assets/immagini/statistics-computer-science.svg';
+import FullStackIcon from '../assets/immagini/full-stack.svg';
+import elenaWeb from '../assets/immagini/elena-web.webp';
+import astroLogo from '../assets/immagini/astro.webp';
+import tsLogo from '../assets/immagini/ts.webp';
+import djangoLogo from '../assets/immagini/django.webp';
+import tailwindLogo from '../assets/immagini/Tailwind.webp';
+import reactLogo from '../assets/immagini/React.webp';
+import nextjsLogo from '../assets/immagini/Nextjs.webp';
+import pythonLogo from '../assets/immagini/python.webp';
+import fastapiLogo from '../assets/immagini/fastapi.webp';
+import fiverrLogo from '../assets/immagini/Fiverr-Logo.webp';
+import fiveStars from '../assets/immagini/5stars.webp';
 
 const { lang } = Astro.props;
 const currentLang = (lang ?? 'it') as (typeof languages)[number];
@@ -132,68 +147,35 @@ const reviews = [
         <p set:html={t('about.areas')} />
       </div>
 
-      <img
-        src="/immagini/elena-web.webp"
-        alt="Elena web developer in formal clothing"
-      />
+      <Image src={elenaWeb} alt="Elena web developer in formal clothing" />
     </div>
   </section>
   <div class="wrapper">
     <div class="stack">
-      <img src="/immagini/astro.webp" alt="astro logo" height="45" />
-      <img src="/immagini/ts.webp" alt="typescript logo" height="70" />
-      <img src="/immagini/django.webp" alt="django logo" height="40" />
-      <img src="/immagini/Tailwind.webp" alt="tailwind css logo" height="45" />
-      <img src="/immagini/React.webp" alt="reactjs logo" height="70" />
-      <img src="/immagini/Nextjs.webp" alt="nextjs" height="30" />
-      <img src="/immagini/python.webp" alt="python logo" height="70" />
-      <img src="/immagini/fastapi.webp" alt="fastapi logo" height="50" />
-      <img
-        src="/immagini/astro.webp"
-        alt="astro logo"
-        height="45"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/ts.webp"
-        alt="typescript logo"
-        height="70"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/django.webp"
-        alt="django logo"
-        height="30"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/Tailwind.webp"
+      <Image src={astroLogo} alt="astro logo" height={45} />
+      <Image src={tsLogo} alt="typescript logo" height={70} />
+      <Image src={djangoLogo} alt="django logo" height={40} />
+      <Image src={tailwindLogo} alt="tailwind css logo" height={45} />
+      <Image src={reactLogo} alt="reactjs logo" height={70} />
+      <Image src={nextjsLogo} alt="nextjs" height={30} />
+      <Image src={pythonLogo} alt="python logo" height={70} />
+      <Image src={fastapiLogo} alt="fastapi logo" height={50} />
+      <Image src={astroLogo} alt="astro logo" height={45} class="duplicate" />
+      <Image src={tsLogo} alt="typescript logo" height={70} class="duplicate" />
+      <Image src={djangoLogo} alt="django logo" height={30} class="duplicate" />
+      <Image
+        src={tailwindLogo}
         alt="tailwind css logo"
-        height="45"
+        height={45}
         class="duplicate"
       />
-      <img
-        src="/immagini/React.webp"
-        alt="reactjs logo"
-        height="70"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/Nextjs.webp"
-        alt="nextjs"
-        height="35"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/python.webp"
-        alt="python logo"
-        height="70"
-        class="duplicate"
-      />
-      <img
-        src="/immagini/fastapi.webp"
+      <Image src={reactLogo} alt="reactjs logo" height={70} class="duplicate" />
+      <Image src={nextjsLogo} alt="nextjs" height={35} class="duplicate" />
+      <Image src={pythonLogo} alt="python logo" height={70} class="duplicate" />
+      <Image
+        src={fastapiLogo}
         alt="fastapi logo"
-        height="40"
+        height={40}
         class="duplicate"
       />
     </div>
@@ -203,28 +185,31 @@ const reviews = [
       <h2 class="textcenter" set:html={t('why-me.title')} />
       <div class="why-me-cont">
         <div>
-          <img
-            src="/immagini/build-product.svg"
-            alt="build product icon"
-            width="150px"
+          <BuildProductIcon
+            width={150}
+            height={138}
+            role="img"
+            aria-label="build product icon"
           />
           <h3 set:html={t('why-me.1.title')} />
           <p>{t('why-me.1.text')}</p>
         </div>
         <div>
-          <img
-            src="/immagini/statistics-computer-science.svg"
-            alt="innovate icon"
-            width="150px"
+          <StatisticsIcon
+            width={150}
+            height={133}
+            role="img"
+            aria-label="innovate icon"
           />
           <h3 set:html={t('why-me.2.title')} />
           <p>{t('why-me.2.text')}</p>
         </div>
         <div>
-          <img
-            src="/immagini/full-stack.svg"
-            alt="collaborate icon"
-            width="150px"
+          <FullStackIcon
+            width={150}
+            height={135}
+            role="img"
+            aria-label="collaborate icon"
           />
           <h3 set:html={t('why-me.3.title')} />
           <p>{t('why-me.3.text')}</p>
@@ -326,17 +311,9 @@ const reviews = [
           <div class="review swiper-slide">
             <div class="clientrev">
               <b>{p.username}</b>
-              <img
-                src="/immagini/Fiverr-Logo.webp"
-                alt="fiverr logo"
-                width="30px"
-              />
+              <Image src={fiverrLogo} alt="fiverr logo" width={30} />
             </div>
-            <img
-              src="/immagini/5stars.webp"
-              alt="5 stars review"
-              height="30px"
-            />
+            <Image src={fiveStars} alt="5 stars review" height={30} />
             <p>{p.review}</p>
           </div>
         ))

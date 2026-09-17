@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/immagini/completelogonew.webp';
+
 const { t, lang } = Astro.props;
 ---
 
@@ -6,11 +9,7 @@ const { t, lang } = Astro.props;
   <div class="ftcont">
     <div>
       <div class="logo">
-        <img
-          src="/immagini/completelogonew.png"
-          alt="Elena Zen Frontend Developer logo"
-          height="60em"
-        />
+        <Image src={logo} alt="Elena Zen Frontend Developer logo" />
       </div>
     </div>
     <div class="ftsubcont">

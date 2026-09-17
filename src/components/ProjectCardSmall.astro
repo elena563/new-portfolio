@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 const {
   t,
   classes,
@@ -16,7 +18,7 @@ const {
 
 <div class={`small-card ${classes || ''}`}>
   <div class="small-content">
-    <img src={img} alt={alt} loading="lazy" />
+    <Image src={img} alt={alt} loading="lazy" />
     <div class="projtext">
       <h4>{title}</h4>
       {

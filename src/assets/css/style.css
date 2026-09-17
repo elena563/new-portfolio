@@ -209,6 +209,10 @@ input {
   display: flex;
   letter-spacing: 2px;
 }
+.logo img {
+  height: 60px;
+  width: auto;
+}
 .getintouch {
   border: none;
   width: max(70%, 300px);
@@ -320,6 +324,7 @@ footer,
 }
 #aboutme img {
   width: min(97%, 450px);
+  height: auto;
   object-fit: contain;
 }
 .policies {
@@ -731,6 +736,7 @@ a.disabled:active {
 }
 .navbar img {
   height: 3em;
+  width: auto;
 }
 nav {
   flex: 1;
