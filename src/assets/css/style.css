@@ -35,7 +35,8 @@
   --accent-violet-dark: #301091;
   --accent-orange: #f97779;
   --accent-orange-dark: #f75254;
-  --primary-color: #c4a6ed;
+  --primary-original:#c4a6ed;
+  --primary-color: #d3bff1;
   --secondary-color: #5a4180;
   --secondary-dark: #664992;
   --violet-light: #eeeaf9;
@@ -860,15 +861,15 @@ nav {
 }
 .badge.typescript,
 .badge.gsc {
-  color: #2d79c7;
-  background-color: #e3f2fd;
-  border-color: #2d79c7;
+  color: #1971c9;
+  background-color: #eef6fc;
+  border-color: #1971c9;
 }
 .badge.reactjs,
 .badge.tailwindcss {
-  color: #00c0f0;
-  background-color: #edfafd;
-  border-color: #00c0f0;
+  color: #0176b6;
+  background-color: #f1fafc;
+  border-color: #0176b6;
 }
 .badge.django {
   color: #2c6f4d;
@@ -907,8 +908,8 @@ nav {
 }
 .badge.matplotlib,
 .badge.scikit-learn {
-  color: #b85e0e;
-  background-color: #fff3e0;
+  color: #a24d03;
+  background-color: #fcf6ed;
   border-color: #b85e0e;
 }
 .badge.astrojs,
@@ -930,9 +931,9 @@ nav {
 }
 .badge.streamlit,
 .badge.figma {
-  color: #d24726;
-  background-color: #f5e4df;
-  border-color: #d24726;
+  color: #c83e1c;
+  background-color: #f7f1ef;
+  border-color: #c83e1c;
 }
 .badge.hugo,
 .badge.shap {

@@ -397,7 +397,7 @@ The work is still in progress, with the goal of preparing the product for sale.`
       en: 'Interactive web application that, given a Spotify playlist or a list of 5 songs, can tell you what kind of listener you are',
     },
     img: bannerSpotiType,
-    alt: 'statpilot web app',
+    alt: 'spotitype web app',
     url: 'https://spotitype.vercel.app/',
     readme: 'https://github.com/elena563/spotitype',
     preview: true,

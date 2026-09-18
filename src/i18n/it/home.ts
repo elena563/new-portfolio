@@ -3,6 +3,7 @@ export default {
   'nav.solutions': 'Soluzioni',
   'nav.portfolio': 'Portfolio',
   'nav.contact': 'Contatti',
+  'nav.menu': 'Apri menu',
 
   'home.meta-description':
     "Elena Zen Full-stack Web Developer | Sviluppo applicazioni web e prodotti digitali moderni, con un background in Statistica e uno sguardo rivolto all'AI.",
