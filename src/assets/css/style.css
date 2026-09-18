@@ -581,6 +581,7 @@ a.disabled:active {
 }
 .small-card img {
   flex: 1 1 250px;
+  height: auto;
   min-width: 0;
   max-width: 100%;
   border-radius: var(--radius-xs);
