@@ -132,6 +132,7 @@ function showProjects(evt: Event, category: string) {
 
   current.classList.add('active');
   moveIndicator(current);
+  sortSelectedProjects(category.slice(1));
 }
 
 const tabIndicator = document.querySelector<HTMLElement>('.tab-indicator');
@@ -147,6 +148,28 @@ function moveIndicator(btn: HTMLElement, animate = true) {
     void tabIndicator.offsetHeight;
     tabIndicator.style.transition = '';
   }
+}
+
+function sortSelectedProjects(category: string) {
+  document
+    .querySelectorAll<HTMLElement>('.large-grid, .small-grid')
+    .forEach((grid) => {
+      const visible = Array.from(grid.children).filter(
+        (el) => !el.classList.contains('hidden')
+      );
+      visible.sort((a, b) => {
+        const aRaw = a.getAttribute(`data-order-${category}`);
+        const bRaw = b.getAttribute(`data-order-${category}`);
+        const av =
+          aRaw === null ? Number.MAX_SAFE_INTEGER : Number(aRaw);
+        const bv =
+          bRaw === null ? Number.MAX_SAFE_INTEGER : Number(bRaw);
+        const an = Number.isFinite(av) ? av : Number.MAX_SAFE_INTEGER;
+        const bn = Number.isFinite(bv) ? bv : Number.MAX_SAFE_INTEGER;
+        return an - bn;
+      });
+      visible.forEach((el) => grid.appendChild(el));
+    });
 }
 
 const projectFilters = [
@@ -168,6 +191,8 @@ projects.forEach(function (proj) {
     proj.classList.add('hidden');
   }
 });
+
+sortSelectedProjects('featured');
 
 const activeTab = document.querySelector('.tab.active') as HTMLElement | null;
 if (activeTab) {

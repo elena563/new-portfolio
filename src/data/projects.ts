@@ -14,6 +14,8 @@ import bannerCrypto from '../assets/project_banners/banner-crypto.webp';
 import bannerHotel from '../assets/project_banners/banner-hotel.webp';
 import bannerHashtag from '../assets/project_banners/banner-hashtag.webp';
 
+export type ProjectCategory = 'featured' | 'webapp' | 'data' | 'website';
+
 export interface Project {
   classes: string;
   card_dim: 'small' | 'large';
@@ -31,6 +33,7 @@ export interface Project {
   };
   img: ImageMetadata;
   alt: string;
+  order?: Partial<Record<ProjectCategory, number>>;
   url?: string;
   readme?: string;
   preview: boolean;
@@ -66,6 +69,10 @@ export const projects: Project[] = [
     },
     img: bannerMamachef,
     alt: 'mamachef web app',
+    order: {
+      featured: 1,
+      webapp: 2,
+    },
     url: 'https://mamachef.alwaysdata.net/',
     readme: 'https://github.com/elena563/mamachef',
     preview: true,
@@ -245,6 +252,9 @@ I also took care of technical decisions, maintenance, and necessary intervention
     },
     img: bannerStatpilot,
     alt: 'statpilot web app',
+    order: {
+      webapp: 3,
+    },
     url: 'https://statpilot.onrender.com/',
     readme: 'https://github.com/elena563/statpilot',
     preview: true,
@@ -310,6 +320,9 @@ Global analysis allows users to observe the importance of variables in the overa
     },
     img: bannerSpaceadmin,
     alt: 'NOD Space Admin platform',
+    order: {
+      webapp: 1,
+    },
     url: 'https://notonlydesk.com/',
     preview: true,
     repo_visibility: false,

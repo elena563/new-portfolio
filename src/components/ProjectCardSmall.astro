@@ -13,11 +13,18 @@ const {
   preview,
   repo_visibility,
   badges,
+  order,
 } = Astro.props;
 ---
 
-<div class={`small-card ${classes || ''}`}>
-  <div class="small-content">
+<div
+    class={`small-card ${classes || ''}`}
+    data-order-featured={order?.featured}
+    data-order-webapp={order?.webapp}
+    data-order-data={order?.data}
+    data-order-website={order?.website}
+  >
+    <div class="small-content">
     <Image src={img} alt={alt} loading="lazy" />
     <div class="projtext">
       <h4>{title}</h4>
