@@ -46,6 +46,7 @@ const projectsLarge = projects.filter((p) => p.card_dim === 'large');
       <h2 class="textcenter" set:html={t('portfolio.title')} />
       <p set:html={t('portfolio.text')} /><br />
       <div class="tabs">
+        <span class="tab-indicator" aria-hidden="true"></span>
         <button id="featured-btn" role="tab" class="tab active"
           >{t('tab.featured')}</button
         >

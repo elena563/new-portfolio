@@ -31,14 +31,14 @@
   --bg-color: #f5f5fa;
   --fg-dark: #d3d3d3;
   --fg-color: #271b46;
-  --accent-violet: #7f5beb;
-  --accent-violet-dark: #684bbf;
-  --accent-orange: #fa9192;
-  --accent-orange-dark: #f97779;
+  --accent-violet: #4217c2;
+  --accent-violet-dark: #301091;
+  --accent-orange: #f97779;
+  --accent-orange-dark: #f75254;
   --primary-color: #c4a6ed;
   --secondary-color: #5a4180;
   --secondary-dark: #664992;
-  --violet-light: #eae5fa;
+  --violet-light: #eeeaf9;
   --orange-light: #f5dfe2;
   --font-base: 'Outfit', sans-serif;
   --font-header: 'Coolvetica', sans-serif;
@@ -132,6 +132,14 @@ textarea:focus-visible,
 select:focus-visible {
   outline: 2px solid var(--violet-light);
   outline-offset: 2px;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: rgba(234, 229, 250, 0.5);
 }
 header {
   background-color: var(--secondary-color);
@@ -506,6 +514,7 @@ a.disabled:active {
   margin: var(--margin-md) 0;
 }
 .tabs {
+  position: relative;
   margin-bottom: 32px;
   display: flex;
   overflow-x: auto;
@@ -516,22 +525,35 @@ a.disabled:active {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+.tab-indicator {
+  position: absolute;
+  top: var(--margin-xs);
+  bottom: var(--margin-xs);
+  left: 0;
+  width: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background-color: var(--primary-color);
+  transition: left 0.3s ease, width 0.3s ease;
+}
 .tabs::-webkit-scrollbar {
   display: none;
 }
 .tab {
+  position: relative;
+  z-index: 1;
   border: none;
   white-space: nowrap;
   padding: var(--margin-xs) 25px;
   border-radius: inherit;
-  background-color: inherit;
+  background-color: transparent;
   font-weight: bold;
   font-family: var(--font-base);
   font-size: 1.1rem;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 .active {
-  background-color: var(--primary-color);
   color: var(--bg-color);
 }
 .small-card {
@@ -832,9 +854,9 @@ nav {
 }
 .badge.javascript,
 .badge.js {
-  color: #b8930f;
-  background-color: #faf8ec;
-  border-color: #b8930f;
+  color: #735600;
+  background-color: #FFFDE7;
+  border-color: #735600;
 }
 .badge.typescript,
 .badge.gsc {

@@ -112,6 +112,8 @@ if (document.querySelector('.mySwiper2')) {
 
 // tab filter in portfolio page
 function showProjects(evt: Event, category: string) {
+  const current = evt.currentTarget as HTMLElement;
+
   const projects = document.querySelectorAll('.large-card, .small-card');
   projects.forEach(function (proj) {
     proj.classList.add('hidden');
@@ -127,7 +129,24 @@ function showProjects(evt: Event, category: string) {
   selected.forEach((proj) => {
     proj.classList.remove('hidden');
   });
-  (evt.currentTarget as HTMLElement).classList.add('active');
+
+  current.classList.add('active');
+  moveIndicator(current);
+}
+
+const tabIndicator = document.querySelector<HTMLElement>('.tab-indicator');
+
+function moveIndicator(btn: HTMLElement, animate = true) {
+  if (!tabIndicator) return;
+  if (!animate) {
+    tabIndicator.style.transition = 'none';
+  }
+  tabIndicator.style.left = `${btn.offsetLeft}px`;
+  tabIndicator.style.width = `${btn.offsetWidth}px`;
+  if (!animate) {
+    void tabIndicator.offsetHeight;
+    tabIndicator.style.transition = '';
+  }
 }
 
 const projectFilters = [
@@ -149,3 +168,8 @@ projects.forEach(function (proj) {
     proj.classList.add('hidden');
   }
 });
+
+const activeTab = document.querySelector('.tab.active') as HTMLElement | null;
+if (activeTab) {
+  moveIndicator(activeTab, false);
+}
